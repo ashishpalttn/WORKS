@@ -1,0 +1,11 @@
+Isolation Pressure Bed Property is not displaying in the Bed Property drop down list.
+
+Steps to Reproduce:
+Select any Admission Process Board where all the filters are configured.
+Open the Filter pane.
+Select the drop down list for Bed property.
+See attached screen shot.
+
+Issue - Isolation Pressure is missing from the Bed Property drop down list.
+
+Soluthion :-
