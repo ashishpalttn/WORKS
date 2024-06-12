@@ -9,3 +9,15 @@ See attached screen shot.
 Issue - Isolation Pressure is missing from the Bed Property drop down list.
 
 Soluthion :-
+api end-point = /orderQueuesData
+QueuesDataService.java
+QueueElementService.java
+VisitQueueElementService.java
+VisitQueueDataFilteringService.java
+QueueDataFilteringService.java
+
+
+
+
+
+QueueDataFilteringService.java

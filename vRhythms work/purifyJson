@@ -1,0 +1,176 @@
+{
+  "id": null,
+  "visit": {
+    "id": "e1ba7b04-e25c-4291-bda0-1e1972238e68",
+    "admitType": "IN",
+    "facilityId": "3101e68f-e137-473e-a115-df8f89d0e385",
+    "visitNumber": "VN_AKERS_1",
+    "patientAlerts": [
+      {
+        "alertTypeId": "997356de-3a03-41f8-abcf-7c649093e8dc",
+        "alertTypeSortOrder": 4,
+        "alertValueIconPath": "https://cdn.filestackcontent.com/XSM9nMZQtiGrE4ynFVMZ",
+        "alertTypeMultivalue": false,
+        "alertValueSortOrder": 1,
+        "alertTypeDisplayName": "Enteric Isolation",
+        "alertValueDisplayName": "Yes"
+      },
+      {
+        "alertTypeId": "7c409d5f-d7d0-474c-bf33-a7fd49cf6f25",
+        "alertTypeSortOrder": 9,
+        "alertValueIconPath": null,
+        "alertTypeMultivalue": false,
+        "alertValueSortOrder": 1,
+        "alertTypeDisplayName": "Telemetry",
+        "alertValueDisplayName": "Yes"
+      },
+      {
+        "alertTypeId": "fe0adc2e-1c67-47db-87d9-fee7315291f2",
+        "alertTypeSortOrder": 1,
+        "alertValueIconPath": "https://cdn.filestackcontent.com/orP2Q1w1RzWx2PMpdlov",
+        "alertTypeMultivalue": false,
+        "alertValueSortOrder": 1,
+        "alertTypeDisplayName": "Airborne Isolation",
+        "alertValueDisplayName": "Yes"
+      },
+      {
+        "alertTypeId": "8ba0c1cc-6fea-488e-bf73-a38c7a14db9c",
+        "alertTypeSortOrder": 7,
+        "alertValueIconPath": null,
+        "alertTypeMultivalue": true,
+        "alertValueSortOrder": 2,
+        "alertTypeDisplayName": "Isolation Organism",
+        "alertValueDisplayName": "RSV"
+      },
+      {
+        "alertTypeId": "79ae8ae3-acb6-4dfe-912a-b4779cb5a14f",
+        "alertTypeSortOrder": 8,
+        "alertValueIconPath": "https://cdn.filestackcontent.com/L6mTyOBKTn2qmwomAZFV",
+        "alertTypeMultivalue": false,
+        "alertValueSortOrder": 1,
+        "alertTypeDisplayName": "Fall Risk",
+        "alertValueDisplayName": "Yes"
+      },
+      {
+        "alertTypeId": "8ba0c1cc-6fea-488e-bf73-a38c7a14db9c",
+        "alertTypeSortOrder": 7,
+        "alertValueIconPath": null,
+        "alertTypeMultivalue": true,
+        "alertValueSortOrder": 1,
+        "alertTypeDisplayName": "Isolation Organism",
+        "alertValueDisplayName": "Hepatitis A"
+      },
+      {
+        "alertTypeId": "3062532e-d77c-45be-90dc-8db7357e5c5f",
+        "alertTypeSortOrder": 3,
+        "alertValueIconPath": "https://cdn.filestackcontent.com/RPK8VnUMTVS5YvFZvMlc",
+        "alertTypeMultivalue": false,
+        "alertValueSortOrder": 1,
+        "alertTypeDisplayName": "Droplet Isolation",
+        "alertValueDisplayName": "Yes"
+      },
+      {
+        "alertTypeId": "562512a7-5ce7-4968-9bc9-18696fc5586d",
+        "alertTypeSortOrder": 10,
+        "alertValueIconPath": null,
+        "alertTypeMultivalue": false,
+        "alertValueSortOrder": 2,
+        "alertTypeDisplayName": "Bariatric Patient",
+        "alertValueDisplayName": "No"
+      },
+      {
+        "alertTypeId": "7516f8c5-5b61-4ba7-9e60-d1bcac0f1c2c",
+        "alertTypeSortOrder": 2,
+        "alertValueIconPath": "https://cdn.filestackcontent.com/7fKhg1krQemM19QYJp45",
+        "alertTypeMultivalue": false,
+        "alertValueSortOrder": 1,
+        "alertTypeDisplayName": "Contact Isolation",
+        "alertValueDisplayName": "Yes"
+      }
+    ],
+    "visitLocation": {
+      "homeBed": {
+        "id": "eb50a95d-2686-42aa-b80f-ae32f01a7966",
+        "open": true,
+        "clean": true,
+        "bariatric": false,
+        "displayName": "Bed 1",
+        "telemetryCapable": false,
+        "handicapAccessible": false,
+        "roomNearNurseStation": false
+      },
+      "currentBed": {
+        "id": "eb50a95d-2686-42aa-b80f-ae32f01a7966",
+        "open": true,
+        "clean": true,
+        "bariatric": false,
+        "displayName": "Bed 1",
+        "telemetryCapable": false,
+        "handicapAccessible": false,
+        "roomNearNurseStation": false
+      },
+      "reservedBed": {
+        "id": "b212af54-db97-4c96-82fb-34a9a0b96c51",
+        "open": true,
+        "clean": true,
+        "bariatric": false,
+        "displayName": "Bed 2",
+        "telemetryCapable": false,
+        "handicapAccessible": false,
+        "roomNearNurseStation": false
+      },
+      "homeDepartment": {
+        "id": "2488f569-e58f-4fc5-86f4-82e006e1bc51",
+        "displayName": "11A",
+        "departmentType": "UNIT"
+      },
+      "currentDepartment": {
+        "id": "2488f569-e58f-4fc5-86f4-82e006e1bc51",
+        "displayName": "11A",
+        "departmentType": "UNIT"
+      },
+      "reservedDepartment": {
+        "id": "2488f569-e58f-4fc5-86f4-82e006e1bc51",
+        "displayName": "11A",
+        "departmentType": "UNIT"
+      },
+      "checkedIntoReservedBedDate": null
+    }
+  },
+  "patient": {
+    "lastName": "Akers",
+    "firstName": "Adam"
+  },
+  "facility": {
+    "id": "3101e68f-e137-473e-a115-df8f89d0e385",
+    "name": "Grady",
+    "displayCode": null
+  },
+  "queueType": "Visit",
+  "currentOrder": {
+    "id": "4f4f7ea2-c8c6-41af-a1a9-9a4e5d1dc3c4",
+    "bedRequest": {
+      "id": "811399c9-f0cf-40f0-871b-99dbc73e1427",
+      "bedType": "Stepdown",
+      "unitType": {
+        "id": "b46201e9-71f0-48ef-ad0a-9f9791b0fe22",
+        "displayCode": "MS",
+        "displayName": "Med Surg"
+      },
+      "bedRequestSource": {
+        "id": "8266e07e-8210-4343-9382-d0ab311ddc67",
+        "displayCode": "ED",
+        "displayName": "Ashish Pal"
+      }
+    },
+    "orderTypeMapping": {
+      "id": "f46ad57a-273d-443f-9ae5-f4b179544cb7",
+      "orderType": "ADMIT",
+      "facilityId": "3101e68f-e137-473e-a115-df8f89d0e385",
+      "displayName": "OUTPATIENT WITH OBSERVATION SERVICES",
+      "orderSubtype": null,
+      "interfaceValue": "ADT12"
+    },
+    "orderStatusMappingDTO": null
+  }
+}
