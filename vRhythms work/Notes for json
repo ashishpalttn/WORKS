@@ -1,0 +1,2 @@
+1 - before send dirtyBed json create a dirty bed. Location->Bed Status Mapping
+2 - before send reserve bed create a Bed request Sourse. Location->Bed Request Sourse
