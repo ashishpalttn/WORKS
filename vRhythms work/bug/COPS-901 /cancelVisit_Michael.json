@@ -1,0 +1,156 @@
+{
+  "meta": {
+    "msgId": "<a message id captured from EMR>",
+    "msgType": "ADT^A01",
+    "eventTimeStamp": "2023-10-13T12:00:00-04:00",
+    "userId": "<id of user who put in EMR message>",
+    "source": "<source of system generating message>",
+    "facilityCodeEMR": "<A code which envoy populates from EMR message>",
+    "tenantCodeCL": "<A code which we provide to Envoy indicating tenant>",
+    "eventType": "PATIENTADMIN",
+    "eventSubType": "CancelVisit",
+    "clMetaFields": {
+      "facilityId": "3101e68f-e137-473e-a115-df8f89d0e385",
+      "facilityCode": "GHS",
+      "facilityName": "Grady",
+      "tenantId": "c12a1ec6-762a-4373-9ded-d860a92e00ac",
+      "tenantName": "Grady"
+    }
+  },
+  "patient": {
+    "identifiers": {
+      "medicalRecordNumber": "MRN_Sumit_1",
+      "masterPatientIdentifier": "MPI_Sumit_1"
+    },
+    "name": {
+      "first": "Adam",
+      "middle": "Alan",
+      "last": "Sumit"
+    },
+    "dateOfBirth": "1990-12-03",
+    "birthGender": "MALE",
+    "preferredGender": "",
+    "weight": "",
+    "weightUnits": "",
+    "height": "",
+    "heightUnits": "",
+    "contact": {
+      "address": {
+        "streetAddress1": "",
+        "streetAddress2": "",
+        "city": "",
+        "state": "",
+        "zipCode": ""
+      },
+      "email": "",
+      "phoneNumbers": {
+        "home": "",
+        "work": ""
+      }
+    }
+  },
+  "visit": {
+    "careTeam" : [
+      {
+        "firstName": "",
+        "lastName": "",
+        "role": "",
+        "identifier": "",
+        "startTime": ""
+      }
+    ],
+    "identifiers": {
+      "visitNumber": "VN_Sumit_1",
+      "HAR": "",
+      "admittingCSN": ""
+    },
+    "currentLocation": {
+      "departmentCode": "11A",
+      "bedCode": "A",
+      "roomCode": "1",
+      "facilityCode": "GHS"
+    },
+    "insurancePlans": [
+      {
+        "code": "",
+        "description": "",
+        "priority": ""
+      },
+      {
+        "code": "",
+        "description": "",
+        "priority": ""
+      }
+    ],
+    "expectedDate": "2024-06-11T12:00:00-04:00",
+    "admitDate": "2024-06-09T12:00:00-04:00",
+    "hospitalService": "",
+    "financialClass": "",
+    "patientClass": "<used to determine the value for admitType>",
+    "patientType": "<used to determine the value for admitType>",
+    "admitType": "IN",
+    "physicianInfo": [
+      {
+        "physicianType": "",
+        "npi": "",
+        "firstName": "",
+        "middleName": "",
+        "lastName": "",
+        "group": ""
+      }
+    ],
+    "expectedDischargeTime": "2024-01-20",
+    "workingDischargeDisposition": "Home",
+    "dischargeDateTime": "",
+    "dischargeDisposition": "",
+    "admittingComplaint": "",
+    "admittingDiagnosisCode": "",
+    "admittingDiagnosisDesc": "",
+    "drgCode": "123",
+    "alerts": [
+      {
+        "name": "Telemetry",
+        "value": "Yes"
+      },
+      {
+        "name": "Bariatric",
+        "value": "No"
+      },
+      {
+        "name": "IsolationOrganism",
+        "value": "HepatitisA",
+        "remove": false
+      },
+      {
+        "name": "IsolationOrganism",
+        "value": "RSV",
+        "remove": false
+      },
+      {
+        "name": "IsolationOrganism",
+        "value": "Ecoli",
+        "remove": true
+      },
+      {
+        "name": "AirborneIsolation",
+        "value": "Yes"
+      },
+      {
+        "name": "FallRisk",
+        "value": "Yes"
+      },
+      {
+        "name": "DropletIsolation",
+        "value": "Yes"
+      },
+      {
+        "name": "ContactIsolation",
+        "value": "Yes"
+      },
+      {
+        "name": "EntericIsolation",
+        "value": "Yes"
+      }
+    ]
+  }
+}

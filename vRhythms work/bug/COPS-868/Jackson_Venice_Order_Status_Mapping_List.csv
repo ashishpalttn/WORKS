@@ -1,0 +1,5 @@
+Facility Code,Interface Value,Display Name,Corresponding Action
+G-GRADY-GA,Arrived,Arrived,Created
+G-GRADY-GA,Exam Begun,Exam Begun,Started
+G-GRADY-GA,Exam Ended,Exam Ended,Completed
+G-GRADY-GA,F,Final Results,RESULTED

@@ -58,7 +58,7 @@
   "bedRequest": {
     "bedRequestState": "PENDING",
     "bedType": "Stepdown",
-    "unitType": "Med Surg",
+    "unitType": "",
     "bedRequestSource": "ED",
     "bedRequestNotes": "This patient broke their leg jumping on a pogo stick.",
     "careLevelRequested": "",

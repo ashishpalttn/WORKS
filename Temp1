@@ -1,0 +1,34 @@
+visit = {Visit@23122} "Visit(id=a265a36f-2253-4f2d-a3cb-959823c71c9c, visitNumber=VN_visitTest_1, admitType=IN, visitStatus=PreAdmission, admitDate=null, admitDateIncludesTime=false, dischargeDate=null, dischargeDateIncludesTime=false, expectedDischargeTime=2024-01-20T10:30+05:30, expectedDischargeTimeIncludesTime=false, legacyBedRequestStatus=null, workingDischargeDisposition=Home, workingDischargeDispositionUpdatedOn=2024-06-19T18:09:20.069082+05:30, drg=123, drgUpdatedOn=2024-06-19T18:09:20.069075+05:30, targetLos=null, targetLosUpdatedOn=null, gmlos=null)"
+ orderDetails = {PersistentBag@23140}  size = 0
+ id = {UUID@23134} "a265a36f-2253-4f2d-a3cb-959823c71c9c"
+ visitNumber = "VN_visitTest_1"
+ admitType = "IN"
+ visitStatus = {VisitStatus@23137} "PreAdmission"
+ admitDate = null
+ admitDateIncludesTime = false
+ dischargeDate = null
+ dischargeDateIncludesTime = false
+ expectedDischargeTime = {OffsetDateTime@23138} "2024-01-20T10:30+05:30"
+ expectedDischargeTimeIncludesTime = false
+ facility = {Facility$HibernateProxy$vcJIs5NA@23139} "Facility(id=3101e68f-e137-473e-a115-df8f89d0e385, name=Grady, code=G-GRADY-GA, codeEmr=GHS, type=EMR, category=null, region=South East, hospital=GRADY, location=Atlanta, timezone=America/New_York, displayCode=null)"
+ patient = null
+ visitLocation = {VisitLocation@23128} "VisitLocation(id=e39a6b5a-e979-4bf1-b1e5-491448aa5b8e, reservedOn=null, checkedIntoReservedBedDate=null)"
+ adtOrderDetails = {PersistentBag@23141}  size = 0
+ patientAlerts = {PersistentSet@23142}  size = 9
+ barriers = {PersistentBag@23143}  size = 0
+ legacyBedRequestStatus = null
+ workingDischargeDisposition = "Home"
+ workingDischargeDispositionUpdatedOn = {OffsetDateTime@23145} "2024-06-19T18:09:20.069082+05:30"
+ drg = "123"
+ drgUpdatedOn = {OffsetDateTime@23147} "2024-06-19T18:09:20.069075+05:30"
+ targetLos = null
+ targetLosUpdatedOn = null
+ gmlos = null
+ visitCareTeamMembers = {PersistentBag@23148}  size = 0
+ tenantId = "c12a1ec6-762a-4373-9ded-d860a92e00ac"
+ isActive = {Boolean@23150} true
+ isDeleted = {Boolean@23150} true
+ createdBy = "d5380db9-4918-4f5b-b322-e6fa4604e122|system"
+ createdOn = {OffsetDateTime@23152} "2024-06-19T18:09:20.119963+05:30"
+ updatedBy = "d5380db9-4918-4f5b-b322-e6fa4604e122|system"
+ updatedOn = {OffsetDateTime@23154} "2024-06-20T11:50:56.068728+05:30"
