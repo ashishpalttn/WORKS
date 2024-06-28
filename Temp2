@@ -1,67 +1,33 @@
 {
-  "meta": {
-    "msgId": "12345",
-    "msgType": "ORM^O01",
-    "eventTimeStamp": "2023-10-13T12:01:00-04:00",
-    "userId": "<id of user who put in EMR message>",
-    "source": "<source of system generating message>",
-    "facilityCodeEMR": "<A code which envoy populates from EMR message>",
-    "tenantCodeCL": "<A code which we provide to Envoy indicating tenant>",
-    "eventType": "Order",
-    "eventSubType": "CreateUpdate",
-    "clMetaFields": {
-      "facilityId": "3101e68f-e137-473e-a115-df8f89d0e385",
-      "facilityCode": "GHS",
-      "facilityName": "Grady",
-      "tenantId": "c12a1ec6-762a-4373-9ded-d860a92e00ac",
-      "tenantName": "Grady"
-    }
+  "id": "5883e647-0707-42b0-9624-1c8a006e10b0",
+  "queueType": "Bed",
+  "facility": {
+    "id": "3101e68f-e137-473e-a115-df8f89d0e385",
+    "name": "Grady",
+    "displayCode": null
   },
-  "patient": {
-    "identifiers": {
-      "medicalRecordNumber": "MRN_Ashish_1",
-      "masterPatientIdentifier": "MPI_Ashish_1"
-    }
+  "department": {
+    "id": "3e986c8d-b8fe-4363-a8c2-57833f9d0ab9",
+    "displayName": "10A",
+    "departmentType": "UNIT",
+    "unitTypes": [
+      {
+        "id": "6fc6f7db-9a81-420d-a780-a8876cc9610b",
+        "displayName": "ICU",
+        "displayCode": "ICU"
+      }
+    ]
   },
-  "visit": {
-    "identifiers": {
-      "visitNumber": "VN_Ashish_1",
-      "HAR": "",
-      "admittingCSN": ""
-    }
-  },
-  "order": {
-    "portable": "",
-    "priority": "1",
-    "stopTime": "2024-01-25",
-    "orderDesc": "BED REQUEST - INPATIENT",
-    "orderName": "ADT9",
-    "startTime": "2024-01-25T11:29:56-05:00",
-    "orderNotes": "",
-    "statusTime": "2024-01-25T11:29:56-05:00",
-    "orderNumber": "ON_Ashish_ITA",
-    "orderReason": "",
-    "orderStatus": "SCHEDULED",
-    "requestedTime": "2024-01-25T11:30:00-05:00",
-    "accessionNumber": "ON_Ashish_ITA",
-    "prevOrderNumber": "",
-    "orderingProvider": {
-      "id": "444444",
-      "lastName": "Doc",
-      "firstName": "Tor"
-    },
-    "orderingDepartment": "",
-    "serviceModalityCode": "ADT"
-  },
-  "bedRequest": {
-    "bedRequestState": "PENDING",
-    "bedType": "Stepdown",
-    "unitType": "testUnit",
-    "bedRequestSource": "ED",
-    "bedRequestNotes": "This patient broke their leg jumping on a pogo stick.",
-    "careLevelRequested": "",
-    "unitTransfer": "",
-    "estimatedTransferTime": "",
-    "cancelled": ""
+  "bed": {
+    "id": "5883e647-0707-42b0-9624-1c8a006e10b0",
+    "displayName": "Bed 3",
+    "bariatric": false,
+    "telemetryCapable": false,
+    "handicapAccessible": false,
+    "roomNearNurseStation": false,
+    "pressure": "NONE",
+    "available": true,
+    "open": false,
+    "clean": false
   }
 }
