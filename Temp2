@@ -1,33 +1,12 @@
-{
-  "id": "5883e647-0707-42b0-9624-1c8a006e10b0",
-  "queueType": "Bed",
-  "facility": {
-    "id": "3101e68f-e137-473e-a115-df8f89d0e385",
-    "name": "Grady",
-    "displayCode": null
+[
+  {
+      "field": "_open",
+      "description": "Open Beds",
+      "order": "desc"
   },
-  "department": {
-    "id": "3e986c8d-b8fe-4363-a8c2-57833f9d0ab9",
-    "displayName": "10A",
-    "departmentType": "UNIT",
-    "unitTypes": [
-      {
-        "id": "6fc6f7db-9a81-420d-a780-a8876cc9610b",
-        "displayName": "ICU",
-        "displayCode": "ICU"
-      }
-    ]
-  },
-  "bed": {
-    "id": "5883e647-0707-42b0-9624-1c8a006e10b0",
-    "displayName": "Bed 3",
-    "bariatric": false,
-    "telemetryCapable": false,
-    "handicapAccessible": false,
-    "roomNearNurseStation": false,
-    "pressure": "NONE",
-    "available": true,
-    "open": false,
-    "clean": false
+  {
+      "field": "_clean",
+      "description": "Clean Beds",
+      "order": "desc"
   }
-}
+]

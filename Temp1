@@ -1,669 +1,251 @@
-{
-    "queue": {
-        "id": "2bcb40c4-dfbd-4123-a1dc-bf538b075127",
-        "queueName": "AvailableBeds",
+[
+    {
+        "id": "eb50a95d-2686-42aa-b80f-ae32f01a7966",
         "queueType": "Bed",
-        "totalItems": 0,
-        "delayedItems": 0,
-        "throughputData": {
-            "throughput": 0,
-            "exception": 0,
-            "averageTat": 0,
-            "targetTime": "0",
-            "warningTime": "0",
-            "alertTime": "0",
-            "turnaroundTimeUnit": "INTEGER"
-        },
-        "queueData": [
-            {
-                "id": "eb50a95d-2686-42aa-b80f-ae32f01a7966",
-                "queueType": "Bed",
-                "facility": "3101e68f-e137-473e-a115-df8f89d0e385",
-                "details": "{\"id\":\"eb50a95d-2686-42aa-b80f-ae32f01a7966\",\"queueType\":\"Bed\",\"facility\":{\"id\":\"3101e68f-e137-473e-a115-df8f89d0e385\",\"name\":\"Grady\",\"displayCode\":null},\"department\":{\"id\":\"2488f569-e58f-4fc5-86f4-82e006e1bc51\",\"displayName\":\"11A\",\"departmentType\":\"UNIT\",\"unitTypes\":[{\"id\":\"713cdc4d-d5d2-4c1a-a072-29e56033b99d\",\"displayName\":\"Med Surg\",\"displayCode\":\"MS\"}]},\"bed\":{\"id\":\"eb50a95d-2686-42aa-b80f-ae32f01a7966\",\"displayName\":\"Bed 1\",\"bariatric\":false,\"telemetryCapable\":false,\"handicapAccessible\":false,\"roomNearNurseStation\":false,\"pressure\":\"NONE\",\"available\":true,\"open\":false,\"clean\":false}}",
-                "queueName": "AvailableBeds"
-            },
-            {
-                "id": "b212af54-db97-4c96-82fb-34a9a0b96c51",
-                "queueType": "Bed",
-                "facility": "3101e68f-e137-473e-a115-df8f89d0e385",
-                "details": "{\"id\":\"b212af54-db97-4c96-82fb-34a9a0b96c51\",\"queueType\":\"Bed\",\"facility\":{\"id\":\"3101e68f-e137-473e-a115-df8f89d0e385\",\"name\":\"Grady\",\"displayCode\":null},\"department\":{\"id\":\"2488f569-e58f-4fc5-86f4-82e006e1bc51\",\"displayName\":\"11A\",\"departmentType\":\"UNIT\",\"unitTypes\":[{\"id\":\"713cdc4d-d5d2-4c1a-a072-29e56033b99d\",\"displayName\":\"Med Surg\",\"displayCode\":\"MS\"}]},\"bed\":{\"id\":\"b212af54-db97-4c96-82fb-34a9a0b96c51\",\"displayName\":\"Bed 2\",\"bariatric\":false,\"telemetryCapable\":false,\"handicapAccessible\":false,\"roomNearNurseStation\":false,\"pressure\":\"NONE\",\"available\":true,\"open\":false,\"clean\":true}}",
-                "queueName": "AvailableBeds"
-            },
-            {
-                "id": "bcd7d11d-d08d-4c4a-a725-4cbacf6e0376",
-                "queueType": "Bed",
-                "facility": "3101e68f-e137-473e-a115-df8f89d0e385",
-                "details": "{\"id\":\"bcd7d11d-d08d-4c4a-a725-4cbacf6e0376\",\"queueType\":\"Bed\",\"facility\":{\"id\":\"3101e68f-e137-473e-a115-df8f89d0e385\",\"name\":\"Grady\",\"displayCode\":null},\"department\":{\"id\":\"2488f569-e58f-4fc5-86f4-82e006e1bc51\",\"displayName\":\"11A\",\"departmentType\":\"UNIT\",\"unitTypes\":[{\"id\":\"713cdc4d-d5d2-4c1a-a072-29e56033b99d\",\"displayName\":\"Med Surg\",\"displayCode\":\"MS\"}]},\"bed\":{\"id\":\"bcd7d11d-d08d-4c4a-a725-4cbacf6e0376\",\"displayName\":\"Bed 3\",\"bariatric\":false,\"telemetryCapable\":false,\"handicapAccessible\":false,\"roomNearNurseStation\":false,\"pressure\":\"NONE\",\"available\":true,\"open\":true,\"clean\":true}}",
-                "queueName": "AvailableBeds"
-            },
-            {
-                "id": "9c146efb-6aaa-44f3-abe8-eb4ea75e5557",
-                "queueType": "Bed",
-                "facility": "3101e68f-e137-473e-a115-df8f89d0e385",
-                "details": "{\"id\":\"9c146efb-6aaa-44f3-abe8-eb4ea75e5557\",\"queueType\":\"Bed\",\"facility\":{\"id\":\"3101e68f-e137-473e-a115-df8f89d0e385\",\"name\":\"Grady\",\"displayCode\":null},\"department\":{\"id\":\"3e986c8d-b8fe-4363-a8c2-57833f9d0ab9\",\"displayName\":\"10A\",\"departmentType\":\"UNIT\",\"unitTypes\":[{\"id\":\"6fc6f7db-9a81-420d-a780-a8876cc9610b\",\"displayName\":\"ICU\",\"displayCode\":\"ICU\"}]},\"bed\":{\"id\":\"9c146efb-6aaa-44f3-abe8-eb4ea75e5557\",\"displayName\":\"Bed 1\",\"bariatric\":false,\"telemetryCapable\":false,\"handicapAccessible\":false,\"roomNearNurseStation\":false,\"pressure\":\"NONE\",\"available\":true,\"open\":false,\"clean\":false}}",
-                "queueName": "AvailableBeds"
-            },
-            {
-                "id": "23e23e4f-ebcc-413e-bde7-f65ee5d87648",
-                "queueType": "Bed",
-                "facility": "3101e68f-e137-473e-a115-df8f89d0e385",
-                "details": "{\"id\":\"23e23e4f-ebcc-413e-bde7-f65ee5d87648\",\"queueType\":\"Bed\",\"facility\":{\"id\":\"3101e68f-e137-473e-a115-df8f89d0e385\",\"name\":\"Grady\",\"displayCode\":null},\"department\":{\"id\":\"3e986c8d-b8fe-4363-a8c2-57833f9d0ab9\",\"displayName\":\"10A\",\"departmentType\":\"UNIT\",\"unitTypes\":[{\"id\":\"6fc6f7db-9a81-420d-a780-a8876cc9610b\",\"displayName\":\"ICU\",\"displayCode\":\"ICU\"}]},\"bed\":{\"id\":\"23e23e4f-ebcc-413e-bde7-f65ee5d87648\",\"displayName\":\"Bed 2\",\"bariatric\":false,\"telemetryCapable\":false,\"handicapAccessible\":false,\"roomNearNurseStation\":false,\"pressure\":\"NONE\",\"available\":true,\"open\":true,\"clean\":true}}",
-                "queueName": "AvailableBeds"
-            },
-            {
-                "id": "5883e647-0707-42b0-9624-1c8a006e10b0",
-                "queueType": "Bed",
-                "facility": "3101e68f-e137-473e-a115-df8f89d0e385",
-                "details": "{\"id\":\"5883e647-0707-42b0-9624-1c8a006e10b0\",\"queueType\":\"Bed\",\"facility\":{\"id\":\"3101e68f-e137-473e-a115-df8f89d0e385\",\"name\":\"Grady\",\"displayCode\":null},\"department\":{\"id\":\"3e986c8d-b8fe-4363-a8c2-57833f9d0ab9\",\"displayName\":\"10A\",\"departmentType\":\"UNIT\",\"unitTypes\":[{\"id\":\"6fc6f7db-9a81-420d-a780-a8876cc9610b\",\"displayName\":\"ICU\",\"displayCode\":\"ICU\"}]},\"bed\":{\"id\":\"5883e647-0707-42b0-9624-1c8a006e10b0\",\"displayName\":\"Bed 3\",\"bariatric\":false,\"telemetryCapable\":false,\"handicapAccessible\":false,\"roomNearNurseStation\":false,\"pressure\":\"NONE\",\"available\":true,\"open\":false,\"clean\":false}}",
-                "queueName": "AvailableBeds"
-            }
-        ]
-    },
-    "_queue$throughputData": {
-        "throughput": 0,
-        "exception": 0,
-        "averageTat": 0,
-        "targetTime": "0",
-        "warningTime": "0",
-        "alertTime": "0",
-        "turnaroundTimeUnit": "INTEGER"
-    },
-    "_queue$throughputData2": {
-        "throughput": 0,
-        "exception": 0,
-        "averageTat": 0,
-        "targetTime": "0",
-        "warningTime": "0",
-        "alertTime": "0",
-        "turnaroundTimeUnit": "INTEGER"
-    },
-    "_queue$throughputData3": {
-        "throughput": 0,
-        "exception": 0,
-        "averageTat": 0,
-        "targetTime": "0",
-        "warningTime": "0",
-        "alertTime": "0",
-        "turnaroundTimeUnit": "INTEGER"
-    },
-    "currentQueueDef": {
-        "queueName": "AvailableBeds",
-        "sortOrderConfig": [
-            {
-                "field": "_open",
-                "description": "Open Beds",
-                "order": "desc"
-            },
-            {
-                "field": "_clean",
-                "description": "Clean Beds",
-                "order": "desc"
-            }
-        ],
-        "turnaroundTime": {
-            "targetTime": "0",
-            "warningTime": "0",
-            "alertTime": "0",
-            "turnaroundTimeUnit": "INTEGER"
-        },
-        "hideThroughput": true,
-        "id": "2bcb40c4-dfbd-4123-a1dc-bf538b075127",
-        "displayName": "Available Beds",
-        "ownerRole": "Bed Manager"
-    },
-    "turnaroundTime": {
-        "targetTime": "0",
-        "warningTime": "0",
-        "alertTime": "0",
-        "turnaroundTimeUnit": "INTEGER"
-    },
-    "sortOrderConfig": [
-        {
-            "field": "_open",
-            "description": "Open Beds",
-            "order": "desc"
-        },
-        {
-            "field": "_clean",
-            "description": "Clean Beds",
-            "order": "desc"
-        }
-    ],
-    "ownerRole": "Bed Manager",
-    "displayName": "Available Beds",
-    "hideThroughput": true,
-    "newQueue": {
-        "id": "2bcb40c4-dfbd-4123-a1dc-bf538b075127",
-        "queueName": "AvailableBeds",
-        "queueType": "Bed",
-        "totalItems": 6,
-        "delayedItems": 0,
-        "throughputData": {
-            "throughput": 0,
-            "exception": 0,
-            "averageTat": 0,
-            "targetTime": "0",
-            "warningTime": "0",
-            "alertTime": "0",
-            "turnaroundTimeUnit": "INTEGER"
-        },
-        "queueData": [
-            {
-                "id": "bcd7d11d-d08d-4c4a-a725-4cbacf6e0376",
-                "queueType": "Bed",
-                "facility": "3101e68f-e137-473e-a115-df8f89d0e385",
-                "details": {
-                    "id": "bcd7d11d-d08d-4c4a-a725-4cbacf6e0376",
-                    "queueType": "Bed",
-                    "facility": {
-                        "id": "3101e68f-e137-473e-a115-df8f89d0e385",
-                        "name": "Grady",
-                        "displayCode": null
-                    },
-                    "department": {
-                        "id": "2488f569-e58f-4fc5-86f4-82e006e1bc51",
-                        "displayName": "11A",
-                        "departmentType": "UNIT",
-                        "unitTypes": [
-                            {
-                                "id": "713cdc4d-d5d2-4c1a-a072-29e56033b99d",
-                                "displayName": "Med Surg",
-                                "displayCode": "MS"
-                            }
-                        ]
-                    },
-                    "bed": {
-                        "id": "bcd7d11d-d08d-4c4a-a725-4cbacf6e0376",
-                        "displayName": "Bed 3",
-                        "bariatric": false,
-                        "telemetryCapable": false,
-                        "handicapAccessible": false,
-                        "roomNearNurseStation": false,
-                        "pressure": "NONE",
-                        "available": true,
-                        "open": true,
-                        "clean": true
-                    }
-                },
-                "queueName": "AvailableBeds",
-                "_open": true,
-                "_clean": true,
-                "_sortPriority": 1
-            },
-            {
-                "id": "23e23e4f-ebcc-413e-bde7-f65ee5d87648",
-                "queueType": "Bed",
-                "facility": "3101e68f-e137-473e-a115-df8f89d0e385",
-                "details": {
-                    "id": "23e23e4f-ebcc-413e-bde7-f65ee5d87648",
-                    "queueType": "Bed",
-                    "facility": {
-                        "id": "3101e68f-e137-473e-a115-df8f89d0e385",
-                        "name": "Grady",
-                        "displayCode": null
-                    },
-                    "department": {
-                        "id": "3e986c8d-b8fe-4363-a8c2-57833f9d0ab9",
-                        "displayName": "10A",
-                        "departmentType": "UNIT",
-                        "unitTypes": [
-                            {
-                                "id": "6fc6f7db-9a81-420d-a780-a8876cc9610b",
-                                "displayName": "ICU",
-                                "displayCode": "ICU"
-                            }
-                        ]
-                    },
-                    "bed": {
-                        "id": "23e23e4f-ebcc-413e-bde7-f65ee5d87648",
-                        "displayName": "Bed 2",
-                        "bariatric": false,
-                        "telemetryCapable": false,
-                        "handicapAccessible": false,
-                        "roomNearNurseStation": false,
-                        "pressure": "NONE",
-                        "available": true,
-                        "open": true,
-                        "clean": true
-                    }
-                },
-                "queueName": "AvailableBeds",
-                "_open": true,
-                "_clean": true,
-                "_sortPriority": 1
-            },
-            {
-                "id": "b212af54-db97-4c96-82fb-34a9a0b96c51",
-                "queueType": "Bed",
-                "facility": "3101e68f-e137-473e-a115-df8f89d0e385",
-                "details": {
-                    "id": "b212af54-db97-4c96-82fb-34a9a0b96c51",
-                    "queueType": "Bed",
-                    "facility": {
-                        "id": "3101e68f-e137-473e-a115-df8f89d0e385",
-                        "name": "Grady",
-                        "displayCode": null
-                    },
-                    "department": {
-                        "id": "2488f569-e58f-4fc5-86f4-82e006e1bc51",
-                        "displayName": "11A",
-                        "departmentType": "UNIT",
-                        "unitTypes": [
-                            {
-                                "id": "713cdc4d-d5d2-4c1a-a072-29e56033b99d",
-                                "displayName": "Med Surg",
-                                "displayCode": "MS"
-                            }
-                        ]
-                    },
-                    "bed": {
-                        "id": "b212af54-db97-4c96-82fb-34a9a0b96c51",
-                        "displayName": "Bed 2",
-                        "bariatric": false,
-                        "telemetryCapable": false,
-                        "handicapAccessible": false,
-                        "roomNearNurseStation": false,
-                        "pressure": "NONE",
-                        "available": true,
-                        "open": false,
-                        "clean": true
-                    }
-                },
-                "queueName": "AvailableBeds",
-                "_open": false,
-                "_clean": true,
-                "_sortPriority": 2
-            },
-            {
-                "id": "eb50a95d-2686-42aa-b80f-ae32f01a7966",
-                "queueType": "Bed",
-                "facility": "3101e68f-e137-473e-a115-df8f89d0e385",
-                "details": {
-                    "id": "eb50a95d-2686-42aa-b80f-ae32f01a7966",
-                    "queueType": "Bed",
-                    "facility": {
-                        "id": "3101e68f-e137-473e-a115-df8f89d0e385",
-                        "name": "Grady",
-                        "displayCode": null
-                    },
-                    "department": {
-                        "id": "2488f569-e58f-4fc5-86f4-82e006e1bc51",
-                        "displayName": "11A",
-                        "departmentType": "UNIT",
-                        "unitTypes": [
-                            {
-                                "id": "713cdc4d-d5d2-4c1a-a072-29e56033b99d",
-                                "displayName": "Med Surg",
-                                "displayCode": "MS"
-                            }
-                        ]
-                    },
-                    "bed": {
-                        "id": "eb50a95d-2686-42aa-b80f-ae32f01a7966",
-                        "displayName": "Bed 1",
-                        "bariatric": false,
-                        "telemetryCapable": false,
-                        "handicapAccessible": false,
-                        "roomNearNurseStation": false,
-                        "pressure": "NONE",
-                        "available": true,
-                        "open": false,
-                        "clean": false
-                    }
-                },
-                "queueName": "AvailableBeds",
-                "_open": false,
-                "_clean": false
-            },
-            {
-                "id": "9c146efb-6aaa-44f3-abe8-eb4ea75e5557",
-                "queueType": "Bed",
-                "facility": "3101e68f-e137-473e-a115-df8f89d0e385",
-                "details": {
-                    "id": "9c146efb-6aaa-44f3-abe8-eb4ea75e5557",
-                    "queueType": "Bed",
-                    "facility": {
-                        "id": "3101e68f-e137-473e-a115-df8f89d0e385",
-                        "name": "Grady",
-                        "displayCode": null
-                    },
-                    "department": {
-                        "id": "3e986c8d-b8fe-4363-a8c2-57833f9d0ab9",
-                        "displayName": "10A",
-                        "departmentType": "UNIT",
-                        "unitTypes": [
-                            {
-                                "id": "6fc6f7db-9a81-420d-a780-a8876cc9610b",
-                                "displayName": "ICU",
-                                "displayCode": "ICU"
-                            }
-                        ]
-                    },
-                    "bed": {
-                        "id": "9c146efb-6aaa-44f3-abe8-eb4ea75e5557",
-                        "displayName": "Bed 1",
-                        "bariatric": false,
-                        "telemetryCapable": false,
-                        "handicapAccessible": false,
-                        "roomNearNurseStation": false,
-                        "pressure": "NONE",
-                        "available": true,
-                        "open": false,
-                        "clean": false
-                    }
-                },
-                "queueName": "AvailableBeds",
-                "_open": false,
-                "_clean": false
-            },
-            {
-                "id": "5883e647-0707-42b0-9624-1c8a006e10b0",
-                "queueType": "Bed",
-                "facility": "3101e68f-e137-473e-a115-df8f89d0e385",
-                "details": {
-                    "id": "5883e647-0707-42b0-9624-1c8a006e10b0",
-                    "queueType": "Bed",
-                    "facility": {
-                        "id": "3101e68f-e137-473e-a115-df8f89d0e385",
-                        "name": "Grady",
-                        "displayCode": null
-                    },
-                    "department": {
-                        "id": "3e986c8d-b8fe-4363-a8c2-57833f9d0ab9",
-                        "displayName": "10A",
-                        "departmentType": "UNIT",
-                        "unitTypes": [
-                            {
-                                "id": "6fc6f7db-9a81-420d-a780-a8876cc9610b",
-                                "displayName": "ICU",
-                                "displayCode": "ICU"
-                            }
-                        ]
-                    },
-                    "bed": {
-                        "id": "5883e647-0707-42b0-9624-1c8a006e10b0",
-                        "displayName": "Bed 3",
-                        "bariatric": false,
-                        "telemetryCapable": false,
-                        "handicapAccessible": false,
-                        "roomNearNurseStation": false,
-                        "pressure": "NONE",
-                        "available": true,
-                        "open": false,
-                        "clean": false
-                    }
-                },
-                "queueName": "AvailableBeds",
-                "_open": false,
-                "_clean": false
-            }
-        ],
-        "displayName": "Available Beds",
-        "displayTodaysPerformance": true,
-        "ownerRole": "Bed Manager",
-        "hideThroughput": true,
-        "sortOrderConfig": [
-            {
-                "field": "_open",
-                "description": "Open Beds",
-                "order": "desc"
-            },
-            {
-                "field": "_clean",
-                "description": "Clean Beds",
-                "order": "desc"
-            }
-        ]
-    },
-    "queueDataCopy": [
-        {
+        "facility": "3101e68f-e137-473e-a115-df8f89d0e385",
+        "details": {
             "id": "eb50a95d-2686-42aa-b80f-ae32f01a7966",
             "queueType": "Bed",
-            "facility": "3101e68f-e137-473e-a115-df8f89d0e385",
-            "details": {
-                "id": "eb50a95d-2686-42aa-b80f-ae32f01a7966",
-                "queueType": "Bed",
-                "facility": {
-                    "id": "3101e68f-e137-473e-a115-df8f89d0e385",
-                    "name": "Grady",
-                    "displayCode": null
-                },
-                "department": {
-                    "id": "2488f569-e58f-4fc5-86f4-82e006e1bc51",
-                    "displayName": "11A",
-                    "departmentType": "UNIT",
-                    "unitTypes": [
-                        {
-                            "id": "713cdc4d-d5d2-4c1a-a072-29e56033b99d",
-                            "displayName": "Med Surg",
-                            "displayCode": "MS"
-                        }
-                    ]
-                },
-                "bed": {
-                    "id": "eb50a95d-2686-42aa-b80f-ae32f01a7966",
-                    "displayName": "Bed 1",
-                    "bariatric": false,
-                    "telemetryCapable": false,
-                    "handicapAccessible": false,
-                    "roomNearNurseStation": false,
-                    "pressure": "NONE",
-                    "available": true,
-                    "open": false,
-                    "clean": false
-                }
+            "facility": {
+                "id": "3101e68f-e137-473e-a115-df8f89d0e385",
+                "name": "Grady",
+                "displayCode": null
             },
-            "queueName": "AvailableBeds",
-            "_open": false,
-            "_clean": false
+            "department": {
+                "id": "2488f569-e58f-4fc5-86f4-82e006e1bc51",
+                "displayName": "11A",
+                "departmentType": "UNIT",
+                "unitTypes": [
+                    {
+                        "id": "713cdc4d-d5d2-4c1a-a072-29e56033b99d",
+                        "displayName": "Med Surg",
+                        "displayCode": "MS"
+                    }
+                ]
+            },
+            "bed": {
+                "id": "eb50a95d-2686-42aa-b80f-ae32f01a7966",
+                "displayName": "Bed 1",
+                "bariatric": false,
+                "telemetryCapable": false,
+                "handicapAccessible": false,
+                "roomNearNurseStation": false,
+                "pressure": "NONE",
+                "available": true,
+                "open": false,
+                "clean": false
+            }
         },
-        {
+        "queueName": "AvailableBeds",
+        "_open": false,
+        "_clean": false
+    },
+    {
+        "id": "b212af54-db97-4c96-82fb-34a9a0b96c51",
+        "queueType": "Bed",
+        "facility": "3101e68f-e137-473e-a115-df8f89d0e385",
+        "details": {
             "id": "b212af54-db97-4c96-82fb-34a9a0b96c51",
             "queueType": "Bed",
-            "facility": "3101e68f-e137-473e-a115-df8f89d0e385",
-            "details": {
-                "id": "b212af54-db97-4c96-82fb-34a9a0b96c51",
-                "queueType": "Bed",
-                "facility": {
-                    "id": "3101e68f-e137-473e-a115-df8f89d0e385",
-                    "name": "Grady",
-                    "displayCode": null
-                },
-                "department": {
-                    "id": "2488f569-e58f-4fc5-86f4-82e006e1bc51",
-                    "displayName": "11A",
-                    "departmentType": "UNIT",
-                    "unitTypes": [
-                        {
-                            "id": "713cdc4d-d5d2-4c1a-a072-29e56033b99d",
-                            "displayName": "Med Surg",
-                            "displayCode": "MS"
-                        }
-                    ]
-                },
-                "bed": {
-                    "id": "b212af54-db97-4c96-82fb-34a9a0b96c51",
-                    "displayName": "Bed 2",
-                    "bariatric": false,
-                    "telemetryCapable": false,
-                    "handicapAccessible": false,
-                    "roomNearNurseStation": false,
-                    "pressure": "NONE",
-                    "available": true,
-                    "open": false,
-                    "clean": true
-                }
+            "facility": {
+                "id": "3101e68f-e137-473e-a115-df8f89d0e385",
+                "name": "Grady",
+                "displayCode": null
             },
-            "queueName": "AvailableBeds",
-            "_open": false,
-            "_clean": true,
-            "_sortPriority": 2
+            "department": {
+                "id": "2488f569-e58f-4fc5-86f4-82e006e1bc51",
+                "displayName": "11A",
+                "departmentType": "UNIT",
+                "unitTypes": [
+                    {
+                        "id": "713cdc4d-d5d2-4c1a-a072-29e56033b99d",
+                        "displayName": "Med Surg",
+                        "displayCode": "MS"
+                    }
+                ]
+            },
+            "bed": {
+                "id": "b212af54-db97-4c96-82fb-34a9a0b96c51",
+                "displayName": "Bed 2",
+                "bariatric": false,
+                "telemetryCapable": false,
+                "handicapAccessible": false,
+                "roomNearNurseStation": false,
+                "pressure": "NONE",
+                "available": true,
+                "open": false,
+                "clean": true
+            }
         },
-        {
+        "queueName": "AvailableBeds",
+        "_open": false,
+        "_clean": true,
+        "_sortPriority": 2
+    },
+    {
+        "id": "bcd7d11d-d08d-4c4a-a725-4cbacf6e0376",
+        "queueType": "Bed",
+        "facility": "3101e68f-e137-473e-a115-df8f89d0e385",
+        "details": {
             "id": "bcd7d11d-d08d-4c4a-a725-4cbacf6e0376",
             "queueType": "Bed",
-            "facility": "3101e68f-e137-473e-a115-df8f89d0e385",
-            "details": {
-                "id": "bcd7d11d-d08d-4c4a-a725-4cbacf6e0376",
-                "queueType": "Bed",
-                "facility": {
-                    "id": "3101e68f-e137-473e-a115-df8f89d0e385",
-                    "name": "Grady",
-                    "displayCode": null
-                },
-                "department": {
-                    "id": "2488f569-e58f-4fc5-86f4-82e006e1bc51",
-                    "displayName": "11A",
-                    "departmentType": "UNIT",
-                    "unitTypes": [
-                        {
-                            "id": "713cdc4d-d5d2-4c1a-a072-29e56033b99d",
-                            "displayName": "Med Surg",
-                            "displayCode": "MS"
-                        }
-                    ]
-                },
-                "bed": {
-                    "id": "bcd7d11d-d08d-4c4a-a725-4cbacf6e0376",
-                    "displayName": "Bed 3",
-                    "bariatric": false,
-                    "telemetryCapable": false,
-                    "handicapAccessible": false,
-                    "roomNearNurseStation": false,
-                    "pressure": "NONE",
-                    "available": true,
-                    "open": true,
-                    "clean": true
-                }
+            "facility": {
+                "id": "3101e68f-e137-473e-a115-df8f89d0e385",
+                "name": "Grady",
+                "displayCode": null
             },
-            "queueName": "AvailableBeds",
-            "_open": true,
-            "_clean": true,
-            "_sortPriority": 1
+            "department": {
+                "id": "2488f569-e58f-4fc5-86f4-82e006e1bc51",
+                "displayName": "11A",
+                "departmentType": "UNIT",
+                "unitTypes": [
+                    {
+                        "id": "713cdc4d-d5d2-4c1a-a072-29e56033b99d",
+                        "displayName": "Med Surg",
+                        "displayCode": "MS"
+                    }
+                ]
+            },
+            "bed": {
+                "id": "bcd7d11d-d08d-4c4a-a725-4cbacf6e0376",
+                "displayName": "Bed 3",
+                "bariatric": false,
+                "telemetryCapable": false,
+                "handicapAccessible": false,
+                "roomNearNurseStation": false,
+                "pressure": "NONE",
+                "available": true,
+                "open": true,
+                "clean": true
+            }
         },
-        {
+        "queueName": "AvailableBeds",
+        "_open": true,
+        "_clean": true,
+        "_sortPriority": 1
+    },
+    {
+        "id": "9c146efb-6aaa-44f3-abe8-eb4ea75e5557",
+        "queueType": "Bed",
+        "facility": "3101e68f-e137-473e-a115-df8f89d0e385",
+        "details": {
             "id": "9c146efb-6aaa-44f3-abe8-eb4ea75e5557",
             "queueType": "Bed",
-            "facility": "3101e68f-e137-473e-a115-df8f89d0e385",
-            "details": {
-                "id": "9c146efb-6aaa-44f3-abe8-eb4ea75e5557",
-                "queueType": "Bed",
-                "facility": {
-                    "id": "3101e68f-e137-473e-a115-df8f89d0e385",
-                    "name": "Grady",
-                    "displayCode": null
-                },
-                "department": {
-                    "id": "3e986c8d-b8fe-4363-a8c2-57833f9d0ab9",
-                    "displayName": "10A",
-                    "departmentType": "UNIT",
-                    "unitTypes": [
-                        {
-                            "id": "6fc6f7db-9a81-420d-a780-a8876cc9610b",
-                            "displayName": "ICU",
-                            "displayCode": "ICU"
-                        }
-                    ]
-                },
-                "bed": {
-                    "id": "9c146efb-6aaa-44f3-abe8-eb4ea75e5557",
-                    "displayName": "Bed 1",
-                    "bariatric": false,
-                    "telemetryCapable": false,
-                    "handicapAccessible": false,
-                    "roomNearNurseStation": false,
-                    "pressure": "NONE",
-                    "available": true,
-                    "open": false,
-                    "clean": false
-                }
+            "facility": {
+                "id": "3101e68f-e137-473e-a115-df8f89d0e385",
+                "name": "Grady",
+                "displayCode": null
             },
-            "queueName": "AvailableBeds",
-            "_open": false,
-            "_clean": false
+            "department": {
+                "id": "3e986c8d-b8fe-4363-a8c2-57833f9d0ab9",
+                "displayName": "10A",
+                "departmentType": "UNIT",
+                "unitTypes": [
+                    {
+                        "id": "6fc6f7db-9a81-420d-a780-a8876cc9610b",
+                        "displayName": "ICU",
+                        "displayCode": "ICU"
+                    }
+                ]
+            },
+            "bed": {
+                "id": "9c146efb-6aaa-44f3-abe8-eb4ea75e5557",
+                "displayName": "Bed 1",
+                "bariatric": false,
+                "telemetryCapable": false,
+                "handicapAccessible": false,
+                "roomNearNurseStation": false,
+                "pressure": "NONE",
+                "available": true,
+                "open": false,
+                "clean": false
+            }
         },
-        {
+        "queueName": "AvailableBeds",
+        "_open": false,
+        "_clean": false
+    },
+    {
+        "id": "23e23e4f-ebcc-413e-bde7-f65ee5d87648",
+        "queueType": "Bed",
+        "facility": "3101e68f-e137-473e-a115-df8f89d0e385",
+        "details": {
             "id": "23e23e4f-ebcc-413e-bde7-f65ee5d87648",
             "queueType": "Bed",
-            "facility": "3101e68f-e137-473e-a115-df8f89d0e385",
-            "details": {
-                "id": "23e23e4f-ebcc-413e-bde7-f65ee5d87648",
-                "queueType": "Bed",
-                "facility": {
-                    "id": "3101e68f-e137-473e-a115-df8f89d0e385",
-                    "name": "Grady",
-                    "displayCode": null
-                },
-                "department": {
-                    "id": "3e986c8d-b8fe-4363-a8c2-57833f9d0ab9",
-                    "displayName": "10A",
-                    "departmentType": "UNIT",
-                    "unitTypes": [
-                        {
-                            "id": "6fc6f7db-9a81-420d-a780-a8876cc9610b",
-                            "displayName": "ICU",
-                            "displayCode": "ICU"
-                        }
-                    ]
-                },
-                "bed": {
-                    "id": "23e23e4f-ebcc-413e-bde7-f65ee5d87648",
-                    "displayName": "Bed 2",
-                    "bariatric": false,
-                    "telemetryCapable": false,
-                    "handicapAccessible": false,
-                    "roomNearNurseStation": false,
-                    "pressure": "NONE",
-                    "available": true,
-                    "open": true,
-                    "clean": true
-                }
+            "facility": {
+                "id": "3101e68f-e137-473e-a115-df8f89d0e385",
+                "name": "Grady",
+                "displayCode": null
             },
-            "queueName": "AvailableBeds",
-            "_open": true,
-            "_clean": true,
-            "_sortPriority": 1
+            "department": {
+                "id": "3e986c8d-b8fe-4363-a8c2-57833f9d0ab9",
+                "displayName": "10A",
+                "departmentType": "UNIT",
+                "unitTypes": [
+                    {
+                        "id": "6fc6f7db-9a81-420d-a780-a8876cc9610b",
+                        "displayName": "ICU",
+                        "displayCode": "ICU"
+                    }
+                ]
+            },
+            "bed": {
+                "id": "23e23e4f-ebcc-413e-bde7-f65ee5d87648",
+                "displayName": "Bed 2",
+                "bariatric": false,
+                "telemetryCapable": false,
+                "handicapAccessible": false,
+                "roomNearNurseStation": false,
+                "pressure": "NONE",
+                "available": true,
+                "open": true,
+                "clean": true
+            }
         },
-        {
+        "queueName": "AvailableBeds",
+        "_open": true,
+        "_clean": true,
+        "_sortPriority": 1
+    },
+    {
+        "id": "5883e647-0707-42b0-9624-1c8a006e10b0",
+        "queueType": "Bed",
+        "facility": "3101e68f-e137-473e-a115-df8f89d0e385",
+        "details": {
             "id": "5883e647-0707-42b0-9624-1c8a006e10b0",
             "queueType": "Bed",
-            "facility": "3101e68f-e137-473e-a115-df8f89d0e385",
-            "details": {
-                "id": "5883e647-0707-42b0-9624-1c8a006e10b0",
-                "queueType": "Bed",
-                "facility": {
-                    "id": "3101e68f-e137-473e-a115-df8f89d0e385",
-                    "name": "Grady",
-                    "displayCode": null
-                },
-                "department": {
-                    "id": "3e986c8d-b8fe-4363-a8c2-57833f9d0ab9",
-                    "displayName": "10A",
-                    "departmentType": "UNIT",
-                    "unitTypes": [
-                        {
-                            "id": "6fc6f7db-9a81-420d-a780-a8876cc9610b",
-                            "displayName": "ICU",
-                            "displayCode": "ICU"
-                        }
-                    ]
-                },
-                "bed": {
-                    "id": "5883e647-0707-42b0-9624-1c8a006e10b0",
-                    "displayName": "Bed 3",
-                    "bariatric": false,
-                    "telemetryCapable": false,
-                    "handicapAccessible": false,
-                    "roomNearNurseStation": false,
-                    "pressure": "NONE",
-                    "available": true,
-                    "open": false,
-                    "clean": false
-                }
+            "facility": {
+                "id": "3101e68f-e137-473e-a115-df8f89d0e385",
+                "name": "Grady",
+                "displayCode": null
             },
-            "queueName": "AvailableBeds",
-            "_open": false,
-            "_clean": false
-        }
-    ]
-}
+            "department": {
+                "id": "3e986c8d-b8fe-4363-a8c2-57833f9d0ab9",
+                "displayName": "10A",
+                "departmentType": "UNIT",
+                "unitTypes": [
+                    {
+                        "id": "6fc6f7db-9a81-420d-a780-a8876cc9610b",
+                        "displayName": "ICU",
+                        "displayCode": "ICU"
+                    }
+                ]
+            },
+            "bed": {
+                "id": "5883e647-0707-42b0-9624-1c8a006e10b0",
+                "displayName": "Bed 3",
+                "bariatric": false,
+                "telemetryCapable": false,
+                "handicapAccessible": false,
+                "roomNearNurseStation": false,
+                "pressure": "NONE",
+                "available": true,
+                "open": false,
+                "clean": false
+            }
+        },
+        "queueName": "AvailableBeds",
+        "_open": false,
+        "_clean": false
+    }
+]
