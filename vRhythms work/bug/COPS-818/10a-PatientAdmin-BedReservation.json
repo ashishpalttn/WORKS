@@ -57,8 +57,8 @@
     },
     "currentLocation": {
       "departmentCode": "11A",
-      "bedCode": "2",
-      "roomCode": "2",
+      "bedCode": "A",
+      "roomCode": "1",
       "facilityCode": "GHS"
     },
     "reservedLocation": {

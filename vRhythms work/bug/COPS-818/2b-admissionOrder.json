@@ -36,8 +36,6 @@
     "stopTime": "2024-01-25",
     "orderDesc": "BED REQUEST - INPATIENT",
     "orderName": "ADT12",
-    "orderedBy": {
-    },
     "startTime": "2024-01-25T11:29:56-05:00",
     "orderNotes": "",
     "statusTime": "2024-01-25T11:29:56-05:00",
@@ -58,7 +56,7 @@
   "bedRequest": {
     "bedRequestState": "PENDING",
     "bedType": "Stepdown",
-    "unitType": "",
+    "unitType": "Med Surg",
     "bedRequestSource": "ED",
     "bedRequestNotes": "This patient broke their leg jumping on a pogo stick.",
     "careLevelRequested": "",
