@@ -8,7 +8,7 @@
     "facilityCodeEMR": "<A code which envoy populates from EMR message>",
     "tenantCodeCL": "<A code which we provide to Envoy indicating tenant>",
     "eventType": "PATIENTADMIN",
-    "eventSubType": "CREATEUPDATEBEDRESERVATION",
+    "eventSubType": "CreateUpdate",
     "clMetaFields": {
       "facilityId": "3101e68f-e137-473e-a115-df8f89d0e385",
       "facilityCode": "GHS",
@@ -57,8 +57,8 @@
     },
     "currentLocation": {
       "departmentCode": "11A",
-      "bedCode": "2",
-      "roomCode": "2",
+      "bedCode": "B",
+      "roomCode": "1",
       "facilityCode": "GHS"
     },
     "reservedLocation": {
