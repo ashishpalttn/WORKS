@@ -19,13 +19,13 @@
   },
   "patient": {
     "identifiers": {
-      "medicalRecordNumber": "MRN_AKERS_1",
-      "masterPatientIdentifier": "MPI_AKERS_1"
+      "medicalRecordNumber": "MRN_AKERS13_1",
+      "masterPatientIdentifier": "MPI_AKERS13_1"
     },
     "name": {
       "first": "Adam",
       "middle": "Alan",
-      "last": "Akers"
+      "last": "AKERS13"
     },
     "dateOfBirth": "1990-12-03",
     "birthGender": "MALE",
@@ -51,14 +51,14 @@
   },
   "visit": {
     "identifiers": {
-      "visitNumber": "VN_AKERS_1",
+      "visitNumber": "VN_AKERS13_1",
       "HAR": "",
       "admittingCSN": ""
     },
     "currentLocation": {
-      "departmentCode": "11A",
-      "bedCode": "A",
-      "roomCode": "1",
+      "departmentCode": "13A",
+      "bedCode": "13A",
+      "roomCode": "13A",
       "facilityCode": "GHS"
     },
     "reservedLocation": {

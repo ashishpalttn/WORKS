@@ -19,8 +19,8 @@
   },
   "patient": {
     "identifiers": {
-      "medicalRecordNumber": "MRN_AKERS_1",
-      "masterPatientIdentifier": "MPI_AKERS_1"
+      "medicalRecordNumber": "MRN_AKERS_10",
+      "masterPatientIdentifier": "MPI_AKERS_10"
     },
     "name": {
       "first": "Adam",
@@ -60,14 +60,14 @@
       }
     ],
     "identifiers": {
-      "visitNumber": "VN_AKERS_1",
+      "visitNumber": "VN_AKERS_10",
       "HAR": "",
       "admittingCSN": ""
     },
     "currentLocation": {
-      "departmentCode": "11A",
-      "bedCode": "A",
-      "roomCode": "1",
+      "departmentCode": "MRI",
+      "bedCode": "",
+      "roomCode": "",
       "facilityCode": "GHS"
     },
     "insurancePlans": [
@@ -110,7 +110,7 @@
     "alerts": [
       {
         "name": "Telemetry",
-        "value": "Yes"
+        "value": "No"
       },
       {
         "name": "Bariatric",

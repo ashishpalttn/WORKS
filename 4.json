@@ -1,0 +1,129 @@
+{
+  "id": "3d8f6385-b5e8-48bb-9b8b-a6d4c61e9c7d",
+  "visit": {
+    "id": "3d8f6385-b5e8-48bb-9b8b-a6d4c61e9c7d",
+    "drg": "123",
+    "gmlos": null,
+    "barriers": [],
+    "admitDate": "2024-06-09T12:00:00-04:00",
+    "admitType": "IN",
+    "targetLos": null,
+    "facilityId": "3101e68f-e137-473e-a115-df8f89d0e385",
+    "visitNumber": "VN_AKERS_10",
+    "patientAlerts": [
+      {
+        "alertTypeId": "943a9d5e-bda4-4ee8-968e-b5a93811e7ff",
+        "alertTypeSortOrder": 2,
+        "alertValueIconPath": "https://cdn.filestackcontent.com/7fKhg1krQemM19QYJp45",
+        "alertTypeMultivalue": false,
+        "alertValueSortOrder": 1,
+        "alertTypeDisplayName": "Contact Isolation",
+        "alertValueDisplayName": "Yes"
+      },
+      {
+        "alertTypeId": "dacbe791-c39f-487e-a285-770728c5681b",
+        "alertTypeSortOrder": 9,
+        "alertValueIconPath": null,
+        "alertTypeMultivalue": false,
+        "alertValueSortOrder": 2,
+        "alertTypeDisplayName": "Telemetry",
+        "alertValueDisplayName": "No"
+      },
+      {
+        "alertTypeId": "ed876dea-3e74-43ce-a368-fcb8790e0778",
+        "alertTypeSortOrder": 1,
+        "alertValueIconPath": "https://cdn.filestackcontent.com/orP2Q1w1RzWx2PMpdlov",
+        "alertTypeMultivalue": false,
+        "alertValueSortOrder": 1,
+        "alertTypeDisplayName": "Airborne Isolation",
+        "alertValueDisplayName": "Yes"
+      },
+      {
+        "alertTypeId": "5b430095-60a1-4b6a-9a6e-aa60fdcdb580",
+        "alertTypeSortOrder": 3,
+        "alertValueIconPath": "https://cdn.filestackcontent.com/RPK8VnUMTVS5YvFZvMlc",
+        "alertTypeMultivalue": false,
+        "alertValueSortOrder": 1,
+        "alertTypeDisplayName": "Droplet Isolation",
+        "alertValueDisplayName": "Yes"
+      },
+      {
+        "alertTypeId": "34f25ed5-07eb-43b6-a324-f1676261b0a2",
+        "alertTypeSortOrder": 10,
+        "alertValueIconPath": null,
+        "alertTypeMultivalue": false,
+        "alertValueSortOrder": 2,
+        "alertTypeDisplayName": "Bariatric Patient",
+        "alertValueDisplayName": "No"
+      },
+      {
+        "alertTypeId": "e38b5936-f809-405b-8884-35367c654a5c",
+        "alertTypeSortOrder": 4,
+        "alertValueIconPath": "https://cdn.filestackcontent.com/XSM9nMZQtiGrE4ynFVMZ",
+        "alertTypeMultivalue": false,
+        "alertValueSortOrder": 1,
+        "alertTypeDisplayName": "Enteric Isolation",
+        "alertValueDisplayName": "Yes"
+      },
+      {
+        "alertTypeId": "6b9af308-19dc-4708-9c0b-892c6edaf46a",
+        "alertTypeSortOrder": 7,
+        "alertValueIconPath": null,
+        "alertTypeMultivalue": true,
+        "alertValueSortOrder": 2,
+        "alertTypeDisplayName": "Isolation Organism",
+        "alertValueDisplayName": "RSV"
+      },
+      {
+        "alertTypeId": "6b9af308-19dc-4708-9c0b-892c6edaf46a",
+        "alertTypeSortOrder": 7,
+        "alertValueIconPath": null,
+        "alertTypeMultivalue": true,
+        "alertValueSortOrder": 1,
+        "alertTypeDisplayName": "Isolation Organism",
+        "alertValueDisplayName": "Hepatitis A"
+      },
+      {
+        "alertTypeId": "b739a381-86ca-4392-a109-75aca80ba4cd",
+        "alertTypeSortOrder": 8,
+        "alertValueIconPath": "https://cdn.filestackcontent.com/L6mTyOBKTn2qmwomAZFV",
+        "alertTypeMultivalue": false,
+        "alertValueSortOrder": 1,
+        "alertTypeDisplayName": "Fall Risk",
+        "alertValueDisplayName": "Yes"
+      }
+    ],
+    "physicianInfo": [],
+    "visitLocation": {
+      "homeBed": null,
+      "currentBed": null,
+      "reservedBed": null,
+      "homeDepartment": {
+        "id": "c0585f34-a859-4c23-910b-29a5b6ecab39",
+        "displayName": "11Bbbbbbbbb",
+        "departmentType": "UNIT"
+      },
+      "currentDepartment": {
+        "id": "3e73a9ed-4639-4f12-ad5c-ea95b7e9723e",
+        "displayName": "MRIIIIIIII",
+        "departmentType": "SERVICE_LOCATION"
+      },
+      "reservedDepartment": null,
+      "checkedIntoReservedBedDate": null
+    },
+    "visitCareTeamMembers": [],
+    "expectedDischargeTime": "2024-01-20T00:00:00-05:00",
+    "legacyBedRequestStatus": null,
+    "workingDischargeDisposition": "Home",
+    "expectedDischargeTimeIncludesTime": false
+  },
+  "patient": { "lastName": "Akers", "firstName": "Adam" },
+  "facility": {
+    "id": "3101e68f-e137-473e-a115-df8f89d0e385",
+    "name": "Grady",
+    "displayCode": null
+  },
+  "queueName": "PotentialDischarge",
+  "queueType": "Visit",
+  "currentOrder": null
+}

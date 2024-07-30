@@ -1,6 +1,6 @@
 {
   "meta": {
-    "msgId": "12345",
+    "msgId": "<a message id captured from EMR>",
     "msgType": "ORM^O01",
     "eventTimeStamp": "2023-10-13T12:01:00-04:00",
     "userId": "<id of user who put in EMR message>",
@@ -31,39 +31,28 @@
     }
   },
   "order": {
-    "portable": "",
-    "priority": "1",
-    "stopTime": "2024-01-25",
-    "orderDesc": "BED REQUEST - INPATIENT",
-    "orderName": "ADT12",
-    "startTime": "2024-01-25T11:29:56-05:00",
-    "orderNotes": "",
-    "statusTime": "2024-01-25T11:29:56-05:00",
-    "orderNumber": "ON_AKERS_ADM",
-    "orderReason": "",
-    "orderStatus": "Scheduled",
-    "requestedTime": "2024-01-25T11:30:00-05:00",
-    "accessionNumber": "ON_AKERS_ADM",
+    "orderNumber": "ON_AKERS_1",
+    "accessionNumber": "",
     "prevOrderNumber": "",
-    "orderingProvider": {
-      "id": "444444",
-      "lastName": "Doc",
-      "firstName": "Tor"
-    },
+    "orderName": "abc",
+    "orderDesc": "XRay of Right Arm",
+    "orderStatus": "Scheduled",
+    "statusTime": "",
+    "startTime": "",
+    "stopTime": "",
     "orderingDepartment": "",
-    "serviceModalityCode": "ADT"
-  },
-  "bedRequest": {
-    "bedRequestState": "PENDING",
-    "type": "ADMIT",
-    "status": "READY",
-    "bedType": "Stepdown",
-    "unitType": "Med Surg",
-    "bedRequestSource": "ED",
-    "bedRequestNotes": "This patient broke their leg jumping on a pogo stick.",
-    "careLevelRequested": "",
-    "unitTransfer": "",
-    "estimatedTransferTime": "",
-    "cancelled": ""
+    "serviceModalityCode": "DIAG RAD",
+    "orderingProvider": {
+      "id": "",
+      "type": "",
+      "firstName": "",
+      "lastName": ""
+    },
+    "orderNotes": "Notes for the order",
+    "requestedTime": "2024-07-15T12:01:00-04:00",
+    "orderReason": "",
+    "priority":"R",
+    "portable":"",
+    "prepCompletedTime": "2024-04-29T12:01:00-04:00"
   }
 }

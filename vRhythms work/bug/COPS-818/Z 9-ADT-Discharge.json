@@ -2,13 +2,13 @@
   "meta": {
     "msgId": "<a message id captured from EMR>",
     "msgType": "ADT^A01",
-    "eventTimeStamp": "2023-10-13T12:00:00-04:00",
+    "eventTimeStamp": "2023-10-13T12:09:00-04:00",
     "userId": "<id of user who put in EMR message>",
     "source": "<source of system generating message>",
     "facilityCodeEMR": "<A code which envoy populates from EMR message>",
     "tenantCodeCL": "<A code which we provide to Envoy indicating tenant>",
     "eventType": "PATIENTADMIN",
-    "eventSubType": "CreateUpdate",
+    "eventSubType": "Discharge",
     "clMetaFields": {
       "facilityId": "3101e68f-e137-473e-a115-df8f89d0e385",
       "facilityCode": "GHS",
@@ -19,13 +19,13 @@
   },
   "patient": {
     "identifiers": {
-      "medicalRecordNumber": "MRN_AKERS_1",
-      "masterPatientIdentifier": "MPI_AKERS_1"
+      "medicalRecordNumber": "MRN_AKERS13_1",
+      "masterPatientIdentifier": "MPI_AKERS13_1"
     },
     "name": {
       "first": "Adam",
       "middle": "Alan",
-      "last": "Akers"
+      "last": "AKERS13"
     },
     "dateOfBirth": "1990-12-03",
     "birthGender": "MALE",
@@ -50,25 +50,16 @@
     }
   },
   "visit": {
-    "careTeam" : [
-      {
-        "firstName": "",
-        "lastName": "",
-        "role": "",
-        "identifier": "",
-        "startTime": ""
-      }
-    ],
     "identifiers": {
-      "visitNumber": "VN_AKERS_1",
+      "visitNumber": "VN_AKERS13_1",
       "HAR": "",
       "admittingCSN": ""
     },
     "currentLocation": {
-      "departmentCode": "11A",
-      "bedCode": "A",
-      "roomCode": "1",
-      "facilityCode": "GHS"
+      "departmentCode": "",
+      "bedCode": "",
+      "roomCode": "",
+      "facilityCode": ""
     },
     "insurancePlans": [
       {
@@ -82,8 +73,8 @@
         "priority": ""
       }
     ],
-    "expectedDate": "2024-06-11T12:00:00-04:00",
-    "admitDate": "2024-06-09T12:00:00-04:00",
+    "expectedDate": "2023-12-03T12:22:55-04:00",
+    "admitDate": "",
     "hospitalService": "",
     "financialClass": "",
     "patientClass": "<used to determine the value for admitType>",
@@ -99,58 +90,13 @@
         "group": ""
       }
     ],
-    "expectedDischargeTime": "2024-01-20",
-    "workingDischargeDisposition": "Home",
-    "dischargeDateTime": "",
+    "expectedDischargeTime": "2023-12-03T22:55:00-04:00",
+    "workingDischargeDisposition": "",
+    "dischargeDateTime": "2023-12-03T22:55:00-04:00",
     "dischargeDisposition": "",
     "admittingComplaint": "",
     "admittingDiagnosisCode": "",
     "admittingDiagnosisDesc": "",
-    "drgCode": "123",
-    "alerts": [
-      {
-        "name": "Telemetry",
-        "value": "Yes"
-      },
-      {
-        "name": "Bariatric",
-        "value": "No"
-      },
-      {
-        "name": "IsolationOrganism",
-        "value": "HepatitisA",
-        "remove": false
-      },
-      {
-        "name": "IsolationOrganism",
-        "value": "RSV",
-        "remove": false
-      },
-      {
-        "name": "IsolationOrganism",
-        "value": "Ecoli",
-        "remove": true
-      },
-      {
-        "name": "AirborneIsolation",
-        "value": "Yes"
-      },
-      {
-        "name": "FallRisk",
-        "value": "Yes"
-      },
-      {
-        "name": "DropletIsolation",
-        "value": "Yes"
-      },
-      {
-        "name": "ContactIsolation",
-        "value": "Yes"
-      },
-      {
-        "name": "EntericIsolation",
-        "value": "Yes"
-      }
-    ]
+    "drgCode": ""
   }
 }

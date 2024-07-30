@@ -1,0 +1,1 @@
+delete visit from table =  visit_loaction -> visit_queue_element -> patient_alert -> visit

@@ -19,9 +19,9 @@
   },
   "bedStatus": {
     "departmentCode": "11A",
-    "bedCode": "2",
-    "roomCode": "2",
+    "bedCode": "B",
+    "roomCode": "1",
     "facilityCode": "GHS",
-    "statusCode": "Clean"
+    "statusCode": "Closed"
   }
 }
