@@ -1,0 +1,8 @@
+aws iam list-users
+
+sam init
+sam build
+sam deploy --guided
+
+
+{ "name" : { "S" : "Ashish Pal" }, "address" : { "S" : "India" }, "email" : { "S" : "ashishpal778@gmail.com" }, "age" : { "N" : "29" } }
