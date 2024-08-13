@@ -19,8 +19,8 @@
   },
   "patient": {
     "identifiers": {
-      "medicalRecordNumber": "MRN_AKERS_15",
-      "masterPatientIdentifier": "MPI_AKERS_15"
+      "medicalRecordNumber": "MRN_AKERS_2",
+      "masterPatientIdentifier": "MPI_AKERS_2"
     },
     "name": {
       "first": "Adam",
@@ -60,15 +60,15 @@
       }
     ],
     "identifiers": {
-      "visitNumber": "VN_AKERS_15",
+      "visitNumber": "VN_AKERS_2",
       "HAR": "",
       "admittingCSN": ""
     },
     "currentLocation": {
-      "departmentCode": "MRI",
-      "bedCode": "",
-      "roomCode": "",
-      "facilityCode": ""
+      "departmentCode": "11A",
+      "bedCode": "A",
+      "roomCode": "1",
+      "facilityCode": "GHS"
     },
     "insurancePlans": [
       {
@@ -88,7 +88,7 @@
     "financialClass": "",
     "patientClass": "<used to determine the value for admitType>",
     "patientType": "<used to determine the value for admitType>",
-    "admitType": "OBS",
+    "admitType": "IN",
     "physicianInfo": [
       {
         "physicianType": "",
@@ -110,7 +110,7 @@
     "alerts": [
       {
         "name": "Telemetry",
-        "value": "No"
+        "value": "Yes"
       },
       {
         "name": "Bariatric",
@@ -133,7 +133,7 @@
       },
       {
         "name": "AirborneIsolation",
-        "value": "No"
+        "value": "Yes"
       },
       {
         "name": "FallRisk",
