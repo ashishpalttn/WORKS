@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "msgId": "f1827280-37d8-4602-ba35-1d84c29919e1",
+    "eventTimeStamp": "2024-05-17T12:00:00-04:00",
+    "source": "CA",
+    "tenantCode": "clhs701",
+    "facilityCode": "GHS",
+    "type": "Barrier"
+  },
+  "patient": {
+    "identifiers": {
+      "medicalRecordNumber": "MRN_AKERS_2",
+      "masterPatientIdentifier": "MPI_AKERS_2"
+    }
+  },
+  "visit": {
+    "visitNumber": "VN_AKERS_2",
+    "barrier": {
+      "id": "043aada0-3aca-4dad-ab99-8e6ee5d07440",
+      "templateId": "6fd48345-df74-4af1-adc7-5841696562b0",
+      "category": "Physician",
+      "name": "DC w/ Consult Clearance",
+      "description": "DC w/ Consult Clearance",
+      "owner": "",
+      "notes": [
+        {
+          "id": "613e3420-bf49-428b-a192-f15a692b59ff",
+          "text": "Physician Note 1",
+          "updatedOn": "2024-05-23T12:00:00-04:00",
+          "updatedBy": ""
+        },
+        {
+          "id": "07ce61e0-6083-4e0b-ba33-381f79aa8810",
+          "text": "Physician Note 2",
+          "updatedOn": "2024-05-24T08:00:00-04:00",
+          "updatedBy": ""
+        },
+        {
+          "id": "07ce61e0-6083-4e0b-ba33-381f79aa8810",
+          "text": "We have resolved the issue",
+          "updatedOn": "2024-05-24T19:00:00-04:00",
+          "updatedBy": ""
+        }
+      ],
+      "createdOn": "2024-05-17T08:00:00-04:00",
+      "lastNoteUpdate": "We have resolved the issue",
+      "lastUpdatedBy": "Nurse User",
+      "lastUpdatedOn": "2024-05-17T13:00:00-04:00",
+      "resolvedOn": "2024-05-17T13:00:00-04:00",
+      "escalated": false,
+      "escalatedOn": ""
+    }
+  }
+}
