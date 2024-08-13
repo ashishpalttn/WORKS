@@ -1,18 +1,128 @@
-const renderDouble = (property, fieldLabel, required, fieldValues, error, editable, index) => {
-  return (
-    <div key={index} className="flex p-8">
-      <TextField
-        id={property}
-        name={property}
-        label={fieldLabel}
-        value={fieldValues && fieldValues[property] ? fieldValues[property] : ''}
-        fullWidth
-        required={required}
-        onChange={handleChange}
-        onBlur={validateDouble}
-        error={error}
-        disabled={!editable}
-      />
-    </div>
-  );
+{
+  "id": "53b69417-576a-4822-ac25-3180a6543c06",
+  "visit": {
+    "id": "53b69417-576a-4822-ac25-3180a6543c06",
+    "drg": "123",
+    "gmlos": null,
+    "barriers": [
+      {
+        "code": "Delay",
+        "createdOn": "2024-08-07T11:05:22.240139+05:30",
+        "escalated": false,
+        "updatedOn": "2024-08-07T11:06:27.952204+05:30",
+        "resolvedOn": null,
+        "displayCode": "Code1",
+        "displayName": "Delay",
+        "barrierNotes": [
+          { "text": "Note 1", "updatedOn": "2024-08-07T11:06:27.926046+05:30" },
+          { "text": "Note 2", "updatedOn": "2024-08-07T11:06:27.926269+05:30" }
+        ],
+        "dischargeDelay": false
+      }
+    ],
+    "admitDate": "2024-06-09T21:30:00+05:30",
+    "admitType": "IN",
+    "targetLos": null,
+    "facilityId": "3101e68f-e137-473e-a115-df8f89d0e385",
+    "visitNumber": "VN_AKERS_12",
+    "patientAlerts": [
+      {
+        "alertTypeId": "01872a2e-08f4-47e5-858b-a3ee7df4a87b",
+        "alertTypeSortOrder": 3,
+        "alertValueIconPath": "https://cdn.filestackcontent.com/RPK8VnUMTVS5YvFZvMlc",
+        "alertTypeMultivalue": false,
+        "alertValueSortOrder": 1,
+        "alertTypeDisplayName": "Droplet Isolation",
+        "alertValueDisplayName": "Yes"
+      },
+      {
+        "alertTypeId": "ed73e08e-1505-40cb-b0b4-713bf2ed862a",
+        "alertTypeSortOrder": 7,
+        "alertValueIconPath": null,
+        "alertTypeMultivalue": true,
+        "alertValueSortOrder": 2,
+        "alertTypeDisplayName": "Isolation Organism",
+        "alertValueDisplayName": "RSV"
+      },
+      {
+        "alertTypeId": "ad823090-feec-463b-9eb5-84d937d6603b",
+        "alertTypeSortOrder": 8,
+        "alertValueIconPath": "https://cdn.filestackcontent.com/L6mTyOBKTn2qmwomAZFV",
+        "alertTypeMultivalue": false,
+        "alertValueSortOrder": 1,
+        "alertTypeDisplayName": "Fall Risk",
+        "alertValueDisplayName": "Yes"
+      },
+      {
+        "alertTypeId": "3d7e4dfb-dbb6-4bb2-aa21-7f9785269a03",
+        "alertTypeSortOrder": 4,
+        "alertValueIconPath": "https://cdn.filestackcontent.com/XSM9nMZQtiGrE4ynFVMZ",
+        "alertTypeMultivalue": false,
+        "alertValueSortOrder": 1,
+        "alertTypeDisplayName": "Enteric Isolation",
+        "alertValueDisplayName": "Yes"
+      },
+      {
+        "alertTypeId": "31d7a325-8ac3-4bc8-aa47-83346a4c7847",
+        "alertTypeSortOrder": 1,
+        "alertValueIconPath": null,
+        "alertTypeMultivalue": false,
+        "alertValueSortOrder": 2,
+        "alertTypeDisplayName": "Airborne Isolation",
+        "alertValueDisplayName": "No"
+      },
+      {
+        "alertTypeId": "807601cf-8a43-4073-877a-17c94deec311",
+        "alertTypeSortOrder": 2,
+        "alertValueIconPath": "https://cdn.filestackcontent.com/7fKhg1krQemM19QYJp45",
+        "alertTypeMultivalue": false,
+        "alertValueSortOrder": 1,
+        "alertTypeDisplayName": "Contact Isolation",
+        "alertValueDisplayName": "Yes"
+      },
+      {
+        "alertTypeId": "7c53bb71-8427-4e87-88d8-5697f05a8cee",
+        "alertTypeSortOrder": 10,
+        "alertValueIconPath": null,
+        "alertTypeMultivalue": false,
+        "alertValueSortOrder": 2,
+        "alertTypeDisplayName": "Bariatric Patient",
+        "alertValueDisplayName": "No"
+      },
+      {
+        "alertTypeId": "ed73e08e-1505-40cb-b0b4-713bf2ed862a",
+        "alertTypeSortOrder": 7,
+        "alertValueIconPath": null,
+        "alertTypeMultivalue": true,
+        "alertValueSortOrder": 1,
+        "alertTypeDisplayName": "Isolation Organism",
+        "alertValueDisplayName": "Hepatitis A"
+      },
+      {
+        "alertTypeId": "1c154cd3-7f88-47aa-948d-f2b6aa65172e",
+        "alertTypeSortOrder": 9,
+        "alertValueIconPath": null,
+        "alertTypeMultivalue": false,
+        "alertValueSortOrder": 2,
+        "alertTypeDisplayName": "Telemetry",
+        "alertValueDisplayName": "No"
+      }
+    ],
+    "physicianInfo": [],
+    "visitLocation": null,
+    "dischargeStatus": null,
+    "visitCareTeamMembers": [],
+    "expectedDischargeTime": "2024-01-19T10:30:00+05:30",
+    "workingDischargeDisposition": "Home",
+    "expectedDischargeTimeIncludesTime": false
+  },
+  "patient": { "lastName": "Akers", "firstName": "Adam" },
+  "facility": {
+    "id": "3101e68f-e137-473e-a115-df8f89d0e385",
+    "name": "Grady",
+    "displayCode": null
+  },
+  "adtOrders": { "hasDischargeOrder": false, "admitOrTransferOrder": null },
+  "queueName": "PotentialDischarge",
+  "queueType": "Visit"
 }
