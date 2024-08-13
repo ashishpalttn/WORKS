@@ -19,22 +19,22 @@
   },
   "patient": {
     "identifiers": {
-      "medicalRecordNumber": "MRN_AKERS_10",
-      "masterPatientIdentifier": "MPI_AKERS_10"
+      "medicalRecordNumber": "MRN_AKERS_15",
+      "masterPatientIdentifier": "MPI_AKERS_15"
     }
   },
   "visit": {
     "identifiers": {
-      "visitNumber": "VN_AKERS_10",
+      "visitNumber": "VN_AKERS_15",
       "HAR": "",
       "admittingCSN": ""
     }
   },
   "order": {
-    "orderNumber": "ON_AKERS_10",
+    "orderNumber": "ON_AKERS_15",
     "accessionNumber": "",
     "prevOrderNumber": "",
-    "orderName": "OrderName_AKERS_10",
+    "orderName": "OrderName_AKERS_15",
     "orderDesc": "XRay of Right Arm",
     "orderStatus": "Scheduled",
     "statusTime": "",
@@ -53,6 +53,6 @@
     "orderReason": "",
     "priority":"R",
     "portable":"",
-    "prepCompletedTime": ""
+    "prepCompletedTime": "2024-04-29T12:01:00-04:00"
   }
 }
