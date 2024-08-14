@@ -1,0 +1,6 @@
+page=>>> pages->process->ViewPage.js->QueueDisplayPage.js->QueueDisplayContent.js->
+
+shared-component=>>> QueueItem->ItemDisplayList =>>>>here you can find different - different queue (eg orde, discharge,)
+
+
+In viewConfig you can configure shortings
