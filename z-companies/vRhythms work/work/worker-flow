@@ -1,0 +1,14 @@
+for visit => QueueListener.java ->  RhapsodyMessageService.java -> VisitMessageProcessorFactory.java -> VisitMessageProcessor.java
+
+
+
+
+
+
+
+
+
+first go to processor like -> CreateUpdateBedReservationProcessor.java -> VisitMessageProcessor.java
+
+
+ CREATEUPDATEBEDRESERVATION String in the future there is a file that has these constants - com/cl/careedgehos/model/EnvoyEventSubTypes.java
