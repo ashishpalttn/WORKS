@@ -1,140 +1,157 @@
 {
-  "id": "53b69417-576a-4822-ac25-3180a6543c06",
-  "visit": {
-      "id": "53b69417-576a-4822-ac25-3180a6543c06",
-      "drg": "123",
-      "gmlos": null,
-      "barriers": [
-          {
-              "code": "Delay",
-              "createdOn": "2024-08-07T11:05:22.240139+05:30",
-              "escalated": false,
-              "updatedOn": "2024-08-07T11:06:27.952204+05:30",
-              "resolvedOn": null,
-              "displayCode": "Code1",
-              "displayName": "Delay",
-              "barrierNotes": [
-                  {
-                      "text": "Note 1",
-                      "updatedOn": "2024-08-07T11:06:27.926046+05:30"
-                  },
-                  {
-                      "text": "Note 2",
-                      "updatedOn": "2024-08-07T11:06:27.926269+05:30"
-                  }
-              ],
-              "dischargeDelay": false
-          }
-      ],
-      "admitDate": "2024-06-09T21:30:00+05:30",
-      "admitType": "IN",
-      "targetLos": null,
+  "meta": {
+    "msgId": "<a message id captured from EMR>",
+    "msgType": "ADT^A01",
+    "eventTimeStamp": "2023-10-13T12:00:00-04:00",
+    "userId": "<id of user who put in EMR message>",
+    "source": "<source of system generating message>",
+    "facilityCodeEMR": "<A code which envoy populates from EMR message>",
+    "tenantCodeCL": "<A code which we provide to Envoy indicating tenant>",
+    "eventType": "PATIENTADMIN",
+    "eventSubType": "CreateUpdate",
+    "clMetaFields": {
       "facilityId": "3101e68f-e137-473e-a115-df8f89d0e385",
-      "visitNumber": "VN_AKERS_12",
-      "patientAlerts": [
-          {
-              "alertTypeId": "01872a2e-08f4-47e5-858b-a3ee7df4a87b",
-              "alertTypeSortOrder": 3,
-              "alertValueIconPath": "https://cdn.filestackcontent.com/RPK8VnUMTVS5YvFZvMlc",
-              "alertTypeMultivalue": false,
-              "alertValueSortOrder": 1,
-              "alertTypeDisplayName": "Droplet Isolation",
-              "alertValueDisplayName": "Yes"
-          },
-          {
-              "alertTypeId": "ed73e08e-1505-40cb-b0b4-713bf2ed862a",
-              "alertTypeSortOrder": 7,
-              "alertValueIconPath": null,
-              "alertTypeMultivalue": true,
-              "alertValueSortOrder": 2,
-              "alertTypeDisplayName": "Isolation Organism",
-              "alertValueDisplayName": "RSV"
-          },
-          {
-              "alertTypeId": "ad823090-feec-463b-9eb5-84d937d6603b",
-              "alertTypeSortOrder": 8,
-              "alertValueIconPath": "https://cdn.filestackcontent.com/L6mTyOBKTn2qmwomAZFV",
-              "alertTypeMultivalue": false,
-              "alertValueSortOrder": 1,
-              "alertTypeDisplayName": "Fall Risk",
-              "alertValueDisplayName": "Yes"
-          },
-          {
-              "alertTypeId": "3d7e4dfb-dbb6-4bb2-aa21-7f9785269a03",
-              "alertTypeSortOrder": 4,
-              "alertValueIconPath": "https://cdn.filestackcontent.com/XSM9nMZQtiGrE4ynFVMZ",
-              "alertTypeMultivalue": false,
-              "alertValueSortOrder": 1,
-              "alertTypeDisplayName": "Enteric Isolation",
-              "alertValueDisplayName": "Yes"
-          },
-          {
-              "alertTypeId": "31d7a325-8ac3-4bc8-aa47-83346a4c7847",
-              "alertTypeSortOrder": 1,
-              "alertValueIconPath": null,
-              "alertTypeMultivalue": false,
-              "alertValueSortOrder": 2,
-              "alertTypeDisplayName": "Airborne Isolation",
-              "alertValueDisplayName": "No"
-          },
-          {
-              "alertTypeId": "807601cf-8a43-4073-877a-17c94deec311",
-              "alertTypeSortOrder": 2,
-              "alertValueIconPath": "https://cdn.filestackcontent.com/7fKhg1krQemM19QYJp45",
-              "alertTypeMultivalue": false,
-              "alertValueSortOrder": 1,
-              "alertTypeDisplayName": "Contact Isolation",
-              "alertValueDisplayName": "Yes"
-          },
-          {
-              "alertTypeId": "7c53bb71-8427-4e87-88d8-5697f05a8cee",
-              "alertTypeSortOrder": 10,
-              "alertValueIconPath": null,
-              "alertTypeMultivalue": false,
-              "alertValueSortOrder": 2,
-              "alertTypeDisplayName": "Bariatric Patient",
-              "alertValueDisplayName": "No"
-          },
-          {
-              "alertTypeId": "ed73e08e-1505-40cb-b0b4-713bf2ed862a",
-              "alertTypeSortOrder": 7,
-              "alertValueIconPath": null,
-              "alertTypeMultivalue": true,
-              "alertValueSortOrder": 1,
-              "alertTypeDisplayName": "Isolation Organism",
-              "alertValueDisplayName": "Hepatitis A"
-          },
-          {
-              "alertTypeId": "1c154cd3-7f88-47aa-948d-f2b6aa65172e",
-              "alertTypeSortOrder": 9,
-              "alertValueIconPath": null,
-              "alertTypeMultivalue": false,
-              "alertValueSortOrder": 2,
-              "alertTypeDisplayName": "Telemetry",
-              "alertValueDisplayName": "No"
-          }
-      ],
-      "physicianInfo": [],
-      "visitLocation": null,
-      "dischargeStatus": null,
-      "visitCareTeamMembers": [],
-      "expectedDischargeTime": "2024-01-19T10:30:00+05:30",
-      "workingDischargeDisposition": "Home",
-      "expectedDischargeTimeIncludesTime": false
+      "facilityCode": "GHS",
+      "facilityName": "Grady",
+      "tenantId": "c12a1ec6-762a-4373-9ded-d860a92e00ac",
+      "tenantName": "Grady"
+    }
   },
   "patient": {
-      "lastName": "Akers",
-      "firstName": "Adam"
+    "identifiers": {
+      "medicalRecordNumber": "MRN_AKERS_5",
+      "masterPatientIdentifier": "MPI_AKERS_5"
+    },
+    "name": {
+      "first": "Adam",
+      "middle": "Alan",
+      "last": "Akers"
+    },
+    "dateOfBirth": "1990-12-03",
+    "birthGender": "MALE",
+    "preferredGender": "",
+    "weight": "",
+    "weightUnits": "",
+    "height": "",
+    "heightUnits": "",
+    "contact": {
+      "address": {
+        "streetAddress1": "",
+        "streetAddress2": "",
+        "city": "",
+        "state": "",
+        "zipCode": ""
+      },
+      "email": "",
+      "phoneNumbers": {
+        "home": "",
+        "work": ""
+      }
+    }
   },
-  "facility": {
-      "id": "3101e68f-e137-473e-a115-df8f89d0e385",
-      "name": "Grady",
-      "displayCode": null
-  },
-  "adtOrders": {
-      "hasDischargeOrder": false,
-      "admitOrTransferOrder": null
-  },
-  "queueName": "PotentialDischarge",
-  "queueType": "Visit"
+  "visit": {
+    "careTeam" : [
+      {
+        "firstName": "",
+        "lastName": "",
+        "role": "",
+        "identifier": "",
+        "startTime": ""
+      }
+    ],
+    "identifiers": {
+      "visitNumber": "VN_AKERS_5",
+      "HAR": "",
+      "admittingCSN": ""
+    },
+    "currentLocation": {
+      "departmentCode": "11A",
+      "bedCode": "A",
+      "roomCode": "1",
+      "facilityCode": "GHS"
+    },
+    "insurancePlans": [
+      {
+        "code": "",
+        "description": "",
+        "priority": ""
+      },
+      {
+        "code": "",
+        "description": "",
+        "priority": ""
+      }
+    ],
+    "expectedDate": "2024-06-11T12:00:00-04:00",
+    "admitDate": "2024-06-09T12:00:00-04:00",
+    "hospitalService": "",
+    "financialClass": "",
+    "patientClass": "<used to determine the value for admitType>",
+    "patientType": "<used to determine the value for admitType>",
+    "admitType": "IN",
+    "physicianInfo": [
+      {
+        "physicianType": "",
+        "npi": "",
+        "firstName": "",
+        "middleName": "",
+        "lastName": "",
+        "group": ""
+      }
+    ],
+    "expectedDischargeTime": "2024-01-20",
+    "workingDischargeDisposition": "Home",
+    "dischargeDateTime": "",
+    "dischargeDisposition": "",
+    "admittingComplaint": "",
+    "admittingDiagnosisCode": "",
+    "admittingDiagnosisDesc": "",
+    "drgCode": "123",
+    "dischargeStatus": "",
+    "alerts": [
+      {
+        "name": "Telemetry",
+        "value": "Yes"
+      },
+      {
+        "name": "Bariatric",
+        "value": "No"
+      },
+      {
+        "name": "IsolationOrganism",
+        "value": "HepatitisA",
+        "remove": false
+      },
+      {
+        "name": "IsolationOrganism",
+        "value": "RSV",
+        "remove": false
+      },
+      {
+        "name": "IsolationOrganism",
+        "value": "Ecoli",
+        "remove": true
+      },
+      {
+        "name": "AirborneIsolation",
+        "value": "Yes"
+      },
+      {
+        "name": "FallRisk",
+        "value": "Yes"
+      },
+      {
+        "name": "DropletIsolation",
+        "value": "Yes"
+      },
+      {
+        "name": "ContactIsolation",
+        "value": "Yes"
+      },
+      {
+        "name": "EntericIsolation",
+        "value": "Yes"
+      }
+    ]
+  }
 }
