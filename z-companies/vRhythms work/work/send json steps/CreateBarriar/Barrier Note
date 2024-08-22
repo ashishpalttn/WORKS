@@ -6,9 +6,11 @@ last month
 Send all the below messages to your CareEdge HOS queue (like you would the Adam Akers messages).
 This message can configure the barriers in your Admin service: 
 
-resources/messages/grady/BarrierConfig/Barriers.json
+setp 1 => resources/messages/grady/BarrierConfig/Barriers.json
 
-Add some sample barriers with these messages:
+Step 2 => send visit
+
+Step 3 => Add some sample barriers with these messages:
 resources/messages/grady/Adam_Akers/11-DC-Barrier.json
 resources/messages/grady/Adam_Akers/12-Physician-Barrier.json
 resources/messages/grady/Adam_Akers/13-Physician-Barrier_update.json
