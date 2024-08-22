@@ -1,2 +1,4 @@
 use html as much as you can use in your project because this is light weight and not dependent on any library
+try to avoid style prop because its calculate dimention on every render
+for theme management used css variable.
 
