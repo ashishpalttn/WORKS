@@ -1,29 +1,67 @@
 {
   "meta": {
-    "msgId": "9ead1dff-fa5b-4e2e-a7b9-9afb607f3b66",
-    "eventTimeStamp": "2024-05-17T12:00:00-04:00",
-    "source": "HOS",
-    "tenantCode": "clhs701",
-    "facilityCode": "GHS",
-    "type": "Visit"
+    "msgId": "12345",
+    "msgType": "ORM^O01",
+    "eventTimeStamp": "2023-10-13T12:01:00-04:00",
+    "userId": "<id of user who put in EMR message>",
+    "source": "<source of system generating message>",
+    "facilityCodeEMR": "<A code which envoy populates from EMR message>",
+    "tenantCodeCL": "<A code which we provide to Envoy indicating tenant>",
+    "eventType": "Order",
+    "eventSubType": "CreateUpdate",
+    "clMetaFields": {
+      "facilityId": "3101e68f-e137-473e-a115-df8f89d0e385",
+      "facilityCode": "GHS",
+      "facilityName": "Grady",
+      "tenantId": "c12a1ec6-762a-4373-9ded-d860a92e00ac",
+      "tenantName": "Grady"
+    }
   },
   "patient": {
     "identifiers": {
-      "medicalRecordNumber": "MRN_AKERS_5",
-      "masterPatientIdentifier": "MPI_AKERS_5"
+      "medicalRecordNumber": "MRN_AKERS_1",
+      "masterPatientIdentifier": "MPI_AKERS_1"
     }
   },
   "visit": {
-    "visitNumber": "VN_AKERS_5",
-    "bedRequestStatus": "AnticipatedDischarge",
-    "expectedDischargeDate": "2024-05-20",
-    "expectedDischargeDateUpdatedOn": "2024-05-17T12:00:00-04:00",
-    "workingDischargeArrangement": "Hospice",
-    "workingDischargeArrangementUpdatedOn": "2024-05-17T12:00:00-04:00",
-    "workingDrg": "123",
-    "workingDrgUpdatedOn": "2024-05-17T12:00:00-04:00",
-    "targetLOS": "5",
-    "targetLOSUpdatedOn": "2024-05-17T12:00:00-04:00",
-    "gmlos": "8.12"
+    "identifiers": {
+      "visitNumber": "VN_AKERS_1",
+      "HAR": "",
+      "admittingCSN": ""
+    }
+  },
+  "order": {
+    "portable": "",
+    "priority": "1",
+    "stopTime": "2024-01-25",
+    "orderDesc": "BED REQUEST - INPATIENT",
+    "orderName": "ADT9",
+    "startTime": "2024-01-25T11:29:56-05:00",
+    "orderNotes": "",
+    "statusTime": "2024-01-25T11:29:56-05:00",
+    "orderNumber": "ON_AKERS_ADM",
+    "orderReason": "",
+    "orderStatus": "SCHEDULED",
+    "requestedTime": "2024-01-25T11:30:00-05:00",
+    "accessionNumber": "ON_AKERS_ADM",
+    "prevOrderNumber": "",
+    "orderingProvider": {
+      "id": "444444",
+      "lastName": "Doc",
+      "firstName": "Tor"
+    },
+    "orderingDepartment": "",
+    "serviceModalityCode": "ADT",
+    "type": "ADMIT"
+  },
+  "bedRequest": {
+    "status": "INTENT",
+    "bedType": "Stepdown",
+    "unitType": "Med Surg",
+    "bedRequestSource": "ED",
+    "bedRequestNotes": "This patient broke their leg jumping on a pogo stick.",
+    "careLevelRequested": "",
+    "estimatedTransferTime": "",
+    "cancelled": ""
   }
 }
