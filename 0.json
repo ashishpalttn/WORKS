@@ -19,8 +19,8 @@
   },
   "patient": {
     "identifiers": {
-      "medicalRecordNumber": "MRN_AKERS_1",
-      "masterPatientIdentifier": "MPI_AKERS_1"
+      "medicalRecordNumber": "MRN_AKERS_2",
+      "masterPatientIdentifier": "MPI_AKERS_2"
     },
     "name": {
       "first": "Adam",
@@ -60,7 +60,7 @@
       }
     ],
     "identifiers": {
-      "visitNumber": "VN_AKERS_1",
+      "visitNumber": "VN_AKERS_2",
       "HAR": "",
       "admittingCSN": ""
     },
