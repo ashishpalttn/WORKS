@@ -1,8 +1,11 @@
 # Ignore specific JSON files
-0.json/
-/1.json
-/2.json
-/3.json
-/4.js
-/purify.json
-AWS/
+0.json
+1.json
+2.json
+3.json
+
+# Ignore specific JavaScript file
+4.js
+
+# Ignore specific JSON file
+purify.json
