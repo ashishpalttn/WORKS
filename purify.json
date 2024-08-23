@@ -1,0 +1,37 @@
+{
+    "parentQueueId": "e36e059b-d427-4965-ab13-561ff4787310",
+    "displayName": "abc",
+    "expectedTurnaroundTime": 2,
+    "configJson": "{\"displayName\":\"abc\",\"expectedTurnaroundTime\":2,\"turnaroundTimeAlert\":3,\"turnaroundTimeWarning\":4,\"turnaroundTimeUnit\":\"INTEGER\"}",
+    "status": "ACTIVE",
+    "isNew": true,
+    "facilityId": "3101e68f-e137-473e-a115-df8f89d0e385",
+    "turnaroundTimeUnit": "INTEGER",
+    "turnaroundTimeAlert": 3,
+    "turnaroundTimeWarning": 4,
+    "ownerRoleId": "60716456-ad4a-4fe8-bbc1-37f028359f56",
+    "isActive": true
+}
+
+{
+    "displayName": "abc",
+    "turnaroundTimeUnit": "INTEGER",
+    "turnaroundTimeAlert": "3",
+    "turnaroundTimeWarning": "4",
+    "expectedTurnaroundTime": "2",
+    "status": "ACTIVE",
+    "id": "184c5659-4215-4f8d-b7e4-687c7e2cf828",
+    "tenantId": "c12a1ec6-762a-4373-9ded-d860a92e00ac",
+    "facilityId": "3101e68f-e137-473e-a115-df8f89d0e385",
+    "ownerRoleId": "60716456-ad4a-4fe8-bbc1-37f028359f56",
+    "configJson": "{\"displayName\":\"abc\",\"expectedTurnaroundTime\":\"2\",\"turnaroundTimeAlert\":\"3\",\"turnaroundTimeWarning\":\"4\",\"turnaroundTimeUnit\":\"INTEGER\"}",
+    "parentQueueId": "e36e059b-d427-4965-ab13-561ff4787310",
+    "isActive": true,
+    "isDeleted": false,
+    "createdBy": "d5380db9-4918-4f5b-b322-e6fa4604e122|apal",
+    "createdOn": "2024-08-23T10:08:24.502686+05:30",
+    "updatedBy": "d5380db9-4918-4f5b-b322-e6fa4604e122|apal",
+    "updatedOn": "2024-08-23T10:08:24.502686+05:30",
+    "isNew": false,
+    "isUpdated": false
+}
