@@ -1,6 +1,0 @@
-public static final String DC_STATUS_ANTICIPATED_DISCHARGE = "AnticipatedDischarge";
-public static final String DC_STATUS_PENDING_DISCHARGE = "PendingDischarge";
-public static final String DC_STATUS_READY_FOR_DISCHARGE = "ReadyForDischarge";
-public static final String DC_STATUS_DC_ORDER_WITH_DELAY = "DischargeOrderWithDelay";
-
-
