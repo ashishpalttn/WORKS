@@ -19,8 +19,8 @@
   },
   "patient": {
     "identifiers": {
-      "medicalRecordNumber": "MRN_AKERS_2",
-      "masterPatientIdentifier": "MPI_AKERS_2"
+      "medicalRecordNumber": "MRN_AKERS_1",
+      "masterPatientIdentifier": "MPI_AKERS_1"
     },
     "name": {
       "first": "Adam",
@@ -60,7 +60,7 @@
       }
     ],
     "identifiers": {
-      "visitNumber": "VN_AKERS_2",
+      "visitNumber": "VN_AKERS_1",
       "HAR": "",
       "admittingCSN": ""
     },
@@ -88,7 +88,7 @@
     "financialClass": "",
     "patientClass": "<used to determine the value for admitType>",
     "patientType": "<used to determine the value for admitType>",
-    "admitType": "IN",
+    "admitType": "OUT",
     "physicianInfo": [
       {
         "physicianType": "",
