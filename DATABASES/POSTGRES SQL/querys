@@ -1,0 +1,3 @@
+\l = list of database
+\c <database-name> =>connect to database
+\dt = list of tables
