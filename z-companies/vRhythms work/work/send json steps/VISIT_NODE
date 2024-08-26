@@ -1,0 +1,1 @@
+admit type icon(Observation Patienout) => send visit with OBS,OUT, IN admitType  "admitType": "OUT",
