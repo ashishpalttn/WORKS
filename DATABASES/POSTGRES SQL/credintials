@@ -5,3 +5,16 @@ for postgres user pass is newpassword
 for aws postgres
 user postgres
 pass mypassword
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+Supabase
+host = aws-0-ap-south-1.pooler.supabase.com
+port = 6543
+database = postgres
+username = postgres.dgxzbrmtcpsunrtmwjwe
+pass = aA@9918434680
+
+
+dummy -  jdbc:postgresql://aws-0-ap-south-1.pooler.supabase.com:6543/postgres?user=postgres.dgxzbrmtcpsunrtmwjwe&password=aA@9918434680
