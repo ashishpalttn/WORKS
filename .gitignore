@@ -1,11 +1,14 @@
 # Ignore specific JSON files
-0.json
 1.json
 2.json
 3.json
+4.json
 
 # Ignore specific JavaScript file
-4.js
+0.js
+
+# Ignore java
+0.java
 
 # Ignore specific JSON file
 purify.json
