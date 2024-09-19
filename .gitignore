@@ -1,8 +1,9 @@
 # Ignore specific JSON files
-1.json
-2.json
-3.json
+1_visit.json
+2_order.json
+3_appointment.json
 4.json
+5.json
 
 # Ignore specific JavaScript file
 0.js
