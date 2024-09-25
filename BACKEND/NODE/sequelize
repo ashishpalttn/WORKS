@@ -1,0 +1,7 @@
+npx sequelize-cli db:migrate
+npx sequelize-cli db:migrate:undo
+
+// create migration template
+npx sequelize-cli migration:generate --name <create-event-registrations>
+npx sequelize-cli db:migrate
+npx sequelize-cli db:migrate:undo
