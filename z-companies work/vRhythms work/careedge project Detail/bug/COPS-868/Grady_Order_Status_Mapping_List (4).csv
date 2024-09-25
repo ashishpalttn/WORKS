@@ -1,9 +1,0 @@
-Facility Code,Interface Value,Display Name,Corresponding Action
-G-GRADY-GA,Arrived,Arrivedtest,Created
-G-GRADY-GA,CA,Cancelled,Cancelled
-G-GRADY-GA,Exam Begun,Exam Begun,Started
-G-GRADY-GA,Exam Ended,Exam Ended,Completed
-G-GRADY-GA,F,Final Results,Resulted
-G-GRADY-GA,P,Preliminary Results,Resulted
-G-GRADY-GA,Scheduled,Scheduled,Created
-G-GRADY-GA,SCHEDULED,Scheduled,Created
