@@ -2,3 +2,4 @@
 express
 DotENV
 nodemoon
+sequelize ORM
