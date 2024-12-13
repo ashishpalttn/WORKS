@@ -1,0 +1,3 @@
+step 1 => visit
+step 2 => order ("orderNumber": "ON_AKERS_2", )
+step 3 => send appointment with step 2's order no. ("scheduleOrderNumber": "ON_AKERS_2",)

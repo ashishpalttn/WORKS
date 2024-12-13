@@ -18,9 +18,9 @@
     }
   },
   "bedStatus": {
-    "departmentCode": "11A",
-    "bedCode": "A",
-    "roomCode": "1",
+    "departmentCode": "10A",
+    "bedCode": "4",
+    "roomCode": "4",
     "facilityCode": "GHS",
     "statusCode": "dirty"
   }
