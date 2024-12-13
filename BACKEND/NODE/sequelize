@@ -1,7 +1,11 @@
-npx sequelize-cli db:migrate
-npx sequelize-cli db:migrate:undo
 
-// create migration template
-npx sequelize-cli migration:generate --name <create-event-registrations>
-npx sequelize-cli db:migrate
-npx sequelize-cli db:migrate:undo
+//create migration template (for create and update a table)
+sequelize migration:generate --name <create-event-registrations> //after generate add code in migration
+sequelize db:migrate
+sequelize db:migrate:undo
+
+
+
+if you want add any propery in existing api then follow these stem
+    1- create a migration 
+    2- update model
