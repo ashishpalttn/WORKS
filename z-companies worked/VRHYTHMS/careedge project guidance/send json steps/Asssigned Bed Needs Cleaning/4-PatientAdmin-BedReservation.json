@@ -19,8 +19,8 @@
   },
   "patient": {
     "identifiers": {
-      "medicalRecordNumber": "MRN_AKERS_1",
-      "masterPatientIdentifier": "MPI_AKERS_1"
+      "medicalRecordNumber": "MRN_AKERS_4",
+      "masterPatientIdentifier": "MPI_AKERS_4"
     },
     "name": {
       "first": "Adam",
@@ -51,20 +51,20 @@
   },
   "visit": {
     "identifiers": {
-      "visitNumber": "VN_AKERS_1",
+      "visitNumber": "VN_AKERS_4",
       "HAR": "",
       "admittingCSN": ""
     },
     "currentLocation": {
-      "departmentCode": "11A",
-      "bedCode": "A",
-      "roomCode": "1",
+      "departmentCode": "",
+      "bedCode": "",
+      "roomCode": "",
       "facilityCode": "GHS"
     },
     "reservedLocation": {
-      "departmentCode": "11A",
-      "bedCode": "B",
-      "roomCode": "1",
+      "departmentCode": "10A",
+      "bedCode": "4",
+      "roomCode": "4",
       "facilityCode": "GHS"
     },
     "insurancePlans": [
@@ -85,7 +85,7 @@
     "financialClass": "",
     "patientClass": "<used to determine the value for admitType>",
     "patientType": "<used to determine the value for admitType>",
-    "admitType": "IN",
+    "admitType": "OBS",
     "physicianInfo": [
       {
         "physicianType": "",

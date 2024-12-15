@@ -1,7 +1,6 @@
 Potential Discharge =>
 only send visit
 
-Order Discharge => 
-set order_status = ORDERED
+Order Discharge => dischargeStatus: "ORDERED" (in visit json)
 
 for update Order_status to visit send => 14-HOS_Visit_fields.json
