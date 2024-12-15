@@ -1,0 +1,49 @@
+{
+    "meta": {
+      "msgId": "<a message id captured from EMR>",
+      "msgType": "ORM^O01",
+      "eventTimeStamp": "2023-11-13T12:03:00-04:00",
+      "userId": "<id of user who put in EMR message>",
+      "source": "<source of system generating message>",
+      "facilityCodeEMR": "<A code which envoy populates from EMR message>",
+      "tenantCodeCL": "<A code which we provide to Envoy indicating tenant>",
+      "eventType": "Appointment",
+      "eventSubType": "CreateUpdate",
+      "clMetaFields": {
+        "facilityId": "3101e68f-e137-473e-a115-df8f89d0e385",
+        "facilityCode": "GHS",
+        "facilityName": "Grady",
+        "tenantId": "c12a1ec6-762a-4373-9ded-d860a92e00ac",
+        "tenantName": "Grady"
+      }
+    },
+    "patient": {
+      "identifiers": {
+        "medicalRecordNumber": "MRN_AKERS_1",
+        "masterPatientIdentifier": "MPI_AKERS_1"
+      },
+      "name": {
+        "first": "Adam",
+        "last": "Akers"
+      }
+    },
+    "visit": {
+      "identifiers": {
+        "visitNumber": "VN_AKERS_1",
+        "HAR": "",
+        "admittingCSN": ""
+      }
+    },
+    "appointment": {
+      "scheduleNumber": "SN_AKERS_3",
+      "scheduleStatus": "CreateUpdate",
+      "scheduleOrderNumber": "ON_AKERS_2",
+      "scheduleName": "SN_AKERS_1",
+      "scheduleDesc": "upcoming 3",
+      "performingProvider": "",
+      "locationResourceCode": "XRAY1",
+      "startTime": "2023-11-13T20:00:00-04:00",
+      "duration": "10"
+    }
+  }
+  

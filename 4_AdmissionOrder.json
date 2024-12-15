@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "msgId": "12345",
+    "msgType": "ORM^O01",
+    "eventTimeStamp": "2023-10-13T12:01:00-04:00",
+    "userId": "<id of user who put in EMR message>",
+    "source": "<source of system generating message>",
+    "facilityCodeEMR": "<A code which envoy populates from EMR message>",
+    "tenantCodeCL": "<A code which we provide to Envoy indicating tenant>",
+    "eventType": "Order",
+    "eventSubType": "CreateUpdate",
+    "clMetaFields": {
+      "facilityId": "3101e68f-e137-473e-a115-df8f89d0e385",
+      "facilityCode": "GHS",
+      "facilityName": "Grady",
+      "tenantId": "c12a1ec6-762a-4373-9ded-d860a92e00ac",
+      "tenantName": "Grady"
+    }
+  },
+  "patient": {
+    "identifiers": {
+      "medicalRecordNumber": "MRN_AKERS_4",
+      "masterPatientIdentifier": "MPI_AKERS_4"
+    }
+  },
+  "visit": {
+    "identifiers": {
+      "visitNumber": "VN_AKERS_4",
+      "HAR": "",
+      "admittingCSN": ""
+    }
+  },
+  "order": {
+    "portable": "",
+    "priority": "1",
+    "stopTime": "2024-01-25",
+    "orderDesc": "BED REQUEST - INPATIENT",
+    "orderName": "ADT12",
+    "startTime": "2024-01-25T11:29:56-05:00",
+    "orderNotes": "",
+    "statusTime": "2024-01-25T11:29:56-05:00",
+    "orderNumber": "ON_AKERS_ADM4",
+    "orderReason": "",
+    "orderStatus": "Scheduled",
+    "requestedTime": "2024-01-25T11:30:00-05:00",
+    "accessionNumber": "ON_AKERS_ADM",
+    "prevOrderNumber": "",
+    "orderingProvider": {
+      "id": "444444",
+      "lastName": "Doc",
+      "firstName": "Tor"
+    },
+    "orderingDepartment": "",
+    "serviceModalityCode": "ADT",
+    "type": "ADMIT"
+  },
+  "bedRequest": {
+    "status": "READY",
+    "bedType": "Stepdown",
+    "unitType": "ICU",
+    "bedRequestSource": "ED",
+    "bedRequestNotes": "This patient broke their leg jumping on a pogo stick.",
+    "careLevelRequested": "",
+    "estimatedTransferTime": "",
+    "cancelled": ""
+  }
+}
