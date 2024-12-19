@@ -1,5 +1,5 @@
 
-// create new table in the DB and modelin app, follow below steps
+// create new table in the DB and model in app, follow below steps
 
 step-1 generate a model and migration(migration will automatic generate with model command)
     npx sequelize-cli model:generate --name Student --attributes studentName:string, address:text,admissionDate:date.....so on

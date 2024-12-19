@@ -3,3 +3,4 @@ express
 DotENV
 nodemoon
 sequelize ORM
+Cookies-parser
