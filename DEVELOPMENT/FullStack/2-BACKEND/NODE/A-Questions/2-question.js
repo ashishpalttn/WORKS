@@ -25,8 +25,8 @@ const list = [
   
   console.log(result);
 
-  Answer -----------------------------------
-  {
-    Maharastra: { cities: [ 'Mumbai', 'Pune' ] },
-    Rajasthan: { cities: [ 'Jaipur', 'Kota' ] }
-  }
+  // Answer -----------------------------------
+  // {
+  //   Maharastra: { cities: [ 'Mumbai', 'Pune' ] },
+  //   Rajasthan: { cities: [ 'Jaipur', 'Kota' ] }
+  // }
