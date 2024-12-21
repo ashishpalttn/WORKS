@@ -23,7 +23,7 @@ const list = [
       
   },{})
   
-  console.log(result);
+  console.log("Answer====>>>>>",result);
 
   // Answer -----------------------------------
   // {

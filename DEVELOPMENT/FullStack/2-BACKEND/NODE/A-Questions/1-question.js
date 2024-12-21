@@ -3,5 +3,5 @@ const str = 'this is some random string where the first latter of each word will
 const arr = str.split(' ')
                .map((word)=>word.charAt(0).toUpperCase() + word.slice(1))
                .join(' ')
-console.log(arr);
+console.log("Answer======>>>>>>>",arr);
 //Answer = 'This Is Some Random String Where The First Latter Of Each Word Will Be Capital'
