@@ -1,6 +1,6 @@
 1- Start MongoDB Service = sudo systemctl start mongod
 2- Enable MongoDB to Start on Boot
-If you want MongoDB to automatically start when the system reboots, run = sudo systemctl enable mongod
+    If you want MongoDB to automatically start when the system reboots, run = sudo systemctl enable mongod
 3. Check MongoDB Status = sudo systemctl status mongod
 4-  open the MongoDB shell = mongosh
 5- see dbs = show dbs
