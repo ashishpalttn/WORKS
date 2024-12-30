@@ -1,0 +1,18 @@
+https://chatgpt.com/share/67718f23-ef18-8007-8fc7-320eab14f25b
+
+Q1- difference between find and findOne?
+    find is used for fetch all documents of a collection, but findOne is used fetch single document
+Q2- difference between SQL and noSQL
+    DataModel:- sql used structured schema model noSql use document based model in BSON(Binary JSON) format
+    Schema :- sql table have predefine schema, every row in table must follow this, for noSQL document of collection don't need follow structure.
+    Scalablity:- sql is virtically scalable and nosql is horizontal scalble
+    ACID Transation:- sql profile acid for a transation so it's most sequre.
+Q3- what is indexing?
+    indexing in database is a tecnique to optimise data retrieval oprations. it typcaly create in hash table
+    type:-
+    1 single field index = db.collection.createIndex({field:1})
+    2 compound index = db.collection.createIndex({field1:1,field2:-1})
+Q4- What is gridFS, and how is it used?
+    gridFS is a specification for storing and retriveing large size image and video.
+Q5- what is purpose of change stream in MongoDB
+    change-stream allow application to listem for real-time changes (insert,update,delete) in database or collection 
