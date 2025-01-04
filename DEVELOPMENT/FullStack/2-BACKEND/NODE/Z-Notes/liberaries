@@ -1,6 +1,0 @@
-// Packages used
-express
-DotENV
-nodemoon
-sequelize ORM
-Cookies-parser
