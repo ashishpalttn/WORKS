@@ -1,0 +1,6 @@
+Q1- what is system architectur and its type
+    system architecture is blueprint that defines structure, behaviour and more view of system
+    types:-
+    1- monolithic = single tired and titly coupled
+    2- microservices = application divided into loosely coupled services, each service run independly
+    3- event-driven = component comunicate by producing and consuming events

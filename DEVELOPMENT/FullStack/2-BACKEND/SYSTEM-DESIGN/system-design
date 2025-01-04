@@ -1,6 +1,0 @@
-CI/CD => jenkins/github-actions
-load balancer => nginx
-loging & Monitoring  frontand => sentry
-loging & monitoring backend  => PM2
-alert service => ?
-messaging queue = ?

@@ -1,2 +1,0 @@
-commands :-
-sudo systemctl status postgresql
