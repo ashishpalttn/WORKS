@@ -1,0 +1,26 @@
+#React.js
+
+
+
+---------------------------------------------------------------------------------------------------------------------------
+https://chatgpt.com/share/67791f1f-512c-800a-a3bf-2d6ab79e0f9a
+https://chatgpt.com/share/677930c3-7b80-800a-b780-d0794d845269
+
+#Next.js
+
+Q1- What is Next and how it is different from React.
+    Next is a React framework for building server-rendered and staticly generated web applications. React is a javaScripts liberary for buillding user interface
+Q2- Explain the purpose of getStaticProp, getServerSideProp and getInitialProp
+    getStaticProp     = fetchData at build time for static site generation(SSG).
+    getServerSideData = fetch data on every request for serverside rendering(SSR).
+Q3- How Can you Implement Dynamic routing in Next.
+    by [] bracket 
+Q4- different b/w useEffect and getServerSideProp
+    useEffect used on client side to fetch data after component is mount and getServerSideProp used data on server-side before rendering the page
+Q5- what are strategies to improve performance in Next.
+    Use static site generation(SSG)
+    Optimise image using next/image
+    Enable code spliting
+    Leverage server-site cashing
+    use react lazy loading.
+Q6- 
