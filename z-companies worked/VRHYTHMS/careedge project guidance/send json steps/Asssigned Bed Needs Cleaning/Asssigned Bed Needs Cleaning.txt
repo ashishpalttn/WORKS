@@ -1,7 +1,9 @@
 To send a order in "Assigned Bed Needs Cleaning"
-    1 - before send dirtyBed json create a dirty bed. Location->Bed Status Mapping
+    1 - before send dirtyBed json create a dirty bed. Location->Bed Status Mapping  
     2 - send dirty JSON with dirty statusCode or u given in step 1
     3 - 2b-admitionOrder.json
     4 - 10a-PatientAdmin-BedReservation.json sent it (change reserve bed detail to drity bed what u done in step 1)
+
+    Note:- current bed not fill in any json message
 
 
