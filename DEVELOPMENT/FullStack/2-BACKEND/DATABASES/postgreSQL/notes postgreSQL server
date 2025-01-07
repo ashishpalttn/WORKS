@@ -1,0 +1,6 @@
+sudo systemctl status postgresql
+
+psql -U postgres = start with postgres user
+\l = list of database
+\c <database-name> =>connect to database
+\dt = list of tables

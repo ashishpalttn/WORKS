@@ -1,0 +1,64 @@
+
+// create new table in the DB and model in app, follow below steps
+
+step-1 generate a model and migration(migration will automatic generate with model command)
+    npx sequelize-cli model:generate --name Student --attributes studentName:string, address:text,admissionDate:date.....so on
+
+step-2 run below command on cmd to create table in database
+    npx sequelize-cli db:migrate
+
+-----------------------------------------------------------------------------------------------------------
+
+
+// add new column in table or alter to table, follow below steps
+
+step1- generate a migration template for update table schema or alter table
+    npx sequelize-cli migration:generate --name <add-new-column-to-student-table> 
+
+step2- write code for add column in generated migration file
+step3- run below command on cmd
+    npx sequelize-cli db:migrate
+
+step-3 if you undo above cmannd run below command
+    sequelize db:migrate:undo
+
+step-4 add column in that model also
+
+-----------------------------------------------------------------------------------------------------------
+// seed data
+step-1 create a seed migration
+npx sequelize-cli seed:generate --name demo-students
+
+step-2 edit the generated seeder file 
+
+example:-
+'use strict';
+
+module.exports = {
+  up: async (queryInterface, Sequelize) => {
+    await queryInterface.bulkInsert('Students', [
+      {
+        studentName: 'John Doe',
+        fatherName: 'Mr. Doe',
+        motherName: 'Mrs. Doe',
+        address: '123 Elm Street',
+        mobileNo: '1234567890',
+        parentMobileNo: '0987654321',
+        email: 'johndoe@example.com',
+        className: '12th',
+        section: 'A',
+        admissionDate: '2024-12-01',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      }
+    ]);
+  },
+
+  down: async (queryInterface, Sequelize) => {
+    await queryInterface.bulkDelete('Students', null, {});
+  }
+};
+
+step-3 run below command
+    npx sequelize-cli db:seed:all
+---------------------------------------------------------------------------------------------------------------
