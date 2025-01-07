@@ -1,0 +1,163 @@
+{
+  "id": "87c11622-a963-4b65-b1f7-688a12d2cf80",
+  "visit": {
+    "admitType": "IN",
+    "facilityId": "3101e68f-e137-473e-a115-df8f89d0e385",
+    "patientAlerts": [
+      {
+        "alertTypeId": "67001985-b9de-46d7-991a-834f2addecac",
+        "alertTypeIsActive": true,
+        "alertTypeSortOrder": 1,
+        "alertValueIconPath": "https://cdn.filestackcontent.com/orP2Q1w1RzWx2PMpdlov",
+        "alertValueIsActive": true,
+        "alertTypeMultivalue": false,
+        "alertValueSortOrder": 1,
+        "alertTypeDisplayName": "Airborne Isolation",
+        "alertValueDisplayName": "Yes"
+      },
+      {
+        "alertTypeId": "346af413-5e1c-4e84-ad38-8d10c49b1ab3",
+        "alertTypeIsActive": true,
+        "alertTypeSortOrder": 4,
+        "alertValueIconPath": "https://cdn.filestackcontent.com/XSM9nMZQtiGrE4ynFVMZ",
+        "alertValueIsActive": true,
+        "alertTypeMultivalue": false,
+        "alertValueSortOrder": 1,
+        "alertTypeDisplayName": "Enteric Isolation",
+        "alertValueDisplayName": "Yes"
+      },
+      {
+        "alertTypeId": "c02b9efa-efe6-4050-b9b7-bbac8c1501a4",
+        "alertTypeIsActive": true,
+        "alertTypeSortOrder": 8,
+        "alertValueIconPath": "https://cdn.filestackcontent.com/L6mTyOBKTn2qmwomAZFV",
+        "alertValueIsActive": true,
+        "alertTypeMultivalue": false,
+        "alertValueSortOrder": 1,
+        "alertTypeDisplayName": "Fall Risk",
+        "alertValueDisplayName": "Yes"
+      },
+      {
+        "alertTypeId": "243d75b0-9bef-4226-acec-546bb2686191",
+        "alertTypeIsActive": true,
+        "alertTypeSortOrder": 7,
+        "alertValueIconPath": null,
+        "alertValueIsActive": true,
+        "alertTypeMultivalue": true,
+        "alertValueSortOrder": 2,
+        "alertTypeDisplayName": "Isolation Organism",
+        "alertValueDisplayName": "RSV"
+      },
+      {
+        "alertTypeId": "349649fc-b8fa-4857-8918-89461fbc9a76",
+        "alertTypeIsActive": true,
+        "alertTypeSortOrder": 3,
+        "alertValueIconPath": "https://cdn.filestackcontent.com/RPK8VnUMTVS5YvFZvMlc",
+        "alertValueIsActive": true,
+        "alertTypeMultivalue": false,
+        "alertValueSortOrder": 1,
+        "alertTypeDisplayName": "Droplet Isolation",
+        "alertValueDisplayName": "Yes"
+      },
+      {
+        "alertTypeId": "5cc3756f-277d-41da-81af-41ca498b40f1",
+        "alertTypeIsActive": true,
+        "alertTypeSortOrder": 9,
+        "alertValueIconPath": null,
+        "alertValueIsActive": true,
+        "alertTypeMultivalue": false,
+        "alertValueSortOrder": 1,
+        "alertTypeDisplayName": "Telemetry",
+        "alertValueDisplayName": "Yes"
+      },
+      {
+        "alertTypeId": "b31c65e2-ef02-4677-87f4-6651c0abdd1e",
+        "alertTypeIsActive": true,
+        "alertTypeSortOrder": 2,
+        "alertValueIconPath": "https://cdn.filestackcontent.com/7fKhg1krQemM19QYJp45",
+        "alertValueIsActive": true,
+        "alertTypeMultivalue": false,
+        "alertValueSortOrder": 1,
+        "alertTypeDisplayName": "Contact Isolation",
+        "alertValueDisplayName": "Yes"
+      },
+      {
+        "alertTypeId": "243d75b0-9bef-4226-acec-546bb2686191",
+        "alertTypeIsActive": true,
+        "alertTypeSortOrder": 7,
+        "alertValueIconPath": null,
+        "alertValueIsActive": true,
+        "alertTypeMultivalue": true,
+        "alertValueSortOrder": 1,
+        "alertTypeDisplayName": "Isolation Organism",
+        "alertValueDisplayName": "Hepatitis A"
+      },
+      {
+        "alertTypeId": "5c4158c7-ab0c-426b-9baa-a7dbf0c407db",
+        "alertTypeIsActive": true,
+        "alertTypeSortOrder": 10,
+        "alertValueIconPath": null,
+        "alertValueIsActive": true,
+        "alertTypeMultivalue": false,
+        "alertValueSortOrder": 2,
+        "alertTypeDisplayName": "Bariatric Patient",
+        "alertValueDisplayName": "No"
+      }
+    ],
+    "visitLocation": {
+      "homeBed": null,
+      "currentBed": null,
+      "reservedBed": null,
+      "homeDepartment": null,
+      "currentDepartment": {
+        "id": "4b798826-db9b-4802-a0b2-9402ec45a734",
+        "displayName": "XRAY",
+        "departmentType": "SERVICE_LOCATION",
+        "departmentSubType": null
+      },
+      "reservedDepartment": null
+    },
+    "dischargeStatus": null,
+    "visitCareTeamMembers": [],
+    "expectedDischargeTime": "2024-01-20T05:00:00Z",
+    "expectedDischargeTimeIncludesTime": false
+  },
+  "homeBed": null,
+  "patient": {
+    "lastName": "Akers",
+    "firstName": "Adam"
+  },
+  "facility": {
+    "id": "3101e68f-e137-473e-a115-df8f89d0e385",
+    "name": "Grady",
+    "displayCode": null
+  },
+  "queueType": "Order",
+  "otherOrders": {},
+  "reservedBed": null,
+  "currentOrder": {
+    "id": "87c11622-a963-4b65-b1f7-688a12d2cf80",
+    "status": "Scheduled",
+    "appointment": {
+      "duration": 10,
+      "resource": "XRAY1",
+      "scheduledTime": "2023-10-13T20:00:00-04:00",
+      "scheduledTimeIncludesTime": true
+    },
+    "description": "XRay of Right Arm",
+    "orderNumber": "ON_AKERS_20",
+    "orderCreatedTime": "2023-10-13T16:01:00Z",
+    "orderStartedTime": null,
+    "schedulingDelays": [],
+    "orderResultedTime": null,
+    "prepCompletedTime": null,
+    "orderCompletedTime": null,
+    "serviceOrderModality": {
+      "id": "4b3106b2-e9fd-4789-8ca8-023caaa49257",
+      "code": "XRAY",
+      "turnaroundEndField": null,
+      "appointmentTimeoutHours": null
+    }
+  },
+  "currentLocation": "XRAY"
+}
