@@ -17,7 +17,7 @@ Q2- what are the feature of Node.js?
     4- fast excution
     5- large ecosystem
 Q3- what is event loop in Node.js? and how dose it works?
-    nevet loop is a fundamental concept in Node.js that help up to achive asynchronous functionality event it's running on single thread. it put all async operation in the event queue and once that are done then event loop excute it.
+    evet loop is a fundamental concept in Node.js that help up to achive asynchronous functionality even it's running on single thread. it put all async operation in the event queue and once that are done then event loop excute it.
 Q4- what is streams in Node.js? Can you explain their types?
     stream are use continous data flow.
     1- Readable (eg:- fs.createReadeStream)
