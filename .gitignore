@@ -6,12 +6,15 @@
 5.json
 3_appointmentOrder.json
 4_AdmissionOrder.json
+1-Temp.js
+2-Temp.js
+3-Temp.js
 
 # Ignore specific JavaScript file
-0.js
+# 0.js
 
 # Ignore java
-0.java
+# 0.java
 
 # Ignore specific JSON file
 purify.json
