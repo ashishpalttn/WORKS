@@ -35,8 +35,14 @@ Q6- How do you optimise the performance of node application?
 Q7- What is clustring in Node.js? how the scaling application.
     cluster allow a Node application to spawn multiple process by utilizing multiple cores
 Q8 How would you secure node application
-    1-validate use input
+    1-validate user input
     2-HTTPs
     3-authentication and autherisation
     4-use helmet.js for rate limit
     5 protect agains SQL injection
+Q9 What is SQS and its type
+    SQS if fully managed messaging service, there are two types
+    1 Standerd Queue = best for applications that are required high throughput and not need strict ordering 
+    2 FIFO Queue = it strictly send, in the order and 300 per second with batching we can increas it to 3000
+Q10 what is SNS
+    SNS is fully managed and scalable service. it allow us to communicate to across distributed system and decouple the microservices it follow publish/subscribe comunication
