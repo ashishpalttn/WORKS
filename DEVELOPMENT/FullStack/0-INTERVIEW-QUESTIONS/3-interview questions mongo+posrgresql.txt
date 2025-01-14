@@ -1,7 +1,17 @@
 #SQL
-Q1- write a query and find users 
-//Mongo
+Q1- find second highest salary
+    select Max(salary) as second_highest_salary from employee where salary < (select max(salary) from employee )
 
+Q2- retrieve duplicate from a table
+    select email count(*) from employee group by email having count(*)>1 
+
+Q3- find the employee who have salary more then manager
+    select e.name m.name from employee e join empolyee m on e.manager_id = m.id where e.salary> m.salary
+
+Q4 
+
+
+//Mongo
 https://chatgpt.com/share/67718f23-ef18-8007-8fc7-320eab14f25b
 
 Q1- difference between find and findOne?
@@ -20,3 +30,12 @@ Q4- What is gridFS, and how is it used?
     gridFS is a specification for storing and retriveing large size image and video.
 Q5- what is purpose of change stream in MongoDB
     change-stream allow application to listem for real-time changes (insert,update,delete) in database or collection 
+
+    db.collection_name.find();
+    db.collection_name.findOne({name:"Ashish"})
+    
+    db.collection_name.insert({name:'temp'})
+    bd.collection_name.insertMany([{},{}])
+
+    db.collection_name.update({name:"ashish"}, {age:$gt>25})
+    db.collection_name.updateMany({name:''ashish. {age: $gt>25}})
