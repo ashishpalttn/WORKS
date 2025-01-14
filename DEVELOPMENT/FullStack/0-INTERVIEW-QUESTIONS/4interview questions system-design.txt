@@ -4,3 +4,7 @@ Q1- what is system architectur and its type
     1- monolithic = single tired and titly coupled
     2- microservices = application divided into loosely coupled services, each service run independly
     3- event-driven = component comunicate by producing and consuming events
+
+Q2- design schema for a mock exam
+
+Q3- design schema enquery form with multi-phone no. and multi email id
