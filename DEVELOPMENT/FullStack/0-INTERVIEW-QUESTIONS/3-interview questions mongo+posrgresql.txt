@@ -1,5 +1,6 @@
 #SQL
 Q1- write a query and find users 
+//Mongo
 
 https://chatgpt.com/share/67718f23-ef18-8007-8fc7-320eab14f25b
 
