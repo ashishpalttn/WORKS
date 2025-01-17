@@ -23,12 +23,26 @@ const list = [
         if(!isStateExist){
             isCountryExist.state.push({stateName:state, city:[]})
         }
-        const stateObj = isCountryExist.state.find((item) => item.stateName === state);
-        if (!stateObj.city.includes(city)) {
-          stateObj.city.push(city);
-        }
 
         return acc
   },[]) 
 
   console.log(newList)
+
+
+//output
+//   [
+//     {
+//       "countryName": "India",
+//       "state": [
+//         {
+//           "stateName": "Maharastra",
+//           "city": ["Mumbai", "Pune"]
+//         },
+//         {
+//           "stateName": "Rajasthan",
+//           "city": ["Jaipur", "Kota"]
+//         }
+//       ]
+//     }
+//   ]
