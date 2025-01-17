@@ -1,3 +1,5 @@
+node_modules
+
 # Ignore specific JSON files
 1_visit.json
 2_order.json
