@@ -31,7 +31,7 @@ Q6- How do you optimise the performance of node application?
     2- use clusting
     3- use cashing
     4- limit middleware use
-    5- monitor performance(New Relic, PM2)
+    5- monitor performance(elasting APM, New Relic, PM2)
 Q7- What is clustring in Node.js? how the scaling application.
     cluster allow a Node application to spawn multiple process by utilizing multiple cores
 Q8 How would you secure node application
