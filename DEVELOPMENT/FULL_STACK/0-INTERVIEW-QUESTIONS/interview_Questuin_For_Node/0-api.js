@@ -1,12 +1,21 @@
-const express = require("express")
-const bodyParser = require('body-parser')
-const app = express();
+//Q1- create a api using express
+//Q2- how you can add rate limit
 
-app.use(bodyParser.json())
-app.get('/getData', (req, res)=>{
-    res.status(200).json("get api called")
+const express = require('express')
+const rateLimit = require('express-rate-limit')
+const app = express()
+
+const limiter = rateLimit({
+    windowMs : 1*60*1000,
+    max:2,
+    mwssage: "TooMany request"
 })
 
-app.listen(5500, ()=>{
-    console.log("server is running on port 5500")
+// app.use('/getData', limiter);
+app.get('/getData', limiter, (req, res, next)=>{
+    res.status(200).json("get Api called")
+})
+
+app.listen(6000, ()=>{
+    console.log("app is running on port 6000")
 })

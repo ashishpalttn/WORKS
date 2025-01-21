@@ -1,17 +1,18 @@
-const findFirstNonRepeated = (str) =>{
-const strArr = str.split('').reduce((acc, curr)=>{
-        if(!acc[curr]){
-            acc[curr] = 1;
-        }
-        else{
-            acc[curr] +=1;
-        }
-        return acc
-},{})
+const express = require('express')
+const rateLimit = require('express-rate-limit')
+const app = express()
 
-const keys = Object.keys(strArr)
-keys.sort()
-console.log(strArr[keys[0]])
-}
+const limiter = rateLimit({
+    windowMs : 1*60*1000,
+    max:2,
+    mwssage: "TooMany request"
+})
 
-findFirstNonRepeated("abacabad")
+// app.use('/getData', limiter);
+app.get('/getData' ,limiter ,(req, res, next)=>{
+    res.status(200).json("get Api called")
+})
+
+app.listen(6000, ()=>{
+    console.log("app is running on port 6000")
+})
