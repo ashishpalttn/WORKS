@@ -1,0 +1,21 @@
+1-GNOME (UI)
+2-Terminal (it is a emulater for bash)
+3-Bash (it is a interpreter between user and ios)
+4-OS (ubantu , based on debian)
+5-kernal (Linux)
+
+
+
+Layer Summary
+Layer	            Examples	                        Role
+1. Hardware	        CPU, RAM, SSD, NIC	                Physical foundation of the system
+2. Firmware	        BIOS, device firmware	            Initializes and configures hardware
+3. Kernel	        Linux Kernel, NT Kernel	            Manages hardware resources
+4. OS	            Windows, macOS, Linux	            Provides services to run applications
+5. Middleware	    Databases      (postgreSQL),                                  
+                    web servers    (nginX)	            Bridges OS and applications
+                    Message Broker (kafka)    
+                    APIs & API gateway ,  
+6. Runtime	        JVM, Node.js, Python Interpreter	Executes application code
+7. Applications	    Browsers, games, enterprise apps	Performs specific tasks for users
+8. User Layer	    Keyboard, monitor, CLI/GUI	        User interaction
