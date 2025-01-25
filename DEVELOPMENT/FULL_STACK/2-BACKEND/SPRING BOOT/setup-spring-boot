@@ -1,0 +1,10 @@
+1- Install Prerequisties
+        Java (JDK 17 or heigh)
+        gradle
+        postgrSQL
+        VS Code with (Spring boot Extention Pack and java Extention Pack)
+        
+2  Gradle Commands
+        Build: ./gradlew build
+        Run: ./gradlew bootRun
+        Clean: ./gradlew clean

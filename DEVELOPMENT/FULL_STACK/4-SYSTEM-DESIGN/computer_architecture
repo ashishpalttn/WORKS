@@ -1,8 +1,10 @@
 1-GNOME (UI)
 2-Terminal (it is a emulater for bash)
-3-Bash (it is a interpreter between user and ios)
-4-OS (ubantu , based on debian)
+3-Bash (it is a interpreter between user and ios) => .bashrc file keep information of bash shell
+4-OS (ubantu , based on debian) => /etc file keep system's setting eg- users and password
 5-kernal (Linux)
+
+
 
 
 
@@ -19,3 +21,4 @@ Layer	            Examples	                        Role
 6. Runtime	        JVM, Node.js, Python Interpreter	Executes application code
 7. Applications	    Browsers, games, enterprise apps	Performs specific tasks for users
 8. User Layer	    Keyboard, monitor, CLI/GUI	        User interaction
+
