@@ -2,8 +2,8 @@ Tools Stack by Enterprise Need
 Here’s a sample stack for an enterprise-level setup:
 
 Feature	Preferred Tools
-API Gateway     	Kong, Apigee, AWS API Gateway, NGINX, Traefik
-Caching	Redis,      Memcached, AWS CloudFront, Varnish
-Authentication	    Keycloak, Auth0, Okta, AWS Cognito
-Rate Limiting	    Kong, Apigee, NGINX with Redis, Cloudflare
-Logging	            ELK Stack, Fluentd, Grafana Loki, Datadog
+API Gateway     	AWS API Gateway, NGINX,              Traefik, Kong, Apigee 
+Caching         	Redis, AWS CloudFront,               Varnish, Memcached, filestack 
+Authentication	    AWS Cognito,                         Keycloak, Auth0, Okta 
+Rate Limiting	    Cloudflare,    NGINX with Redis,     Kong, Apigee
+Logging	            Datadog,                             ELK Stack, Fluentd, Grafana Loki
