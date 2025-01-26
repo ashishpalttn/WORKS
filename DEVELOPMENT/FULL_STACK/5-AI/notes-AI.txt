@@ -2,8 +2,11 @@ Sagemaker-AWS   = create models for ur data
 DATA-IQ         = it's give data models for 
 Matillion       = create pipeline for table
 Snow-flak       = store data and use AI models
+Flask           = used to process data (u can use in data in flask or Sagemaker)
 
-Allama allow us to use AI models on local system
+
+
+#Allama allow us to use AI models on local system
 
 step-1 download ollama using command line -> https://ollama.com/download
 step-2 Models-> download model -> using command line (eg llama)
