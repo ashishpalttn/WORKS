@@ -1,0 +1,11 @@
+Sagemaker-AWS   = create models for ur data
+DATA-IQ         = it's give data models for 
+Matillion       = create pipeline for table
+Snow-flak       = store data and use AI models
+
+Allama allow us to use AI models on local system
+
+step-1 download ollama using command line -> https://ollama.com/download
+step-2 Models-> download model -> using command line (eg llama)
+step-3 start    = ollama run llama3.2:3b
+step-4 for exit = /bye  
