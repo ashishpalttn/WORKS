@@ -10,6 +10,7 @@
      -CMO
     3-CTO->Tech_Team
     4-Data_Analyst_Team-> Data-Engineering team->Data-Quality->Data-governance team
+      Business Analist team (jaspersoft and astrato)
     5-DevOps team
     6-Service_Now Team
     7-Marketing_Team 

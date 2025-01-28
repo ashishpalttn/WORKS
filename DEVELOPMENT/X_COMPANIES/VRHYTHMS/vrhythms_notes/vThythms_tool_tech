@@ -1,0 +1,50 @@
+1- Astrato = for Business analyst too
+2- Twilio = for text message and call
+
+Technologies
+        Redux Toolkit = for state management of app
+        React.js
+        TS
+        JS
+        taiwind
+        java
+        Spring Boot (Hibernate)
+        PostgreSQL
+        AWS(SaaI, SQS)
+        nginX
+        docker
+
+
+React Liberary
+        React.js (font,theme,language,redux,route,axios,taiwind.css, mui,datadog)
+        MUI (dataGrid)
+        Worker-Timer = for handling unfocus browser window
+        React-csv = for import/Export csv file
+        React-router-dom
+        DataDog = for analysing user activity
+
+
+Spring boot Library
+        Hibernate =(controller, service, repository, entity, Model, dto)
+        JPA
+        Postgres SQL
+        SQS ANS AWS
+        JUNIt Intigration testing
+        modelMapper = implementation 'org.modelmapper:modelmapper:3.1.1'
+        Twillio = for message and phone call
+
+Tools
+        Jira
+        Figma
+        Bitbucket
+        Lucid Chart and draw.io
+        Docker = Docker Desktop
+        Postman (see example in )
+        Visual Studio Code (with extension= git lens, thunder, folder diff)
+        DBeaver
+        Soursetree
+        Slack
+        IntelliJ IDEA
+        Astrato = for business analysis
+        Snow-flak = for data storage and AI
+            
