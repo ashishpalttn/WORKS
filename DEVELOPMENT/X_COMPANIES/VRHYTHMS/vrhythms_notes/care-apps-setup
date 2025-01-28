@@ -1,0 +1,17 @@
+To test/configure the display boards:
+    step 1-  In Care Operations make sure you have a Board Template and Display Board configured. I normally choose a Process Board type and choose some of the order queues.
+
+    step 2-  Make sure Care Apps is running
+
+    step 3-  There is a launch script you need to run. This will open up your browser and redirect to the page which will show the board. This script passes in an API key to authenticate as a Grady user, so you'll be on Grady's URL here. Depending on if you are on a Mac or Windows machine you'll do a different script. We're all on Mac.
+    a-  launch_display_mac.sh
+    b-  launch_display.ps1 - will need PowerShell if on Windows
+
+step 4-  Browser should open and you'll see a warning that your Display Requires Configuration. Leave this browser tab open.
+
+step 5-  In a different tab/window, log into the Care Displays product via the Care Logistics URL as normal. Go to Care Displays 
+--> Device Configuration. You should see your device entry there. It'll be Inactive without a Content Option selected
+
+step 6-   Edit your entry to choose a Content Option and set to Active. You can Preview at this time if wanted
+
+step 7-   Go back to your other browser tab (Grady URL) and it should refresh to show the queues.
