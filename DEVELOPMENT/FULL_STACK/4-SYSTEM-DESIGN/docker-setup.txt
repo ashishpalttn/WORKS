@@ -1,0 +1,41 @@
+##Prerequesties............................................
+Step1- install Docker and Docker Compose
+Step2- create Dockerfile
+step3- create docker-compose.yml file
+
+## Docker internal structure..........................................
+Docker ->container-> Image ->Dockerfile
+Docker-compose = it manager to manage multiple docker container by docker-compose.yml
+
+##docker commands:........................................................
+docker images = to find list of images
+docker rmi <IMAGE_ID> = remove image
+
+##Docoker Compose commands................
+docker-compose up --build = run first time to build container
+docker-compose up
+docker-compose down
+
+
+
+
+##Docker-Hub.....................................................................
+username = terminal77788
+Email    = terminal777888@gmail.com
+
+##steps to push image to docker hub using terminal..............
+step-1 docker login =  connect your local system to dockerhub docker login
+step-2 tag imgage to docker hub username = docker tag my_react_app  terminal777888/react-app:latest
+        note 1-terminal777888 = it is username of dockerhub
+             2-my_react_app   = it is local docker image
+             3-react-app = new name
+
+step-3 push it = docker push terminal777888/react-app:latest
+
+#step to pull docker image on another machine
+step1 = docker login = connect DockerHub to another machine
+step2 = docker pull ashish123/my-react-app:latest = pull ashish123/my-react-app repository
+
+
+
+
