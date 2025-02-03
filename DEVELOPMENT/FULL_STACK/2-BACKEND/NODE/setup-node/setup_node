@@ -12,6 +12,6 @@ load balancer => nginx
 loging & Monitoring  frontand => sentry
 loging & monitoring backend  => PM2
 alert service => ?
-messaging queue = ?
+messaging queue = sqs and sns
 
-CI/CD => jenkins/github-actions
+CI/CD => jenkins or github-actions or bitbucket pipelines 
