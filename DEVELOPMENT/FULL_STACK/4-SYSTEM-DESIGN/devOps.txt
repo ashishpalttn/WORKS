@@ -4,6 +4,7 @@
 
 
 #Tool.......................................
+AWS
 Docker ----> DockerHub 
 gateway----->nginx
 CI/CD--------> jenkins, git action, bitbucket pipelines
