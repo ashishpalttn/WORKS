@@ -1,15 +1,10 @@
-All tech and tool for fullstack that I know 
-
 #Prerequesties for a machine to work........
-1-VS-Code
-2- git -------> Github-----> GitKraken Dasktop
-3-Node.js
-4-Gateway-> nginx ->Kong -> Konga Deshboard
 
 
 
 
 #Tool.......................................
 Docker ----> DockerHub 
-jenkins, git action, bitbucket pipelines
+gateway----->nginx
+CI/CD--------> jenkins, git action, bitbucket pipelines
 
