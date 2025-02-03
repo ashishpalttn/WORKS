@@ -1,3 +1,6 @@
+https://chatgpt.com/share/679a6326-cb10-800a-b8ac-c5b92cd415b0
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 // console.log('Start');
 // setTimeout(() => {
 //  console.log('Timeout');
@@ -22,6 +25,11 @@ const promise1 = new Promise((resolve, reject) => {
    
   const promise2 = promise1.then(res => {
     console.log(res)
+    // return 'promise2'
+  })
+
+  promise2.then(res=>{
+    console.log('promise2 resolve with res', res )
   })
    
   console.log('promise1:', promise1);

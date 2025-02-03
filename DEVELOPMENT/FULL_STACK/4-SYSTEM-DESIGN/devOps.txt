@@ -1,0 +1,15 @@
+All tech and tool for fullstack that I know 
+
+#Prerequesties for a machine to work........
+VS-Code
+git -------> Github-----> GitKraken Dasktop
+Node.js
+Gateway-> nginx ->Kong -> Konga Deshboard
+
+
+
+
+#Tool.......................................
+Docker ----> DockerHub 
+namecheap
+
