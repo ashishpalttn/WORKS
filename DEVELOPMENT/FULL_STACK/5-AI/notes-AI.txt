@@ -1,3 +1,15 @@
+#Prerequesties
+    Annaconda->Python->jupitor note book
+    database
+
+liberary:-
+    sklearn
+    panda
+    numpy
+    matplot
+    pyCarrot
+
+
 Sagemaker-AWS   = create models for ur data
 DATA-IQ         = it's give data models for 
 Matillion       = create pipeline for table
