@@ -1,0 +1,3 @@
+Reverse a word in line without using inbuilt in methods
+EX- input - BMS Developer Interview in Hyderabad
+     output-SMB repoleveD weivretni ni dabaredyH

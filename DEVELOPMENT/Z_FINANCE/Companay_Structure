@@ -7,21 +7,25 @@
 #Required team for product development and run
     1-CEO
     2-COO
+     -CMO
     3-CTO->Tech_Team
-    4-Data_Analyst_Team
-    5-Marketing_Team 
-    6-ProductDesign Team
-    7-UI-Design team
-    8-Testing_Team
-    9-Social Marketing Team
-    10- Finance Team -> CA ->SAP Lab
-    11- Human Resourse Team
-    12- Legal Team
+    4-Data_Analyst_Team-> Data-Engineering team->Data-Quality->Data-governance team
+      Business Analist team (jaspersoft and astrato)
+    5-DevOps team
+    6-Service_Now Team
+    7-Marketing_Team 
+    8-ProductDesign Team
+    9-UI-Design team
+    10-Testing_Team
+    11-Social Marketing Team
+    12- Finance Team -> CA ->SAP Lab
+    13- Human Resourse Team
+    14- Legal Team
 
-    13 Manufectureing Team
-    14-Quality_Assurance Team
-    15-Delivery Partners
-    16-Wearhouse-Team
+    15- Manufectureing Team
+    16-Quality_Assurance Team
+    17-Delivery Partners
+    18-Wearhouse-Team
 
 # Others
 Catering Partner
@@ -29,5 +33,9 @@ Insurance Partner
 Transport Partner
 Security Partner
 Technical gadgets PArtner (eg Laptop, bag)
+
+
+# Jargons
+
 
   
