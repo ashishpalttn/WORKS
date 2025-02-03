@@ -37,5 +37,7 @@ step1 = docker login = connect DockerHub to another machine
 step2 = docker pull ashish123/my-react-app:latest = pull ashish123/my-react-app repository
 
 
+##Notes.....................................
+1-if you want file hot reloading then use volume mount instead of images 
 
 

@@ -26,17 +26,34 @@
 // }
 // console.log("longest str", longestStr);
 
-// {
-//     var a=5
-//     }
-//     console.log(a);
-//     {
-//     let a=5;
-//     }
-//     console.log(a)
-//     {
-//     const a=5;
-//     }
-//     console.log(a);
-     
 
+
+// console.log("start outer")
+
+// async function fetchData() {
+//     console.log("start")
+
+//     try {
+//         console.log("try");
+//         let result = await Promise.reject('Request Failed');
+    
+//     } catch (error) {
+//         console.log('Caught:', error);
+//     }
+//     console.log("End")
+// }
+// console.log("End - outer")
+
+// fetchData();
+
+// console.log("End - last..............")
+
+
+
+
+const str = "Find the longest non repeating sub string";
+const arr = str.split(' ');
+const newarr = arr. map(item=>{
+   return item.split('').reverse().join('')
+})
+console.log(newarr)
