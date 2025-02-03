@@ -8,8 +8,10 @@ Docker ->container-> Image ->Dockerfile
 Docker-compose = it manager to manage multiple docker container by docker-compose.yml
 
 ##docker commands:........................................................
-docker images = to find list of images
-docker rmi <IMAGE_ID> = remove image
+docker images              = to find list of images
+docker rmi <IMAGE_ID>      = remove image
+docker ps                  = check running container
+docker stop <container ID> = stop container
 
 ##Docoker Compose commands................
 docker-compose up --build = run first time to build container
