@@ -5,7 +5,9 @@
 
 #Tool.......................................
 AWS
-Docker ----> DockerHub 
+nameCheap
 gateway----->nginx
 CI/CD--------> jenkins, git action, bitbucket pipelines
+DataDog
+Docker ----> DockerHub 
 
