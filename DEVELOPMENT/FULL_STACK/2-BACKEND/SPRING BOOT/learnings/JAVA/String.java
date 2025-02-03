@@ -1,3 +1,4 @@
+package learnings.JAVA;
 int digit = Character.getNumericValue(str.charAt(0));
 int number = Integer.parseInt("12345");
 Character.isDisit()

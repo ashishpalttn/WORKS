@@ -1,3 +1,4 @@
+package learnings;
 Serialaizable =  it is a maker interface  that indicates that a class can be serialized, which means  its objects can be convert into byte stream. 
                            
 

@@ -1,3 +1,4 @@
+package learnings;
 1- @SpringBootApplication = This is main entry point for a Spring Boot Application.
 
 2- @RestController = Used to define a RESTful controller
