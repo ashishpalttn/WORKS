@@ -6,8 +6,9 @@
 #Tool.......................................
 AWS
 nameCheap
-gateway----->nginx
 CI/CD--------> jenkins, git action, bitbucket pipelines
+gateway----->nginx
+jusper and Astrato
 DataDog
 Docker ----> DockerHub 
 
