@@ -6,8 +6,10 @@
 
 
 etc        = it system configration file
-apt        =  it os manager
 .bashrc    = it is configration file of bash shell (Terminal)
+apt        =  package manager
+systemctl  =  service manager 
+
 
 
 
