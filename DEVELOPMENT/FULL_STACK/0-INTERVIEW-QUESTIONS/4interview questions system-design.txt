@@ -1,3 +1,5 @@
+https://www.linkedin.com/posts/rajatgajbhiye_if-anybody-is-saying-system-design-is-overrated-activity-7288909352944459776-7S6A?utm_source=share&utm_medium=member_desktop
+
 Q1- what is system architectur and its type
     system architecture is blueprint that defines structure, behaviour and more view of system
     types:-

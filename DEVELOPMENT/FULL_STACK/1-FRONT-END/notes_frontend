@@ -1,0 +1,16 @@
+#Prerequesties
+VS-coupled
+Node.js-> npm or yarn
+
+
+#React
+Step1 - create react app.
+step2 -add below libreary based on requirement
+            Axios
+            React_router_Dom
+            Tailwind_CSS
+            MUI
+            Redux
+            Datadog
+
+#Next if SSR required then use Next.js
