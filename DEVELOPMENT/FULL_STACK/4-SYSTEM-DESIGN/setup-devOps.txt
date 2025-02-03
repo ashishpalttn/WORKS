@@ -4,11 +4,11 @@
 
 
 #Tool.......................................
-AWS
-nameCheap
-CI/CD--------> jenkins, git action, bitbucket pipelines
-gateway----->nginx
-jusper and Astrato
-DataDog
-Docker ----> DockerHub 
+1-AWS
+2-nameCheap
+3-CI/CD--------> jenkins, git action, bitbucket pipelines
+4-gateway----->nginx
+5-DataDog
+6-Docker ----> DockerHub 
+7-jusper and Astrato
 
