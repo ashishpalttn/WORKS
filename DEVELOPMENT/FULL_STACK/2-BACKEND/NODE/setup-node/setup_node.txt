@@ -1,0 +1,24 @@
+#Prerequesties
+1-VS-code
+2-node.js
+3-git
+4-database-> (mongo, compass) or (postgressQL , DBeaver) 
+5-docker
+
+
+step1- create node app
+step2- install dependency based on requirment
+            1-express
+            2-ORM (sequelize or mongoose) 
+            3-Cookies-parser
+            4-DotENV
+            5-nodemoon
+
+#Notes
+load balancer => nginx
+loging & Monitoring  frontand => sentry
+loging & monitoring backend  => PM2
+alert service => sns
+messaging queue = sqs
+
+CI/CD => jenkins or github-actions or bitbucket pipelines 

@@ -1,6 +1,8 @@
 #Prerequesties
 VS-coupled
 Node.js-> npm or yarn
+git-> github
+docker-> docker
 
 
 #React

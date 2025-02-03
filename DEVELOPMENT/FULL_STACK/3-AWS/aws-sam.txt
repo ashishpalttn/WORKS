@@ -1,3 +1,5 @@
+used for create serverless functions
+
 aws iam list-users
 
 sam init
