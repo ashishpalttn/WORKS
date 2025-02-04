@@ -1,0 +1,36 @@
+#interview Questions
+https://chatgpt.com/share/67a181bb-6f8c-800a-8885-3fef667e876a 
+ 
+ #Prerequesties
+ step1-  install nginx
+ step2-   cd /etc -> nginx 
+
+
+ #important file/dir of nginx
+            nginx.conf, 
+            sites-available, 
+            site-enabled
+
+# commands
+sudo nginx -t                   = test nginx
+sudo systemctl reload nginx     = reload
+sudo systemctl restart nginx    = restart
+sudo systemctl status nginx     =
+sudo systemctl stop nginx       = stop
+sudo systemctl start nginx      =start
+sudo tail -f /var/log/nginx/error.log = log error
+sudo tail -f /var/log/nginx/error.log = log access
+
+#To apply changes:-
+Step1- sudo nginx -t                   = test nginx
+Step2- sudo systemctl reload nginx     = reload (it will not stop active connection)
+
+
+
+#benifit of gateway
+1-simplify the urls
+2-Rate limit
+3-Loging
+4-Security
+5-Load Balancing
+6-Centerlise Authentication using Identity Provider
