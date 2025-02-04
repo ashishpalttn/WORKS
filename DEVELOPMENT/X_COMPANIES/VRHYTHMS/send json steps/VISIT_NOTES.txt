@@ -1,0 +1,8 @@
+admit type icon(Observation Patienout) => send visit with OBS,OUT, IN admitType  "admitType": "OUT",
+
+
+DischargeStatus:
+    POTENTIAL
+    ORDERED
+    READY
+    DISCHARGE_ORDER_WITH_DELAY
