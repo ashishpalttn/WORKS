@@ -34,3 +34,7 @@ Step2- sudo systemctl reload nginx     = reload (it will not stop active connect
 4-Security
 5-Load Balancing
 6-Centerlise Authentication using Identity Provider
+
+
+#Note
+sites-available and site-enabled always edit in site available
