@@ -13,3 +13,16 @@ Step 3 => Add some sample barriers with these messages:
 resources/messages/grady/Adam_Akers/11-DC-Barrier.json
 resources/messages/grady/Adam_Akers/12-Physician-Barrier.json
 resources/messages/grady/Adam_Akers/13-Physician-Barrier_update.json
+
+
+-------------------------------------------------------------------------------------------------------------------
+ # Resolve Barrier
+ Send a Barrier Json (11-DC-Barrier.json) with active false
+
+   "barrier": {
+        .
+        .
+      "escalatedOn": "",
+      "active": false,
+      "resolvedOn": "2025-02-05T04:24:50-04:00", // current time
+    }
