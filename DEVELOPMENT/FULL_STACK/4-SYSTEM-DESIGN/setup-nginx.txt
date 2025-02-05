@@ -35,3 +35,8 @@ Step2- sudo systemctl reload nginx     = reload (it will not stop active connect
 5-cache -> [client level] -> [CDN level] -> [gatelevel] -> [microservice leve] -> [Database cache]
 5-Security --> rate limit token Authentication
 6-Load Balancing
+
+
+#Notes
+impotant file of nginx => 
+sites-available and sites-enabled = always update in sites-available
