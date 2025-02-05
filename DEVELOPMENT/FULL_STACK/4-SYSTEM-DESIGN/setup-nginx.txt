@@ -28,13 +28,10 @@ Step2- sudo systemctl reload nginx     = reload (it will not stop active connect
 
 
 #benifit of gateway
-1-simplify the urls
-2-Rate limit
-3-Loging
-4-Security
-5-Load Balancing
-6-Centerlise Authentication using Identity Provider
-
-
-#Note
-sites-available and site-enabled always edit in site available
+1-simplify the urls      =>        use iginx
+2-Rate limit             =>        use at nginx and microservice
+3-Loging & Monitoring    =>        use combine (hybrid) nginx and microservice
+4-Centerlise Authentication using Identity Provider => use combine (hybrid) nginx and authproxy (with identity provider like AWS coginto)
+5-cache -> [client level] -> [CDN level] -> [gatelevel] -> [microservice leve] -> [Database cache]
+5-Security --> rate limit token Authentication
+6-Load Balancing
