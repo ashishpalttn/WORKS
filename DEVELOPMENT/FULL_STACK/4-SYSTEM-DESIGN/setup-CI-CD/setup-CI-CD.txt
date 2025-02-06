@@ -1,0 +1,4 @@
+//1- jenkin = it ia a open sourse
+//2- GitHub Actions
+//3- Bitbucket pipelines 
+
