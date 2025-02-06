@@ -1,0 +1,16 @@
+#  Pipeline to run integration tests before code merge
+
+image: gradle:7.3.1-jdk17-alpine
+
+pipelines:
+  pull-requests:
+    '**':
+      - step:
+          services:
+            - docker
+          caches:
+            - gradle
+          script:
+            - export TESTCONTAINERS_RYUK_DISABLED=true
+            - export INTEGRATION_TEST_WAIT_TIME=600
+            - ./gradlew :worker:integrationTest
