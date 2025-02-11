@@ -8,9 +8,11 @@ Q2- retrieve duplicate from a table
 Q3- find the employee who have salary more then manager
     select e.name m.name from employee e join empolyee m on e.manager_id = m.id where e.salary> m.salary
 
-Q4 find top 5 highest salary employee
+Q4- find top 5 highest salary employee
     select * from employee orderd by salary desc limit 5
 
+Q5- left Join
+    select column_names from tableA left join table2 on table1.id = table2.id
 
 //Mongo
 https://chatgpt.com/share/67718f23-ef18-8007-8fc7-320eab14f25b
