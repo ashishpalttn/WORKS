@@ -1,0 +1,63 @@
+//https://chatgpt.com/share/67ac0c44-6520-800a-b7b7-84e24907844e
+
+
+Beginner Level:
+What is the difference between var, let, and const?
+What are the different data types in JavaScript?
+Explain the difference between == and ===.
+What is the difference between null and undefined?
+What is the purpose of the typeof operator?
+What are JavaScript closures? Provide an example.
+Explain hoisting in JavaScript with an example.
+What is the difference between function declaration and function expression?
+What is the this keyword in JavaScript? How does it behave in different contexts?
+What is an IIFE (Immediately Invoked Function Expression)? Why is it used?
+Intermediate Level:
+
+
+What are arrow functions, and how do they differ from regular functions?
+What is event delegation? How does it work?
+Explain the difference between shallow copy and deep copy in JavaScript.
+What is the event loop in JavaScript, and how does it work?
+Explain how JavaScript handles asynchronous programming (callbacks, promises, async/await).
+What is a prototype in JavaScript? How does prototypal inheritance work?
+What are JavaScript promises? How do .then(), .catch(), and .finally() work?
+Explain setTimeout and setInterval. What will happen if the delay is set to 0ms?
+What is destructuring in JavaScript? Provide examples for array and object destructuring.
+What are default parameters in JavaScript functions? How do they work?
+Advanced Level:
+
+What is the difference between synchronous and asynchronous execution in JavaScript?
+What are generators in JavaScript? How do they differ from regular functions?
+How does JavaScript handle memory management and garbage collection?
+What is the difference between call, apply, and bind methods in JavaScript?
+How does debouncing and throttling work in JavaScript? Provide an example.
+What are weak maps and weak sets in JavaScript? How are they different from regular maps and sets?
+Explain the concept of currying in JavaScript. Provide an example.
+What is the difference between deep cloning and shallow cloning in JavaScript?
+What is the significance of Object.freeze(), Object.seal(), and Object.preventExtensions()?
+Explain how to implement a polyfill for Array.prototype.map() or Promise.all().
+Coding-Based Questions:
+
+Reverse a string without using built-in functions.
+Find the first non-repeating character in a string.
+Write a function to check if two arrays are equal.
+Write a function to flatten a nested array.
+Implement a function to check if a number is prime.
+Write a function to remove duplicate values from an array.
+Implement a function that deep clones an object.
+Write a function to find the longest substring without repeating characters.
+Find the maximum occurring character in a string.
+Implement a function to check if a given string is a palindrome.
+System Design & Conceptual Questions:
+
+How does JavaScript handle concurrency and multithreading?
+Explain how front-end performance can be optimized in JavaScript.
+What are Web Workers, and how do they improve performance?
+Explain microtasks and macrotasks in the JavaScript event loop.
+How do modern JavaScript frameworks like React, Vue, and Angular optimize rendering?
+How do you handle memory leaks in JavaScript applications?
+Explain the importance of closures in JavaScript and real-world use cases.
+How does JavaScript handle floating-point precision issues?
+Explain how the new keyword works in JavaScript.
+What are service workers, and how do they enhance PWA performance
