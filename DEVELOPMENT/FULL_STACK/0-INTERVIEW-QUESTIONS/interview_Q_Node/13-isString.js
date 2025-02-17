@@ -1,4 +1,4 @@
-// is pure strring or not
+// is pure string or not
 
 const isString = (input) => {
     const arr = input.split('')
