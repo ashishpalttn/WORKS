@@ -13,6 +13,5 @@ return (
         {children}
     </CounterContext.Provider>
 )
-export const CounterConsumer = CounterContext.Consumer
- export default CounterContext
 }
+export const CounterConsumer = CounterContext.Consumer
