@@ -1,2 +1,14 @@
-To send a order in "Need bed Assignment" = visit-> admitionOrder.
-2 - before send reserve bed create a Bed request Sourse. Location->Bed Request Sourse
+To send a order in "Need bed Assignment" = visit-> admitionOrder(2a-Order-IntentToAdmitOrder.json).
+2 - add thes value to send order :-
+     "bedRequest": {
+    "bedRequestState": "PENDING",
+    "type": "ADMIT",         //importent
+    "status": "ORDERED",     //importent
+    "bedType": "Stepdown",
+    "unitType": "UT1",
+    "bedRequestSource": "ED",
+    "bedRequestNotes": "This patient broke their leg jumping on a pogo stick.",
+    "careLevelRequested": "",
+    "unitTransfer": "",
+    "estimatedTransferTime": "",
+    "cancelled": ""
