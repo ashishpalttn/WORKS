@@ -43,3 +43,26 @@ const promise1 = new Promise((resolve, reject) => {
 
 
 //3/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+console.log("start outer")
+
+async function fetchData() {
+    console.log("start")
+
+    try {
+        console.log("try");
+        let result = await Promise.reject('Request Failed');
+    
+    } catch (error) {
+        console.log('Caught:', error);
+    }
+    console.log("End")
+}
+console.log("End - outer")
+
+fetchData();
+
+console.log("End - last..............")
+
+
