@@ -1,33 +1,19 @@
 Emirates NBD Questions :
 
 1. Why Node js is popular
-
 2. Is javascript async or sync ?
-
 3. How Nodejs handles non blocking async ops ?
-
 4. What is resultant code of typescript converted to js
-
 5. How js is configured in a project
-
 6. Microtask vs macrotask
-
 7. Scopes
-
 8. Security mechanisms
-
 9. Security practices in code
-
 10. Design patterns in javascript
-
 11. Coding task to print console log with 1 sec gap where console logic is not inside function
-
 12. Find recurrings in an array of objects and give count
-
 13. React prop drilling
-
 14. Redux how it works
-
 15. How context works
 
 
