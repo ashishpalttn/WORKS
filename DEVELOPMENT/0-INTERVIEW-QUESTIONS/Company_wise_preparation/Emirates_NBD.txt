@@ -1,0 +1,46 @@
+Here’s a structured list of interview questions based on the topics mentioned in your overview:
+
+Node.js (Express.js & LoopBack)
+    1-What are the key differences between Express.js and LoopBack?
+    2-How do you ensure security in a Node.js application?
+    3-What are the best practices for handling authentication in Node.js using OAuth and JWT?
+    4-How does SSO authentication work in a microservices architecture?
+    5-Can you explain request prioritization in Node.js queues?
+    6-How do micro and macro task queues work in Node.js?
+    7-Explain the event loop in Node.js and how it handles asynchronous operations.
+    8-What are streams in Node.js, and how do they improve performance?
+
+JavaScript (ES6 & TypeScript)
+    1-What are the key ES6 features that improve JavaScript development?
+    2-Explain the difference between let, const, and var.
+    3-What is TypeScript, and how does it improve JavaScript development?
+    4-What is the difference between TypeScript interfaces and types?
+    5-How do you implement and use interfaces in TypeScript?
+
+React.js & Redux Thunk
+    1-What are the core principles of the React API?
+    2-How do you manage state in React applications using Redux Thunk?
+    3-What are the advantages of using Redux Thunk over other middleware solutions?
+    4-How do you handle side effects in a React-Redux application?
+    5-How do you optimize performance in a React application?
+
+SOLID Principles & Microservices
+    1-What are the SOLID principles, and how do they apply to JavaScript and Node.js?
+    2-How do microservices improve application scalability and maintainability?
+    3-What are the key security concerns when implementing microservices?
+    4-How does service discovery work in a microservices architecture?
+
+Programming Challenges (Strings & Arrays)
+    1-How would you find the first non-repeating character in a string?
+    2-Given an array of numbers, find two numbers that sum up to a given target.
+    3-How do you reverse a string without using built-in functions?
+    4-How do you find the longest substring without repeating characters?
+    5-Implement a function to check if two strings are anagrams.
+    6-Given a rotated sorted array, find the index of a given element.
+
+Unit Testing (Frontend & Backend)
+    1-How do you write unit tests for a React component?
+    2-What are the best practices for testing an Express.js API?
+    3-How do you mock API requests in Jest for frontend testing?
+    4-How do you use Supertest to test Node.js APIs?
+    5-What is the difference between unit testing, integration testing, and end-to-end testing?

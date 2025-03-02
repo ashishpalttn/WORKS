@@ -1,0 +1,17 @@
+ Spring Boot vs. Node.js Security: What’s Built-in?
+✅ Spring Boot Security Features (Default) vs. ❌ Node.js (Manual Implementation Required)
+Security Feature	Spring Boot (Default)	Node.js (Express/Nest.js)
+Authentication & Authorization	✅ Spring Security handles user auth with session/JWT, OAuth2, and LDAP out-of-the-box	❌ Must implement JWT/OAuth2 manually using libraries (passport.js, jsonwebtoken)
+Role-Based Access Control (RBAC)	✅ @PreAuthorize("hasRole('ADMIN')") restricts access by role	❌ Need to build custom middleware
+CSRF Protection	✅ Enabled by default	❌ Must use csurf middleware manually
+Session Management	✅ In-memory, Redis, or JDBC-backed session storage	❌ Need express-session or external session store
+Password Hashing & Salting	✅ Auto-uses BCrypt (PasswordEncoder)	❌ Need bcrypt manually
+Rate Limiting	✅ spring-cloud-gateway or Resilience4j supports rate limiting	❌ Need express-rate-limit manually
+Security Headers	✅ Secure headers enabled by default (X-Frame-Options, X-XSS-Protection)	❌ Need helmet.js manually
+CORS Protection	✅ @CrossOrigin annotation	❌ Need cors middleware manually
+OAuth2 & SSO	✅ Built-in OAuth2, integrates with Okta, Google, Azure AD	❌ Need to configure Passport.js manually
+Audit Logging	✅ spring-boot-starter-actuator logs security events	❌ Need winston + database logging manually
+JWT Token Handling	✅ Built-in JWT authentication with Spring Security	❌ Need jsonwebtoken manually
+Database Security (SQL Injection Protection)	✅ Uses JPA/Hibernate, prevents SQL injection automatically	❌ Need to use parameterized queries (sequelize, pg)
+Dependency Security Scanning	✅ Spring Boot automatically checks for CVEs with dependency management	❌ Need npm audit manually
+Multi-Factor Authentication (MFA)	✅ Easy integration with Spring Security OAuth2	❌ Need third-party services like Auth0
