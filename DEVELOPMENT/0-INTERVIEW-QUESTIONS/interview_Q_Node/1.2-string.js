@@ -1,4 +1,6 @@
 //finds the first non-repeated character in a string. If all characters are repeated, return null
+// Input = abacabad
+// Output = c
 
 const findFirstNonRepeated = (str) =>{
     const strArr = str.split('');

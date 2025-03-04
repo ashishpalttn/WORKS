@@ -5,7 +5,7 @@ const isString = (input) => {
     
     for(let i=0;i<arr.length;i++){
       
-          if(!isNaN(arr[0])){
+          if(!isNaN(arr[i])){
             return "this a number included"
           }
     }

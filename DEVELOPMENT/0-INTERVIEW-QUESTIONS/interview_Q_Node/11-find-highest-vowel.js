@@ -1,2 +1,0 @@
-//Input abeiuolea
-//Output iou
