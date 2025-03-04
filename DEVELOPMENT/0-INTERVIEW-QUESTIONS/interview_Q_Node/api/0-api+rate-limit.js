@@ -6,7 +6,7 @@ const rateLimit = require('express-rate-limit')
 const app = express()
 
 const limiter = rateLimit({
-    windowMs : 1*60*1000,
+    windowMs : 1*60*1000,  //1 min
     max:2,
     mwssage: "TooMany request"
 })

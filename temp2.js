@@ -1,13 +1,8 @@
-console.log("Start"); // 1️⃣
+const fork = require('fork');
 
-setTimeout(() => console.log("setTimeout"), 0); // 5️⃣ (Macrotask)
+const child = fork('./child')
 
-setImmediate(() => console.log("setImmediate")); // 6️⃣ (Macrotask)
-
-process.nextTick(() => console.log("nextTick")); // 2️⃣ (Microtask)
-
-queueMicrotask(() => console.log("queueMicrotask")); // 3️⃣ (Microtask)
-
-Promise.resolve().then(() => console.log("Promise")); // 4️⃣ (Microtask)
-
-console.log("End"); // 7️⃣
+child.send({"msg":"message from parent"})
+child.on('msg',()=>{
+    
+})
