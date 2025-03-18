@@ -1,0 +1,6 @@
+step1 - visit (1-ADT-CreateUpdate.json)
+step2 - order (2-Order-CreateUpdate-Order1.json)
+step3 - appointment (3-Appointment-CreateUpdate-Order1.json) fill order number of step2
+step4 - sent order of step2 with 
+        "orderStatus": "Exam Begun",
+        "startTime": "2025-03-18T06:20:00-04:00", (current time)
