@@ -14,4 +14,3 @@ return (
     </CounterContext.Provider>
 )
 }
-export const CounterConsumer = CounterContext.Consumer
