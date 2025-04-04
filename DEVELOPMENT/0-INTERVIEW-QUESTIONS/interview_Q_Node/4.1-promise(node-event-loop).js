@@ -26,7 +26,7 @@ const promise1 = new Promise((resolve, reject) => {
    
   const promise2 = promise1.then(res => {
     console.log(res)
-    // return 'promise2'
+    return 'promise2'
   })
 
   promise2.then(res=>{

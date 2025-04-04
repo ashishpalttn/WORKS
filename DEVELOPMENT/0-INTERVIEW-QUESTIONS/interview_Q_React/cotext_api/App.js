@@ -1,7 +1,7 @@
 import Counter from "./CounterComponent"
 import { CounterProvider } from "./CounterContext"
 
-const App = ()=>{
+export const App = ()=>{
     return (
         <CounterProvider>
             <Counter/>
