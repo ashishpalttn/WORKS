@@ -8,8 +8,8 @@ const io = new Socket(server);
 
 io.on('connection', (socket)=>{
     console.log('user is connected', socket.id)
-    io.on('chat message',(data)=>{
-        io.emit('chat messahe',data)
+    socket.on('chat message',(msg)=>{
+        io.emit('chat messahe',msg)
     })
     io.on('disconnect', ()=>{
         console.log("connection is disconnected")
