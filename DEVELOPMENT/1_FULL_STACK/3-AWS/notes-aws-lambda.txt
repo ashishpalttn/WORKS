@@ -1,0 +1,18 @@
+// create a lambda function on local and deploy it by using atihub actions(CI/CD)
+
+step 1 = create a app in ur local (src)
+step 2 = wrap it to lambda wraper (lambda.js)
+step 3 = write a CI/CD (.github/workflows/deploy.yml) <replace to your lambda function name>
+step 4 = add secret key and ID in github for CI/CD
+            <your repository> -> settings -> secret and variables -> actions -> new repository secret
+
+Goto AWS
+ step 4 = create lambda function
+ step 5 = connect it to AWS api gateway
+
+ Node :- 
+ 1- if ur lambda wraper is not in index then chenge it in <your-lambda> -> code -> runtime setting
+ 2- change payload format version 2.0 -> 1.0
+ 3- add route /{proxy+} to handle routing inside express app
+ 4- keep default in url if u are not disabling it in stage 
+        Deploy Without a Stage (Use $default Stage)
