@@ -1,5 +1,5 @@
 //finds the first non-repeated character in a string. If all characters are repeated, return null
-// Input = abacabad
+// const input = 'abgacabad'
 // Output = c
 
 const findFirstNonRepeated = (str) =>{

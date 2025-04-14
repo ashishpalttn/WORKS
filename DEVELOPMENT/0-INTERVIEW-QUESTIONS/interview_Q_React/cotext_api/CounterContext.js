@@ -4,7 +4,6 @@ export const CounterContext = createContext()
 
 export const CounterProvider = ({children}) =>{
 const [count, setCount] = useState();
-
 const increment = () => setCount(count+1)
 const decrement = () => setCount(count-1)
 

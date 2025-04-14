@@ -1,5 +1,5 @@
-//Input abeiuolea
-//Output iuo
+//const str = 'abeiuolea'
+//Output eiuo
 const str = "abeiuolea";
 let logestVowel = "";
 const vowel = ['a','e','i','o','u']
