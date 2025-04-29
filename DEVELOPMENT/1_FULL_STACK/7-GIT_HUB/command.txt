@@ -1,0 +1,6 @@
+Problem: -        I have two branches in my git develop and feature/care-progression 
+                  mistakely I have created a branch feature/COPS-1915 from develop and  made 5 commits
+                  but I had to get this out of the feature/care-progression 
+
+Solution:-      step-1  go to branch you want to fix "git checkout feature/COPS-1915"
+                step-2  "git rebase --onto <feature/care-progression> <develop> <feature/COPS-1915>"     This means: take the commits from feature/COPS-1915 that are not in develop, and replay them onto feature/care-progression.
