@@ -1,0 +1,33 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        String str = "hollo ashish how are you ";
+       
+       String[] words = str.split(" ");
+       
+
+       
+       List<String> result = new ArrayList<>();
+       for(String word : words){
+           if(countVowels(word)==2){
+               result.add(word);
+           }
+       }
+       System.out.println(result);
+       
+    }
+    
+        public static int countVowels(String word){
+             String vowels = "aeiouAEIOU";
+            int count = 0;
+            for(char ch : word.toCharArray()){
+                if(vowels.indexOf(ch) != -1){
+                    count++;
+                }
+            }
+           return count;
+       }
+    
+}
