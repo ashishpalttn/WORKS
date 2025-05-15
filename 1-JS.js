@@ -1,72 +1,32 @@
-// const parent = () =>{
-//     let a = 5;
-//     return ()=>{
-//         console.log(a)
-//     }
-// }
+const arr = [5,20,10,5,5,10]
+const a = 3;
 
-const { response } = require("express")
+const findSubArrays = (arr, size) =>{
+    const len = arr.length;
+    let maxSum = 0
+    let subArraysCount = 0
+    let sum = 0
+        for(let i=0;i<size;i++){
+           sum += arr[i]
+        }
+        maxSum = sum
+        subArraysCount =1 
+    for(let i=size;i<len; i++){
+      sum = sum - arr[i-size] + arr[i]
 
-// const promise = (token) =>{
-//     return new Promise((res, rej)=>{
-//         if(token){
-//             res("success")
-//         }
-//         else{
-//             rej("rejecte")
-//         }
-//     })
-// }
+      if(maxSum<sum){
+        maxSum=sum
+        subArraysCount=1
+      }
+      else if(maxSum==sum){
+        subArraysCount++
+      }
 
-// console.log(1 < 2 < 3);
+    }
 
-// const obj1={ a:3, b:4, sum:()=>{ return this.a+this.b; } }
-
-// const result=obj1.sum;
-
-// console.log(result())
-// var temp = "";
-// for(var i=1;i<=5;i++){
-//     for(var j=1;j<=i; j++){
-//         temp +=j;
-//         console.log(i,j);
-//     }
-//     temp += "\n"
-// }
-
-// console.log(temp);
-
-// function addition(x, y){
-//      arguments[10] = 10; 
-// console.log(x+y); }
- 
-// addition(5,10) 
-// addition(5,5)
-
-// const Counter = () =>{
-// const [count, setCount] = useState(0)
-// useEffect(()=>{
-//     fetch("api-end-poit")
-//     .then(response=>response.json())
-//     .then(data =>setCount(data))
-// })
-//     return (
-//         <div>
-//             <p>Counter: {count}</p>
-//             <button >Start</button>
-//         </div>
-//     )
-// }
-
-const express = require(exp)
-const app = express()
-
-const calculateTime = (req, res)=>{
-
+    return subArraysCount;
 
 }
-app.use(calculateTime)
-app.get('/getData/:name',(res, rej)=>{
-const {} = res.params
 
-})
+const subArraysCount = findSubArrays(arr,a);
+console.log("subArraysCount= ",subArraysCount)
