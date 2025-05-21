@@ -26,3 +26,8 @@ EOF
 # kill all process
 #           pkill gnome-terminal
 
+
+
+#Note1- In mac open all tab in one window change below settings
+#mac settings -> Desktop & Dock -> Windows -> prefered tabs when openning the documents -> [Always]
+
