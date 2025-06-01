@@ -1,6 +1,7 @@
 const AWS = require("aws-sdk");
 const fs = require("fs");
 const path = require("path");
+const csvParser = require("csv-parser");
 
 // Configure AWS region
 AWS.config.update({ region: "ap-south-1" });
@@ -21,13 +22,23 @@ function chunkArray(arr, size) {
   );
 }
 
-async function uploadToDynamoDB(tableName, fileName, partitionKey, sortKey = null) {
+async function uploadCsvToDynamoDB(tableName, fileName, partitionKey, sortKey = null) {
   const filePath = path.join(__dirname, "data", fileName);
-  const rawData = fs.readFileSync(filePath, "utf8");
-  const items = JSON.parse(rawData).map((item) => ({
-    ...item,
-    [partitionKey]: String(item[partitionKey]), // Convert partition key to string
-  }));
+  const items = [];
+
+  // Parse CSV file
+  await new Promise((resolve, reject) => {
+    fs.createReadStream(filePath)
+      .pipe(csvParser())
+      .on("data", (row) => {
+        items.push({
+          ...row,
+          [partitionKey]: String(row[partitionKey]), // Convert partition key to string
+        });
+      })
+      .on("end", resolve)
+      .on("error", reject);
+  });
 
   // Validate that each item contains the required keys
   for (const item of items) {
@@ -63,15 +74,16 @@ async function uploadToDynamoDB(tableName, fileName, partitionKey, sortKey = nul
   console.log("✅ Upload complete!");
 }
 
-// Pass args: node upload.js <TableName> <FileName> <PartitionKey> [SortKey]
+// Pass args: node uploadCsv.js <TableName> <FileName> <PartitionKey> [SortKey]
 const [,, tableName, fileName, partitionKey, sortKey] = process.argv;
 
 if (!tableName || !fileName || !partitionKey) {
-  console.error("❗ Usage: node upload.js <TableName> <FileName> <PartitionKey> [SortKey]");
+  console.error("❗ Usage: node uploadCsv.js <TableName> <FileName> <PartitionKey> [SortKey]");
   process.exit(1);
 }
 
-uploadToDynamoDB(tableName, fileName, partitionKey, sortKey);
+uploadCsvToDynamoDB(tableName, fileName, partitionKey, sortKey);
 
+// Note:- table should be exist in dynamodb before running this script and file should be in data folder
 // Run this command to upload data:
-// Usage: node uploadJson.js <TableName> <FileName> <PartitionKey> [SortKey]
+// node upload-csv-to-table.js <TableName> <FileName> <PartitionKey> [SortKey]

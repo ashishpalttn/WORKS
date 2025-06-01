@@ -4,7 +4,7 @@
     "name": "Supermarkets & Kirana Stores",
     "subcategories": ["Supermarkets", "Kirana Stores", "Organic Grocery Stores"],
     "isActive": true,
-    "city": "CityName",
+    "city": "Pune",
     "state": "StateName",
     "pincode": "000000",
     "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/categories-icon/grocery-store.svg"
