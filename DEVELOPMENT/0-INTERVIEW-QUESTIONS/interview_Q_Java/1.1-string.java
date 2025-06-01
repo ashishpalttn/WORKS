@@ -10,7 +10,8 @@ class Main {
                     .map(item->item.substring(0,1).toUpperCase()+item.substring(1))
                     .collect(Collectors.toList());
                     
-        System.out.println(result);
+        String finalResult = String.join(" ",result);
+        System.out.println(finalResult);
         test2();
      
     }

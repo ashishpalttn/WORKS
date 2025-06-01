@@ -1,3 +1,4 @@
+// find the longest substring of vowels in a string
 //const str = 'abeiuolea'
 //Output eiuo
 const str = "abeiuolea";

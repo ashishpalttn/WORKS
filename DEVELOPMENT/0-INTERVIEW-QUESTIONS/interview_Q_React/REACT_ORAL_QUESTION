@@ -1,0 +1,14 @@
+ Frontend (React.js)
+How does the Virtual DOM work in React?
+
+What are React Hooks? Can you explain useState and useEffect with examples?
+
+What is the difference between controlled and uncontrolled components in React?
+
+How would you handle performance optimization in a large React application?
+
+How do you manage state across multiple components (e.g., Context API vs Redux)?
+
+What is code splitting and how does React support it?
+
+Explain how to handle form validation in React.

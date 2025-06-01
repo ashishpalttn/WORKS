@@ -1,0 +1,13 @@
+
+🔸 Backend (Node.js)
+What is the event loop in Node.js and how does it handle concurrency?
+
+How do you manage asynchronous code in Node.js (callbacks, promises, async/await)?
+
+How would you handle file uploads or downloads in a Node.js server?
+
+Explain how to structure a scalable Express.js application.
+
+How do you implement middleware in Express, and give an example of a custom middleware.
+
+How do you secure APIs in Node.js (rate limiting, input sanitization, JWT)?

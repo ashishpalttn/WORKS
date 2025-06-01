@@ -20,3 +20,16 @@ for(let i = 0; i<len; i++){
   return "not found"
 }
 findIndex(console.log(findIndex))
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+//find the maximum sub array sum
+const arr= [1, -2, 3, 4, -1, 5]
+let currSum = arr[0];
+
+
+arr.forEach(item=>{
+    currSum = Math.max(item, item+currSum);
+})
+
+console.log(currSum)// 11
