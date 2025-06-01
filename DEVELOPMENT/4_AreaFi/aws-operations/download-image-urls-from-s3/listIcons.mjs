@@ -33,3 +33,6 @@ async function listIcons() {
 }
 
 listIcons();
+
+//run below command to download all images urls from images/categories-icon
+// node listIcons.mjs
