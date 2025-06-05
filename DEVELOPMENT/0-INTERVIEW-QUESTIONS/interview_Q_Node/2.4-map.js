@@ -1,7 +1,10 @@
+//Impotent Map methods
+// set, get, has, delete, clear, forEach
+
 //find the index of value  which gives sum of target
 //output [0,1]
 
-nums = [4, 2, 3], target = 6
+nums = [5,7,4, 2, 3], target = 6
 
 
 const findIndex = () =>{

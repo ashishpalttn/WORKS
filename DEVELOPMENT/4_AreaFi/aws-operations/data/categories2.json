@@ -1,0 +1,1032 @@
+[
+  {
+    "categoryId": "CATE00001",
+    "name": "Grocery",
+    "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/category-icon/grocery.svg",
+    "subcategories": [
+      {
+        "subcategory_code": "SUBC00001",
+        "subcategory_name": "Kirana Stores"
+      },
+      {
+        "subcategory_code": "SUBC00002",
+        "subcategory_name": "General Provision Stores"
+      },
+      {
+        "subcategory_code": "SUBC00003",
+        "subcategory_name": "Supermarkets"
+      },
+      {
+        "subcategory_code": "SUBC00017",
+        "subcategory_name": "Ethnic Regional Grocery"
+      }
+    ]
+  },
+  {
+    "categoryId": "CATE00002",
+    "name": "Dairy",
+    "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/category-icon/dairy.svg",
+    "subcategories": [
+      {
+        "subcategory_code": "SUBC00018",
+        "subcategory_name": "Milk Booth"
+      },
+      {
+        "subcategory_code": "SUBC00019",
+        "subcategory_name": "Local Dairy Farm"
+      },
+      {
+        "subcategory_code": "SUBC00020",
+        "subcategory_name": "Paneer & Ghee Shop"
+      },
+      {
+        "subcategory_code": "SUBC00021",
+        "subcategory_name": "Butter & Cheese Store"
+      },
+      {
+        "subcategory_code": "SUBC00022",
+        "subcategory_name": "Curd & Buttermilk Center"
+      }
+    ]
+  },
+  {
+    "categoryId": "CATE00003",
+    "name": "Fruits & Vegetables",
+    "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/category-icon/fruit & veggies.svg",
+    "subcategories": [
+      {
+        "subcategory_code": "SUBC00035",
+        "subcategory_name": "Fruit Stall"
+      },
+      {
+        "subcategory_code": "SUBC00036",
+        "subcategory_name": "Vegetable Vendor"
+      },
+      {
+        "subcategory_code": "SUBC00037",
+        "subcategory_name": "Mixed Fruits & Vegetables Shop"
+      },
+      {
+        "subcategory_code": "SUBC00038",
+        "subcategory_name": "Seasonal Fruits Seller"
+      },
+      {
+        "subcategory_code": "SUBC00039",
+        "subcategory_name": "Organic Fruits & Veg Store"
+      },
+      {
+        "subcategory_code": "SUBC00040",
+        "subcategory_name": "Juice & Fruit Bar"
+      }
+    ]
+  },
+  {
+    "categoryId": "CATE00004",
+    "name": "Pharmacy",
+    "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/category-icon/pharmacy.svg",
+    "subcategories": [
+      {
+        "subcategory_code": "SUBC00064",
+        "subcategory_name": "Government Medicine Outlet"
+      },
+      {
+        "subcategory_code": "SUBC00065",
+        "subcategory_name": "Medical Wholesale Distributor"
+      },
+      {
+        "subcategory_code": "SUBC00066",
+        "subcategory_name": "Herbal & Natural Remedy Store"
+      },
+      {
+        "subcategory_code": "SUBC00067",
+        "subcategory_name": "Diabetic & Cardiac Medicine Shop"
+      },
+      {
+        "subcategory_code": "SUBC00068",
+        "subcategory_name": "Physiotherapy Aids & Equipment"
+      }
+    ]
+  },
+  {
+    "categoryId": "CATE00005",
+    "name": "Health",
+    "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/category-icon/health.svg",
+    "subcategories": [
+      {
+        "subcategory_code": "SUBC00069",
+        "subcategory_name": "General Physician Clinic"
+      },
+      {
+        "subcategory_code": "SUBC00070",
+        "subcategory_name": "Multispeciality Hospital"
+      },
+      {
+        "subcategory_code": "SUBC00071",
+        "subcategory_name": "Super Speciality Hospital"
+      },
+      {
+        "subcategory_code": "SUBC00072",
+        "subcategory_name": "Children's Hospital"
+      },
+      {
+        "subcategory_code": "SUBC00073",
+        "subcategory_name": "Maternity & Women's Health Clinic"
+      }
+    ]
+  },
+  {
+    "categoryId": "CATE00006",
+    "name": "Food",
+    "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/category-icon/food.svg",
+    "subcategories": [
+      {
+        "subcategory_code": "SUBC00117",
+        "subcategory_name": "Food Truck / Mobile Van"
+      },
+      {
+        "subcategory_code": "SUBC00118",
+        "subcategory_name": "Cloud Kitchen (No Dine-in)"
+      },
+      {
+        "subcategory_code": "SUBC00119",
+        "subcategory_name": "Canteen & Mess Service"
+      },
+      {
+        "subcategory_code": "SUBC00120",
+        "subcategory_name": "Organic/Eco-Friendly Cafe"
+      },
+      {
+        "subcategory_code": "SUBC00121",
+        "subcategory_name": "Halwai (Traditional Sweets)"
+      },
+      {
+        "subcategory_code": "SUBC00122",
+        "subcategory_name": "Caterer (Events & Functions)"
+      }
+    ]
+  },
+  {
+    "categoryId": "CATE00007",
+    "name": "Fitness",
+    "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/category-icon/fitness.svg",
+    "subcategories": [
+      {
+        "subcategory_code": "SUBC00123",
+        "subcategory_name": "Unisex Gym"
+      },
+      {
+        "subcategory_code": "SUBC00124",
+        "subcategory_name": "Ladies Gym"
+      },
+      {
+        "subcategory_code": "SUBC00125",
+        "subcategory_name": "CrossFit Training Center"
+      },
+      {
+        "subcategory_code": "SUBC00126",
+        "subcategory_name": "Personal Fitness Trainer"
+      },
+      {
+        "subcategory_code": "SUBC00127",
+        "subcategory_name": "Yoga Studio"
+      }
+    ]
+  },
+  {
+    "categoryId": "CATE00008",
+    "name": "Clothing",
+    "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/category-icon/clothing.svg",
+    "subcategories": [
+      {
+        "subcategory_code": "SUBC00156",
+        "subcategory_name": "Casual Wear & Denim Store"
+      },
+      {
+        "subcategory_code": "SUBC00157",
+        "subcategory_name": "Party Wear & Occasion Wear"
+      },
+      {
+        "subcategory_code": "SUBC00158",
+        "subcategory_name": "Nightwear & Sleepwear Store"
+      },
+      {
+        "subcategory_code": "SUBC00159",
+        "subcategory_name": "Sportswear & Gym Apparel"
+      },
+      {
+        "subcategory_code": "SUBC00160",
+        "subcategory_name": "Traditional Stores"
+      }
+    ]
+  },
+  {
+    "categoryId": "CATE00009",
+    "name": "Footwear",
+    "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/category-icon/footwear.svg",
+    "subcategories": [
+      {
+        "subcategory_code": "SUBC00161",
+        "subcategory_name": "Men's Footwear Store"
+      },
+      {
+        "subcategory_code": "SUBC00162",
+        "subcategory_name": "Women's Footwear Store"
+      },
+      {
+        "subcategory_code": "SUBC00163",
+        "subcategory_name": "Kids Footwear Shop"
+      },
+      {
+        "subcategory_code": "SUBC00164",
+        "subcategory_name": "Unisex Footwear Outlet"
+      },
+      {
+        "subcategory_code": "SUBC00165",
+        "subcategory_name": "Sports Shoes & Sneakers Store"
+      }
+    ]
+  },
+  {
+    "categoryId": "CATE00010",
+    "name": "Salon / Parlor",
+    "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/category-icon/salon.svg",
+    "subcategories": [
+      {
+        "subcategory_code": "SUBC00191",
+        "subcategory_name": "Grooming Packages for Men"
+      },
+      {
+        "subcategory_code": "SUBC00192",
+        "subcategory_name": "Anti-Aging & Cosmetic Treatment"
+      },
+      {
+        "subcategory_code": "SUBC00193",
+        "subcategory_name": "Body Polishing & Scrubbing Center"
+      },
+      {
+        "subcategory_code": "SUBC00194",
+        "subcategory_name": "Massage & Relaxation Spa"
+      },
+      {
+        "subcategory_code": "SUBC00195",
+        "subcategory_name": "Herbal & Organic Beauty Studio"
+      },
+      {
+        "subcategory_code": "SUBC00196",
+        "subcategory_name": "Kids Haircut & Grooming Salon"
+      }
+    ]
+  },
+  {
+    "categoryId": "CATE00011",
+    "name": "Stationery",
+    "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/category-icon/stationary.svg",
+    "subcategories": [
+      {
+        "subcategory_code": "SUBC00197",
+        "subcategory_name": "General Stationery Store"
+      },
+      {
+        "subcategory_code": "SUBC00198",
+        "subcategory_name": "School Stationery Supplier"
+      },
+      {
+        "subcategory_code": "SUBC00199",
+        "subcategory_name": "Office Supplies Store"
+      },
+      {
+        "subcategory_code": "SUBC00200",
+        "subcategory_name": "Bookstore & Academic Books Seller"
+      }
+    ]
+  },
+  {
+    "categoryId": "CATE00012",
+    "name": "Hardware",
+    "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/category-icon/hardware.svg",
+    "subcategories": [
+      {
+        "subcategory_code": "SUBC00226",
+        "subcategory_name": "Construction Material Transporter"
+      },
+      {
+        "subcategory_code": "SUBC00227",
+        "subcategory_name": "Modular Switches & Fittings Store"
+      },
+      {
+        "subcategory_code": "SUBC00228",
+        "subcategory_name": "Steel & Iron Rod Supplier"
+      },
+      {
+        "subcategory_code": "SUBC00229",
+        "subcategory_name": "POP & False Ceiling Material Dealer"
+      },
+      {
+        "subcategory_code": "SUBC00230",
+        "subcategory_name": "Building Repair Material Store"
+      },
+      {
+        "subcategory_code": "SUBC00231",
+        "subcategory_name": "Waterproofing Chemical Supplier"
+      }
+    ]
+  },
+  {
+    "categoryId": "CATE00013",
+    "name": "Garage",
+    "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/category-icon/garage.svg",
+    "subcategories": [
+      {
+        "subcategory_code": "SUBC00245",
+        "subcategory_name": "Brake & Clutch Specialist"
+      },
+      {
+        "subcategory_code": "SUBC00246",
+        "subcategory_name": "Vehicle Oil Change Station"
+      },
+      {
+        "subcategory_code": "SUBC00247",
+        "subcategory_name": "Vehicle Towing Service"
+      },
+      {
+        "subcategory_code": "SUBC00248",
+        "subcategory_name": "Spare Parts Dealer (All Vehicles)"
+      },
+      {
+        "subcategory_code": "SUBC00249",
+        "subcategory_name": "Authorized Vehicle Service Center"
+      },
+      {
+        "subcategory_code": "SUBC00250",
+        "subcategory_name": "Bike Modification & Customization"
+      }
+    ]
+  },
+  {
+    "categoryId": "CATE00014",
+    "name": "Jewellery",
+    "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/category-icon/jewellery.svg",
+    "subcategories": [
+      {
+        "subcategory_code": "SUBC00251",
+        "subcategory_name": "Gold Jewellery Showroom"
+      },
+      {
+        "subcategory_code": "SUBC00252",
+        "subcategory_name": "Silver Jewellery Store"
+      },
+      {
+        "subcategory_code": "SUBC00253",
+        "subcategory_name": "Diamond Jewellery Outlet"
+      },
+      {
+        "subcategory_code": "SUBC00254",
+        "subcategory_name": "Artificial / Imitation Jewellery"
+      }
+    ]
+  },
+  {
+    "categoryId": "CATE00015",
+    "name": "Furniture",
+    "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/category-icon/furniture.svg",
+    "subcategories": [
+      {
+        "subcategory_code": "SUBC00283",
+        "subcategory_name": "Shoe Rack & Storage Furniture"
+      },
+      {
+        "subcategory_code": "SUBC00284",
+        "subcategory_name": "Custom-Made Furniture Maker"
+      }
+    ]
+  },
+  {
+    "categoryId": "CATE00016",
+    "name": "Automobile",
+    "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/category-icon/automobile.svg",
+    "subcategories": [
+      {
+        "subcategory_code": "SUBC00302",
+        "subcategory_name": "Vehicle Washing & Detailing Center"
+      },
+      {
+        "subcategory_code": "SUBC00303",
+        "subcategory_name": "Test Drive & Booking Center"
+      },
+      {
+        "subcategory_code": "SUBC00304",
+        "subcategory_name": "Vehicle Towing & Breakdown Service"
+      },
+      {
+        "subcategory_code": "SUBC00305",
+        "subcategory_name": "Battery & Tyre Dealer"
+      },
+      {
+        "subcategory_code": "SUBC00306",
+        "subcategory_name": "Vehicle Leasing"
+      }
+    ]
+  },
+  {
+    "categoryId": "CATE00017",
+    "name": "local Market",
+    "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/category-icon/local market.svg",
+    "subcategories": [
+      {
+        "subcategory_code": "SUBC00307",
+        "subcategory_name": "Vegetable Market (Sabzi Mandi)"
+      },
+      {
+        "subcategory_code": "SUBC00308",
+        "subcategory_name": "Fruit Market"
+      },
+      {
+        "subcategory_code": "SUBC00309",
+        "subcategory_name": "Fish Market"
+      },
+      {
+        "subcategory_code": "SUBC00310",
+        "subcategory_name": "Meat & Chicken Market"
+      },
+      {
+        "subcategory_code": "SUBC00311",
+        "subcategory_name": "Flower Market"
+      }
+    ]
+  },
+  {
+    "categoryId": "CATE00018",
+    "name": "Street Stalls",
+    "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/category-icon/steetstalls.svg",
+    "subcategories": [
+      {
+        "subcategory_code": "SUBC00342",
+        "subcategory_name": "Second-hand Books Seller"
+      },
+      {
+        "subcategory_code": "SUBC00343",
+        "subcategory_name": "Balloons & Kids Items Seller"
+      },
+      {
+        "subcategory_code": "SUBC00344",
+        "subcategory_name": "Roaming Cosmetics Vendor"
+      },
+      {
+        "subcategory_code": "SUBC00345",
+        "subcategory_name": "Roadside Popcorn / Corn Stall"
+      },
+      {
+        "subcategory_code": "SUBC00346",
+        "subcategory_name": "Street Games & Mini Ride Operators"
+      }
+    ]
+  },
+  {
+    "categoryId": "CATE00019",
+    "name": "Pets",
+    "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/category-icon/pets.svg",
+    "subcategories": [
+      {
+        "subcategory_code": "SUBC00347",
+        "subcategory_name": "Pet Shop (Dogs, Cats, Birds, etc.)"
+      },
+      {
+        "subcategory_code": "SUBC00348",
+        "subcategory_name": "Aquarium & Fish Store"
+      },
+      {
+        "subcategory_code": "SUBC00349",
+        "subcategory_name": "Pet Food & Nutrition Store"
+      },
+      {
+        "subcategory_code": "SUBC00350",
+        "subcategory_name": "Pet Accessories & Toys Shop"
+      },
+      {
+        "subcategory_code": "SUBC00351",
+        "subcategory_name": "Veterinary Clinic"
+      }
+    ]
+  },
+  {
+    "categoryId": "CATE00020",
+    "name": "Property",
+    "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/category-icon/property.svg",
+    "subcategories": [
+      {
+        "subcategory_code": "SUBC00379",
+        "subcategory_name": "Builder / Developer"
+      },
+      {
+        "subcategory_code": "SUBC00380",
+        "subcategory_name": "Construction Plot Consultant"
+      },
+      {
+        "subcategory_code": "SUBC00381",
+        "subcategory_name": "Industrial Property Agent"
+      },
+      {
+        "subcategory_code": "SUBC00382",
+        "subcategory_name": "Property Management Services"
+      },
+      {
+        "subcategory_code": "SUBC00383",
+        "subcategory_name": "NRI Property Services"
+      },
+      {
+        "subcategory_code": "SUBC00384",
+        "subcategory_name": "RERA Registered Consultant"
+      }
+    ]
+  },
+  {
+    "categoryId": "CATE00021",
+    "name": "Decor",
+    "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/category-icon/decor.svg",
+    "subcategories": [
+      {
+        "subcategory_code": "SUBC00385",
+        "subcategory_name": "Interior Designer"
+      },
+      {
+        "subcategory_code": "SUBC00386",
+        "subcategory_name": "Architect"
+      },
+      {
+        "subcategory_code": "SUBC00387",
+        "subcategory_name": "Modular Kitchen Designer"
+      },
+      {
+        "subcategory_code": "SUBC00388",
+        "subcategory_name": "False Ceiling Specialist"
+      },
+      {
+        "subcategory_code": "SUBC00389",
+        "subcategory_name": "Home Renovation Contractor"
+      }
+    ]
+  },
+  {
+    "categoryId": "CATE00022",
+    "name": "Professional Services",
+    "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/category-icon/professional.svg",
+    "subcategories": [
+      {
+        "subcategory_code": "SUBC00415",
+        "subcategory_name": "Freelance Content Writer / Blogger"
+      },
+      {
+        "subcategory_code": "SUBC00416",
+        "subcategory_name": "Web Developer / IT Consultant"
+      },
+      {
+        "subcategory_code": "SUBC00417",
+        "subcategory_name": "Event Planner / Manager (Freelance)"
+      },
+      {
+        "subcategory_code": "SUBC00418",
+        "subcategory_name": "Architect / Civil Engineer (Freelance)"
+      },
+      {
+        "subcategory_code": "SUBC00419",
+        "subcategory_name": "Digital Marketing Expert"
+      }
+    ]
+  },
+  {
+    "categoryId": "CATE00023",
+    "name": "HomeFix",
+    "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/category-icon/homefix.svg",
+    "subcategories": [
+      {
+        "subcategory_code": "SUBC00439",
+        "subcategory_name": "POP & False Ceiling Repair"
+      },
+      {
+        "subcategory_code": "SUBC00440",
+        "subcategory_name": "Gardener / Mali"
+      },
+      {
+        "subcategory_code": "SUBC00441",
+        "subcategory_name": "Gas Stove & Chimney Repair"
+      },
+      {
+        "subcategory_code": "SUBC00442",
+        "subcategory_name": "CCTV & Security System Installer"
+      }
+    ]
+  },
+  {
+    "categoryId": "CATE00024",
+    "name": "Education",
+    "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/category-icon/education.svg",
+    "subcategories": [
+      {
+        "subcategory_code": "SUBC00443",
+        "subcategory_name": "Pre-School / Kindergarten"
+      },
+      {
+        "subcategory_code": "SUBC00444",
+        "subcategory_name": "Play School / Montessori"
+      },
+      {
+        "subcategory_code": "SUBC00445",
+        "subcategory_name": "Primary School"
+      },
+      {
+        "subcategory_code": "SUBC00446",
+        "subcategory_name": "Secondary / High School"
+      },
+      {
+        "subcategory_code": "SUBC00447",
+        "subcategory_name": "Junior College (11th-12th)"
+      },
+      {
+        "subcategory_code": "SUBC00448",
+        "subcategory_name": "Degree College (B.A, B.Sc, B.Com, etc.)"
+      }
+    ]
+  },
+  {
+    "categoryId": "CATE00025",
+    "name": "FunZone",
+    "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/category-icon/funzone.svg",
+    "subcategories": [
+      {
+        "subcategory_code": "SUBC00487",
+        "subcategory_name": "Soft Play Area for Toddlers"
+      },
+      {
+        "subcategory_code": "SUBC00488",
+        "subcategory_name": "Carnival & Mela Stalls"
+      },
+      {
+        "subcategory_code": "SUBC00489",
+        "subcategory_name": "Coin Game Machines & Ride Vendors"
+      },
+      {
+        "subcategory_code": "SUBC00490",
+        "subcategory_name": "Inflatable Bounce House Operators"
+      },
+      {
+        "subcategory_code": "SUBC00491",
+        "subcategory_name": "Laser Tag Arena"
+      }
+    ]
+  },
+  {
+    "categoryId": "CATE00026",
+    "name": "Travel",
+    "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/category-icon/travel.svg",
+    "subcategories": [
+      {
+        "subcategory_code": "SUBC00492",
+        "subcategory_name": "Domestic Travel Agent"
+      },
+      {
+        "subcategory_code": "SUBC00493",
+        "subcategory_name": "International Travel Agent"
+      },
+      {
+        "subcategory_code": "SUBC00494",
+        "subcategory_name": "Flight Booking Services"
+      },
+      {
+        "subcategory_code": "SUBC00495",
+        "subcategory_name": "Bus & Train Ticket Booking"
+      },
+      {
+        "subcategory_code": "SUBC00496",
+        "subcategory_name": "Hotel Booking & Reservation Center"
+      },
+      {
+        "subcategory_code": "SUBC00497",
+        "subcategory_name": "Taxi & Cab Booking Services"
+      },
+      {
+        "subcategory_code": "SUBC00498",
+        "subcategory_name": "Tour Package Operator"
+      }
+    ]
+  },
+  {
+    "categoryId": "CATE00028",
+    "name": "Mover / Delivery",
+    "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/category-icon/delivery.svg",
+    "subcategories": [
+      {
+        "subcategory_code": "SUBC00546",
+        "subcategory_name": "Bulk Goods Transport Agent"
+      },
+      {
+        "subcategory_code": "SUBC00547",
+        "subcategory_name": "B2B Logistics & Supply Chain Provider"
+      },
+      {
+        "subcategory_code": "SUBC00548",
+        "subcategory_name": "Same-Day Delivery Specialist"
+      },
+      {
+        "subcategory_code": "SUBC00549",
+        "subcategory_name": "E-commerce Parcel Pickup Services"
+      },
+      {
+        "subcategory_code": "SUBC00550",
+        "subcategory_name": "Luggage & Bag Courier Services"
+      },
+      {
+        "subcategory_code": "SUBC00551",
+        "subcategory_name": "Rental Pickup Vehicle Providers"
+      }
+    ]
+  },
+  {
+    "categoryId": "CATE00029",
+    "name": "Banking",
+    "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/category-icon/banking.svg",
+    "subcategories": [
+      {
+        "subcategory_code": "SUBC00552",
+        "subcategory_name": "Public Sector Bank Branch"
+      },
+      {
+        "subcategory_code": "SUBC00553",
+        "subcategory_name": "Private Sector Bank Branch"
+      },
+      {
+        "subcategory_code": "SUBC00554",
+        "subcategory_name": "Cooperative Bank"
+      },
+      {
+        "subcategory_code": "SUBC00555",
+        "subcategory_name": "ATM (All Banks)"
+      },
+      {
+        "subcategory_code": "SUBC00556",
+        "subcategory_name": "Mutual Fund & SIP Advisor"
+      },
+      {
+        "subcategory_code": "SUBC00557",
+        "subcategory_name": "Bank Correspondent (CSP/Bank Mitra)"
+      },
+      {
+        "subcategory_code": "SUBC00558",
+        "subcategory_name": "Microfinance Institution Representative"
+      },
+      {
+        "subcategory_code": "SUBC00559",
+        "subcategory_name": "Gold Loan Provider"
+      },
+      {
+        "subcategory_code": "SUBC00560",
+        "subcategory_name": "NBFC / Financial Institution Agent"
+      },
+      {
+        "subcategory_code": "SUBC00561",
+        "subcategory_name": "Forex & Currency Exchange Center"
+      },
+      {
+        "subcategory_code": "SUBC00562",
+        "subcategory_name": "Investment & Wealth Advisor"
+      },
+      {
+        "subcategory_code": "SUBC00563",
+        "subcategory_name": "Bank Document Notary / Legal Aid"
+      }
+    ]
+  },
+  {
+    "categoryId": "CATE00030",
+    "name": "Fuel",
+    "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/category-icon/fuel pumps.svg",
+    "subcategories": [
+      {
+        "subcategory_code": "SUBC00564",
+        "subcategory_name": "Petrol Pump"
+      },
+      {
+        "subcategory_code": "SUBC00565",
+        "subcategory_name": "Diesel Filling Station"
+      },
+      {
+        "subcategory_code": "SUBC00566",
+        "subcategory_name": "CNG Station"
+      },
+      {
+        "subcategory_code": "SUBC00567",
+        "subcategory_name": "EV Charging Station"
+      },
+      {
+        "subcategory_code": "SUBC00568",
+        "subcategory_name": "Battery Swap Station"
+      }
+    ]
+  },
+  {
+    "categoryId": "CATE00031",
+    "name": "Parks",
+    "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/category-icon/parks.svg",
+    "subcategories": [
+      {
+        "subcategory_code": "SUBC00585",
+        "subcategory_name": "Park with Water Fountain / Pond"
+      },
+      {
+        "subcategory_code": "SUBC00586",
+        "subcategory_name": "Garden with Yoga / Meditation Space"
+      },
+      {
+        "subcategory_code": "SUBC00587",
+        "subcategory_name": "Park with Play Equipment"
+      },
+      {
+        "subcategory_code": "SUBC00588",
+        "subcategory_name": "Butterfly or Bird Watching Park"
+      },
+      {
+        "subcategory_code": "SUBC00589",
+        "subcategory_name": "Picnic Spot or Family Recreation Area"
+      },
+      {
+        "subcategory_code": "SUBC00590",
+        "subcategory_name": "Urban Forest or Community Green Space"
+      }
+    ]
+  },
+  {
+    "categoryId": "CATE00032",
+    "name": "Spiritual",
+    "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/category-icon/spiritual.svg",
+    "subcategories": [
+      {
+        "subcategory_code": "SUBC00591",
+        "subcategory_name": "Hindu Temple"
+      },
+      {
+        "subcategory_code": "SUBC00592",
+        "subcategory_name": "Mosque (Masjid)"
+      },
+      {
+        "subcategory_code": "SUBC00593",
+        "subcategory_name": "Church"
+      },
+      {
+        "subcategory_code": "SUBC00594",
+        "subcategory_name": "Gurudwara"
+      },
+      {
+        "subcategory_code": "SUBC00595",
+        "subcategory_name": "Jain Derasar / Temple"
+      },
+      {
+        "subcategory_code": "SUBC00596",
+        "subcategory_name": "Buddhist Monastery / Vihara"
+      }
+    ]
+  },
+  {
+    "categoryId": "CATE00033",
+    "name": "Events",
+    "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/category-icon/events.svg",
+    "subcategories": [
+      {
+        "subcategory_code": "SUBC00625",
+        "subcategory_name": "Conference & Seminar Planner"
+      },
+      {
+        "subcategory_code": "SUBC00626",
+        "subcategory_name": "Kids Party Supplies Vendor"
+      },
+      {
+        "subcategory_code": "SUBC00627",
+        "subcategory_name": "Theme Party Decor Specialist"
+      },
+      {
+        "subcategory_code": "SUBC00628",
+        "subcategory_name": "Invitation Card Printing & Design"
+      },
+      {
+        "subcategory_code": "SUBC00629",
+        "subcategory_name": "Return Gift & Souvenir Supplier"
+      }
+    ]
+  },
+  {
+    "categoryId": "CATE00034",
+    "name": "Organization",
+    "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/category-icon/organization.svg",
+    "subcategories": [
+      {
+        "subcategory_code": "SUBC00644",
+        "subcategory_name": "Free Coaching & Education NGO"
+      },
+      {
+        "subcategory_code": "SUBC00645",
+        "subcategory_name": "Disaster Relief NGO"
+      },
+      {
+        "subcategory_code": "SUBC00646",
+        "subcategory_name": "Local Cultural Committee / Sabha"
+      },
+      {
+        "subcategory_code": "SUBC00647",
+        "subcategory_name": "LGBTQ+ Support Group"
+      },
+      {
+        "subcategory_code": "SUBC00648",
+        "subcategory_name": "Self-Help Group (SHG)"
+      },
+      {
+        "subcategory_code": "SUBC00649",
+        "subcategory_name": "Donation & Fundraising Platform"
+      }
+    ]
+  },
+  {
+    "categoryId": "CATE00035",
+    "name": "Society",
+    "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/category-icon/societies.svg",
+    "subcategories": [
+      {
+        "subcategory_code": "SUBC00650",
+        "subcategory_name": "Residential Housing Society"
+      },
+      {
+        "subcategory_code": "SUBC00651",
+        "subcategory_name": "Cooperative Housing Society"
+      },
+      {
+        "subcategory_code": "SUBC00652",
+        "subcategory_name": "Gated Community"
+      },
+      {
+        "subcategory_code": "SUBC00653",
+        "subcategory_name": "Apartment / Flat Owner Association"
+      }
+    ]
+  },
+  {
+    "categoryId": "CATE00036",
+    "name": "GovtHelp",
+    "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/category-icon/govt help.svg",
+    "subcategories": [
+      {
+        "subcategory_code": "SUBC00664",
+        "subcategory_name": "Municipal Corporation Office"
+      },
+      {
+        "subcategory_code": "SUBC00665",
+        "subcategory_name": "Panchayat Office"
+      },
+      {
+        "subcategory_code": "SUBC00666",
+        "subcategory_name": "Electricity Board Customer Center"
+      },
+      {
+        "subcategory_code": "SUBC00667",
+        "subcategory_name": "Water Supply & Sewerage Dept"
+      },
+      {
+        "subcategory_code": "SUBC00668",
+        "subcategory_name": "Gas Distribution Office (PNG, LPG)"
+      }
+    ]
+  },
+  {
+    "categoryId": "CATE00037",
+    "name": "Electronics",
+    "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/category-icon/electrnoics.svg",
+    "subcategories": [
+      {
+        "subcategory_code": "SUBC00703",
+        "subcategory_name": "Cable, Charger & Adapters Outlet"
+      },
+      {
+        "subcategory_code": "SUBC00704",
+        "subcategory_name": "Gadget & Tech Store (Multi-Brand)"
+      },
+      {
+        "subcategory_code": "SUBC00705",
+        "subcategory_name": "Chip-Level Repair Technician"
+      },
+      {
+        "subcategory_code": "SUBC00706",
+        "subcategory_name": "E-Waste Collection Center"
+      },
+      {
+        "subcategory_code": "SUBC00707",
+        "subcategory_name": "Authorized Electronics Service Center"
+      },
+      {
+        "subcategory_code": "SUBC00708",
+        "subcategory_name": "Electronic Spare Parts Shop"
+      }
+    ]
+  },
+  {
+    "categoryId": "CATE00038",
+    "name": "Other",
+    "iconUrl": "https://areafi.s3.ap-south-1.amazonaws.com/images/category-icon/other.svg",
+    "subcategories": []
+  }
+]

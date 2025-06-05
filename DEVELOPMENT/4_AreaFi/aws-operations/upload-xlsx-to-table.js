@@ -1,6 +1,7 @@
 const AWS = require("aws-sdk");
 const fs = require("fs");
 const path = require("path");
+const XLSX = require("xlsx");
 
 // Configure AWS region
 AWS.config.update({ region: "ap-south-1" });
@@ -21,23 +22,23 @@ function chunkArray(arr, size) {
   );
 }
 
-async function uploadToDynamoDB(tableName, fileName, partitionKey, sortKey = null) {
+async function uploadXlsxToDynamoDB(tableName, fileName, partitionKey, sortKey = null) {
   const filePath = path.join(__dirname, "data", fileName);
-  const rawData = fs.readFileSync(filePath, "utf8");
-  const items = JSON.parse(rawData).map((item) => ({
-    ...item,
-    [partitionKey]: String(item[partitionKey]), // Convert partition key to string
-  }));
+  const workbook = XLSX.readFile(filePath);
+  const sheetName = workbook.SheetNames[0];
+  const sheet = workbook.Sheets[sheetName];
+  const items = XLSX.utils.sheet_to_json(sheet);
 
   // Validate that each item contains the required keys
   for (const item of items) {
     if (!item[partitionKey]) {
-      throw new Error(`❌ Missing partition key "${partitionKey}" in item: ${JSON.stringify(item)}`);
+      throw new Error(`❌ Missing partition key \"${partitionKey}\" in item: ${JSON.stringify(item)}`);
     }
     if (sortKey && !item[sortKey]) {
-      throw new Error(`❌ Missing sort key "${sortKey}" in item: ${JSON.stringify(item)}`);
+      throw new Error(`❌ Missing sort key \"${sortKey}\" in item: ${JSON.stringify(item)}`);
     }
-
+    // Convert partition key to string
+    item[partitionKey] = String(item[partitionKey]);
     // Debug log to check data types
     console.log(`🔍 Item ID: ${item[partitionKey]} (Type: ${typeof item[partitionKey]})`);
   }
@@ -63,16 +64,16 @@ async function uploadToDynamoDB(tableName, fileName, partitionKey, sortKey = nul
   console.log("✅ Upload complete!");
 }
 
-// Pass args: node upload.js <TableName> <FileName> <PartitionKey> [SortKey]
+// Pass args: node upload-xlsx-to-table.js <TableName> <FileName> <PartitionKey> [SortKey]
 const [,, tableName, fileName, partitionKey, sortKey] = process.argv;
 
 if (!tableName || !fileName || !partitionKey) {
-  console.error("❗Usage: node upload.js <TableName> <FileName> <PartitionKey> [SortKey]");
+  console.error("❗ Usage: node upload-xlsx-to-table.js <TableName> <FileName> <PartitionKey> [SortKey]");
   process.exit(1);
 }
 
-uploadToDynamoDB(tableName, fileName, partitionKey, sortKey);
+uploadXlsxToDynamoDB(tableName, fileName, partitionKey, sortKey);
 
-//Note:- table should be exist in dynamodb before running this script and file should be in data folder
+// Note:- table should be exist in dynamodb before running this script and file should be in data folder
 // Run this command to upload data:
-// node upload-json-to-table.js <TableName> <FileName> <PartitionKey> [SortKey]
+// node upload-xlsx-to-table.js <TableName> <FileName> <PartitionKey> [SortKey]

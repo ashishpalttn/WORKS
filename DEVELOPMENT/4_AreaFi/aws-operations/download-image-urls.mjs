@@ -3,7 +3,7 @@ import { S3Client, ListObjectsV2Command } from "@aws-sdk/client-s3";
 // Replace these with your values
 const REGION = "ap-south-1";
 const BUCKET_NAME = "areafi";
-const PREFIX = "images/categories-icon/";
+const PREFIX = "images/category-icon/";
 
 const s3Client = new S3Client({ region: REGION });
 
