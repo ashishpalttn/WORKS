@@ -1,4 +1,5 @@
-// convert first letter of each word to uppercase
+// convert first letter of each word to uppercase;
+// sort the string;
 import java.util.*;
 import java.util.stream.Collectors;
 

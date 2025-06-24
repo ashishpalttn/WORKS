@@ -23,6 +23,7 @@ class Main {
         
         List<Integer> numbers = Arrays.asList(1,2,3,4,5,6);
         int sum = numbers.stream()
+        
                     .reduce(0, (acc,curr) ->{
                         System.out.println(curr);
                         return acc+curr; }

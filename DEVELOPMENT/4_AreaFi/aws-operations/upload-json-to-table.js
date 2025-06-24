@@ -76,3 +76,4 @@ uploadToDynamoDB(tableName, fileName, partitionKey, sortKey);
 //Note:- table should be exist in dynamodb before running this script and file should be in data folder
 // Run this command to upload data:
 // node upload-json-to-table.js <TableName> <FileName> <PartitionKey> [SortKey]
+// eg=  node upload-json-to-table.js categories final_full_categories_structure2.json categoryId 
