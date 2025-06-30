@@ -11,7 +11,7 @@ Promise.resolve().then(() => {
 });
 console.log('End');
 
-          output
+      output
           Start
           End
           Promise
