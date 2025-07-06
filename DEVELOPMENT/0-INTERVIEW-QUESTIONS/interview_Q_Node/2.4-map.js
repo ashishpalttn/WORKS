@@ -25,20 +25,12 @@ console.log(findIndex())
 // output [ [ 'abc', 'bca', 'cba' ], [ 'efg' ], [ 'ghij' ] ]
 const arr = ["abc","bca", "cba", "efg", "ghij"]
 const map = new Map();
-arr.forEach(item=>{
+for(const item of arr){
   const temp = item.split('').sort().join('')
-  if(map.has(temp)){
-
-      map.set(temp,[...map.get(temp),item])
-  }
-  else{
-  map.set(temp,[item])
-  }
-})
-
-const result = []
-for (let [key ,value] of map){
-  result.push(value);
+      const group = map.get(temp) || []
+      group.push(item)
+      map.set(temp, group)
+  
+ 
 }
-
-console.log (result)
+console.log ([...map.values()])
