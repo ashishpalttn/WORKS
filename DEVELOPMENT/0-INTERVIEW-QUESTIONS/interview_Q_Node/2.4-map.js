@@ -20,3 +20,17 @@ const findIndex = () =>{
 }
 
 console.log(findIndex())
+
+//City Bank
+// output [ [ 'abc', 'bca', 'cba' ], [ 'efg' ], [ 'ghij' ] ]
+const arr = ["abc","bca", "cba", "efg", "ghij"]
+const map = new Map();
+for(const item of arr){
+  const temp = item.split('').sort().join('')
+      const group = map.get(temp) || []
+      group.push(item)
+      map.set(temp, group)
+  
+ 
+}
+console.log ([...map.values()])
