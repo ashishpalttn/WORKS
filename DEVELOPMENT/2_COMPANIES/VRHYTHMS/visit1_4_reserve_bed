@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "msgId": "9ead1dff-fa5b-4e2e-a7b9-9afb607f3b66",
+    "eventTimeStamp": "2024-05-17T12:00:00-04:00",
+    "source": "HOS",
+    "tenantCode": "clhs701",
+    "facilityCode": "GHS",
+    "type": "Visit"
+  },
+  "patient": {
+    "identifiers": {
+      "medicalRecordNumber": "MRN_AKERS_15",
+      "masterPatientIdentifier": "MPI_AKERS_15"
+    }
+  },
+  "visit": {
+    "visitNumber": "VN_AKERS_15",
+    "bedRequestStatus": "DischargeOrderWithDelay",
+    "expectedDischargeDate": "2024-05-20",
+    "expectedDischargeDateUpdatedOn": "2024-05-17T12:00:00-04:00",
+    "workingDischargeArrangement": "Hospic",
+    "workingDischargeArrangementUpdatedOn": "2024-05-17T12:00:00-04:00",
+    "workingDrg": "123",
+    "workingDrgUpdatedOn": "2024-05-17T12:00:00-04:00",
+    "targetLOS": "5",
+    "targetLOSUpdatedOn": "2024-05-17T12:00:00-04:00",
+    "gmlos": "8.12"
+  }
+}

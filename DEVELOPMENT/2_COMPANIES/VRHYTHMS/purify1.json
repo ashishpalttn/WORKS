@@ -1,0 +1,80 @@
+//noteSection.js
+
+import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+import { useDispatch, useSelector } from 'react-redux';
+import PushPinIcon from '@mui/icons-material/PushPin';
+import DeleteIcon from '@mui/icons-material/Delete';
+import Button from '@mui/material/Button';
+import Input from '@mui/material/Input';
+import { addNote, selectNotes, deleteNote } from 'app/store/slices/patientDetailsSlice';
+
+const NotesSection = ({ sectionPadding = 'p-4', visit }) => {
+  const { t } = useTranslation('app');
+  const dispatch = useDispatch();
+  const notes = useSelector(selectNotes);
+  const [noteText, setNoteText] = useState('');
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleAddNote = async (e) => {
+    e.preventDefault();
+    if (!noteText.trim()) return;
+    setSubmitting(true);
+    await dispatch(addNote({ noteText, visit }));
+    setNoteText('');
+    setSubmitting(false);
+  };
+
+  return (
+    <div className={`bg-white rounded-lg shadow-md mb-6 border border-gray-400 ${sectionPadding}`}>
+      <h3 className="text-xl font-semibold text-black mb-2">
+        {t('NOTES_SECTION_TITLE')}
+      </h3>
+      <form onSubmit={handleAddNote} className="flex gap-2 mb-4">
+        <Input
+          className="flex-1 px-3 pl-12 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-clblue focus:border-transparent text-base"
+          type="text"
+          value={noteText}
+          onChange={(e) => setNoteText(e.target.value)}
+          placeholder={t('ADD_NOTE_PLACEHOLDER')}
+          disabled={submitting}
+          disableUnderline
+          fullWidth
+        />
+        <Button
+          variant="outlined"
+          color="primary"
+          size="small"
+          type="submit"
+          className="text-base font-medium rounded-full"
+          disabled={submitting || !noteText.trim()}
+        >
+          {submitting ? t('SAVING_BUTTON_LABEL') : t('SAVE_BUTTON_LABEL')}
+        </Button>
+      </form>
+      <div className="divide-y divide-gray-200">
+        {notes.map((note) => (
+          <div key={note.id} className="flex items-center gap-4 py-3">
+            {note.pinned && <PushPinIcon className="w-24 h-24 text-blue-500" />}
+            <div className="flex-1 text-base text-gray-700">{note.noteText || note.text}</div>
+            <button
+              type="button"
+              className="ml-2 p-1 rounded-full hover:bg-gray-200"
+              aria-label={t('DELETE_BUTTON_LABEL') || 'Delete'}
+              onClick={() => dispatch(deleteNote(note.id))}
+            >
+              <DeleteIcon className="text-gray-500 hover:text-red-600" />
+            </button>
+          </div>
+        ))}
+        {notes.length === 0 && (
+          <div className="text-gray-500 text-sm py-4 text-center">
+            {t('NO_NOTES_MESSAGE')}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default NotesSection;

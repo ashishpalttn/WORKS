@@ -1,0 +1,346 @@
+//patientDetailsSlice.js
+
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import axios from 'axios';
+
+const mockPatient = {
+  name: 'Andrew D. Garman',
+  age: 77,
+  gender: 'M',
+  id: '598CC',
+};
+
+const mockVisit = {
+  id: 'e541e9a0-565d-4fa4-ae42-70e822b2d6ec',
+  attendingPhysician: 'Green, Cynthia',
+  drg: '123',
+  workingDrgLevel: 'Level 2',
+  patientAlerts: [
+    {
+      alertTypeId: 'ad6aba72-c943-4aa6-879c-8c255a5da3a2',
+      alertTypeDisplayName: 'Isolation Organism',
+      alertTypeMultivalue: true,
+      alertTypeSortOrder: 7,
+      alertValueDisplayName: 'RSV',
+      alertValueIconPath: null,
+      alertValueSortOrder: 2,
+      alertTypeIsActive: true,
+      alertValueIsActive: true,
+      alertTypeInterfaceValue: 'IsolationOrganism',
+    },
+    {
+      alertTypeId: 'e1083567-e6da-4e39-a17d-e69b24255a9e',
+      alertTypeDisplayName: 'Contact Isolation',
+      alertTypeMultivalue: false,
+      alertTypeSortOrder: 2,
+      alertValueDisplayName: 'Yes',
+      alertValueIconPath: 'https://cdn.filestackcontent.com/7fKhg1krQemM19QYJp45',
+      alertValueSortOrder: 1,
+      alertTypeIsActive: true,
+      alertValueIsActive: true,
+      alertTypeInterfaceValue: 'ContactIsolation',
+    },
+    {
+      alertTypeId: '37e03106-8908-482f-9473-6f66a48447d6',
+      alertTypeDisplayName: 'Enteric Isolation',
+      alertTypeMultivalue: false,
+      alertTypeSortOrder: 4,
+      alertValueDisplayName: 'Yes',
+      alertValueIconPath: 'https://cdn.filestackcontent.com/XSM9nMZQtiGrE4ynFVMZ',
+      alertValueSortOrder: 1,
+      alertTypeIsActive: true,
+      alertValueIsActive: true,
+      alertTypeInterfaceValue: 'EntericIsolation',
+    },
+    {
+      alertTypeId: '5b73edf2-5ee7-4b7d-8d97-013b87edc431',
+      alertTypeDisplayName: 'Droplet Isolation',
+      alertTypeMultivalue: false,
+      alertTypeSortOrder: 3,
+      alertValueDisplayName: 'Yes',
+      alertValueIconPath: 'https://cdn.filestackcontent.com/RPK8VnUMTVS5YvFZvMlc',
+      alertValueSortOrder: 1,
+      alertTypeIsActive: true,
+      alertValueIsActive: true,
+      alertTypeInterfaceValue: 'DropletIsolation',
+    },
+    {
+      alertTypeId: '5501c97c-bf14-4095-8d8b-dcf30ff65305',
+      alertTypeDisplayName: 'Airborne Isolation',
+      alertTypeMultivalue: false,
+      alertTypeSortOrder: 1,
+      alertValueDisplayName: 'Yes',
+      alertValueIconPath: 'https://cdn.filestackcontent.com/orP2Q1w1RzWx2PMpdlov',
+      alertValueSortOrder: 1,
+      alertTypeIsActive: true,
+      alertValueIsActive: true,
+      alertTypeInterfaceValue: 'AirborneIsolation',
+    },
+    {
+      alertTypeId: 'ad6aba72-c943-4aa6-879c-8c255a5da3a2',
+      alertTypeDisplayName: 'Isolation Organism',
+      alertTypeMultivalue: true,
+      alertTypeSortOrder: 7,
+      alertValueDisplayName: 'Hepatitis A',
+      alertValueIconPath: null,
+      alertValueSortOrder: 1,
+      alertTypeIsActive: true,
+      alertValueIsActive: true,
+      alertTypeInterfaceValue: 'IsolationOrganism',
+    },
+    {
+      alertTypeId: '48dcf2bc-19cc-4ac4-9c0c-c951e2cbd661',
+      alertTypeDisplayName: 'Fall Risk',
+      alertTypeMultivalue: false,
+      alertTypeSortOrder: 8,
+      alertValueDisplayName: 'Yes',
+      alertValueIconPath: 'https://cdn.filestackcontent.com/L6mTyOBKTn2qmwomAZFV',
+      alertValueSortOrder: 1,
+      alertTypeIsActive: true,
+      alertValueIsActive: true,
+      alertTypeInterfaceValue: 'FallRisk',
+    },
+    {
+      alertTypeId: '4de166b2-2388-4101-bfa2-bb1e8e3d8b06',
+      alertTypeDisplayName: 'Telemetry',
+      alertTypeMultivalue: false,
+      alertTypeSortOrder: 9,
+      alertValueDisplayName: 'Yes',
+      alertValueIconPath: null,
+      alertValueSortOrder: 1,
+      alertTypeIsActive: true,
+      alertValueIsActive: true,
+      alertTypeInterfaceValue: 'Telemetry',
+    },
+    {
+      alertTypeId: '07c02f7b-a1d1-4d23-b35f-7c5579e2ce18',
+      alertTypeDisplayName: 'Bariatric Patient',
+      alertTypeMultivalue: false,
+      alertTypeSortOrder: 10,
+      alertValueDisplayName: 'No',
+      alertValueIconPath: null,
+      alertValueSortOrder: 2,
+      alertTypeIsActive: true,
+      alertValueIsActive: true,
+      alertTypeInterfaceValue: 'Bariatric',
+    },
+  ],
+  barrierCount: 2,
+  escalatedBarrierCount: 1,
+  todoCount: 3,
+  dischargeStatus: 'CHECKED_IN',
+  admitType: 'IN',
+  admitDate: '2024-06-01T08:00:00Z',
+  expectedTransferTime: '2024-06-10T14:00:00Z',
+  expectedTransferTimeIncludesTime: true,
+  expectedDischargeTime: '2024-06-12T10:00:00Z',
+  expectedDischargeTimeIncludesTime: true,
+  workingDischargeDisposition: 'Home',
+  workingDischargeDispositionId: '1',
+  workingDCArrangementNote: 'Patient will need home health.',
+  insurancePlan: 'Medicare',
+  patientProblem: 'Needs physical therapy',
+  visitLocation: {
+    reservedBed: {
+      id: 'B-101',
+    },
+  },
+};
+
+const mockBed = {
+  id: 'B-101',
+  departmentDisplayName: 'ICU',
+  displayName: 'Bed 101',
+  name: 'Bed 101',
+  unit: 'ICU',
+  status: 'Occupied',
+  clean: true,
+  reserved: false,
+  properties: ['Private', 'Window'],
+};
+
+const mockTodos = [
+  {
+    id: 1,
+    status: 'complete',
+    dueDate: 'TODAY',
+    text: 'Sample To do',
+  },
+  {
+    id: 2,
+    status: 'na',
+    dueDate: 'TODAY',
+    text: 'Second To-Do',
+  },
+  {
+    id: 3,
+    status: 'incomplete',
+    dueDate: '2024-07-01',
+    text: 'Third To-do',
+  },
+];
+
+const mockBarriers = [
+  {
+    id: 1,
+    name: 'Insurance Delay',
+    notes: 'Waiting for insurance approval.',
+    pinned: true,
+    resolved: false,
+    escalated: false,
+  },
+  {
+    id: 2,
+    name: 'Family Meeting Needed',
+    notes: 'Family not available for meeting.',
+    pinned: false,
+    resolved: false,
+    escalated: false,
+  },
+  {
+    id: 3,
+    name: 'No Home Health',
+    notes: 'No agency available.',
+    pinned: false,
+    resolved: true,
+    escalated: false,
+  },
+  {
+    id: 4,
+    name: 'Insurance Escalation',
+    notes: 'Escalated to supervisor for urgent approval.',
+    pinned: false,
+    resolved: false,
+    escalated: true,
+  },
+  {
+    id: 5,
+    name: 'Social Work Consult',
+    notes: 'Waiting for social worker assignment.',
+    pinned: true,
+    resolved: false,
+    escalated: false,
+  },
+]
+
+// Async thunk for fetching patient details (API integration placeholder)
+export const fetchPatientDetails = createAsyncThunk(
+  'patientDetails/fetchPatientDetails',
+  async (_, { rejectWithValue }) => {
+    return {
+      patient: mockPatient,
+      visit: mockVisit,
+      bed: mockBed,
+    };
+  }
+);
+
+export const fetchNotes = createAsyncThunk(
+  'patientDetails/fetchNotes',
+  async (visit, { rejectWithValue }) => {
+    try {
+      const response = await axios.get(`${process.env.REACT_APP_API_PREFIX}/secure/notes/${visit?.id}`);
+      return response.data;
+    } catch (err) {
+      return rejectWithValue(err.response?.data || err.message);
+    }
+  }
+);
+
+export const addNote = createAsyncThunk(
+  'patientDetails/addNote',
+  async ({ noteText, visit }, { rejectWithValue }) => {
+    try {
+      const response = await axios.post(
+        `${process.env.REACT_APP_API_PREFIX}/secure/notes`,
+        { noteText, pinned: false, visitId: visit?.id }
+      );
+      return response.data;
+    } catch (err) {
+      return rejectWithValue(err.response?.data || err.message);
+    }
+  }
+);
+
+export const deleteNote = createAsyncThunk(
+  'patientDetails/deleteNote',
+  async (noteId, { rejectWithValue }) => {
+    try {
+      await axios.delete(`${process.env.REACT_APP_API_PREFIX}/secure/notes/${noteId}`);
+      return noteId;
+    } catch (err) {
+      return rejectWithValue(err.response?.data || err.message);
+    }
+  }
+);
+
+const initialState = {
+  patient: mockPatient,
+  visit: mockVisit,
+  bed: mockBed,
+  notes: [], 
+  todos: mockTodos,
+  barriers: mockBarriers, 
+  loading: false,
+  error: null,
+};
+
+const patientDetailsSlice = createSlice({
+  name: 'patientDetails',
+  initialState,
+  reducers: {
+    // Add reducers for updating patient/visit/bed if needed
+    deleteTodo: (state, action) => {
+      state.todos = state.todos.filter((todo) => todo.id !== action.payload);
+    },
+  },
+  extraReducers: (builder) => {
+    builder
+      .addCase(fetchPatientDetails.pending, (state) => {
+        state.loading = true;
+        state.error = null;
+      })
+      .addCase(fetchPatientDetails.fulfilled, (state, action) => {
+        state.loading = false;
+        state.patient = action.payload.patient;
+        state.visit = action.payload.visit;
+        state.bed = action.payload.bed;
+      })
+      .addCase(fetchPatientDetails.rejected, (state, action) => {
+        state.loading = false;
+        state.error = action.error.message;
+      })
+      .addCase(fetchNotes.pending, (state) => {
+        state.loading = true;
+        state.error = null;
+      })
+      .addCase(fetchNotes.fulfilled, (state, action) => {
+        state.loading = false;
+        state.notes = action.payload;
+      })
+      .addCase(fetchNotes.rejected, (state, action) => {
+        state.loading = false;
+        state.error = action.payload || action.error.message;
+      })
+      .addCase(addNote.fulfilled, (state, action) => {
+        state.notes.push(action.payload);
+      })
+      .addCase(deleteNote.fulfilled, (state, action) => {
+        state.notes = state.notes.filter((note) => note.id !== action.payload);
+      });
+  },
+});
+
+// Selectors
+export const selectPatient = (state) => state.patientDetails.patient;
+export const selectVisit = (state) => state.patientDetails.visit;
+export const selectBed = (state) => state.patientDetails.bed;
+export const selectPatientDetailsLoading = (state) => state.patientDetails.loading;
+export const selectPatientDetailsError = (state) => state.patientDetails.error;
+export const selectNotes = (state) => state.patientDetails.notes;
+export const selectTodos = (state) => state.patientDetails.todos;
+export const selectBarriers = (state) => state.patientDetails.barriers;
+
+export const { deleteTodo } = patientDetailsSlice.actions;
+
+export default patientDetailsSlice.reducer;

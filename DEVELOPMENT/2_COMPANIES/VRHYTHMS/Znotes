@@ -1,0 +1,26 @@
+//order queue element
+1-UpcomingOrder
+2-OrderInProgress
+3-OrderNeedsPrep
+4-OrderNeedsResulted
+5-OrderNeedsScheduling
+6-SchedulingDelayHold
+
+//visit queue element
+1-NeedsNurseAssignment, remove careTeam tag from visit
+2-NeedsBedAssignment
+3-NeedsTransport 
+4-AssignedBedNeedsCleaning
+5-PastTargetLos
+6-PotentialAdmission
+7-PotentialDischarge
+8-DelayedDischarge
+9-ObservationPatients 
+10-OrderedDischarge
+11-ActiveBarriers
+
+// Follow these steps to be able to view patient data in the app:
+// In Care Operations, run the send-cap-view-messages.sh script - make sure to put your name in the correct spot
+// This will populate several patients in the DB
+// In Care Progression UI go to My Assignments page and select all Grady bed and Apply changes
+// In Care Progression UI go to My Patient List page and you should see patients available

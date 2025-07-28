@@ -1,16 +1,16 @@
 node_modules
 
 # Ignore specific JSON files
-1_visit.json
-2_order.json
-3_appointment.json
-4.json
-5.json
-3_appointmentOrder.json
-4_AdmissionOrder.json
-1-Temp.js
-2-Temp.js
-3-Temp.js
+# 1_visit.json
+# 2_order.json
+# 3_appointment.json
+# 4.json
+# 5.json
+# 3_appointmentOrder.json
+# 4_AdmissionOrder.json
+# 1-Temp.js
+# 2-Temp.js
+# 3-Temp.js
 
 # Ignore specific JavaScript file
 # 0.js
@@ -19,21 +19,21 @@ node_modules
 # 0.java
 
 # Ignore specific JSON file
-purify.json
-purify1.json
-purify2.json
-purify3.json
+# purify.json
+# purify1.json
+# purify2.json
+# purify3.json
 
-Znotes
+# Znotes
 
-visit1_1
-visit1_3a
-visit1_2o
-visit1_4_reserve_bed
+# visit1_1
+# visit1_3a
+# visit1_2o
+# visit1_4_reserve_bed
 
-visitSecond2_1
-visitSecond2_3a
-visitSecond2_2o
+# visitSecond2_1
+# visitSecond2_3a
+# visitSecond2_2o
 
-DEVELOPMENT/2_COMPANIES/VRHYTHMS/1-big_bugfix_json
-DEVELOPMENT/2_COMPANIES/VRHYTHMS/2-big_bugfix_json
+# DEVELOPMENT/2_COMPANIES/VRHYTHMS/1-big_bugfix_json
+# DEVELOPMENT/2_COMPANIES/VRHYTHMS/2-big_bugfix_json

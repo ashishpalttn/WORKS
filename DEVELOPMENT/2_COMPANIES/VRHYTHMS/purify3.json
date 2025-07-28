@@ -1,0 +1,172 @@
+patientBlock.js
+
+import React, { useState, useEffect } from 'react';
+import PatientBlockCell from './PatientBlockCell';
+import BedInfo from './BedInfo';
+import PatientInfo from './PatientInfo';
+import PatientStatus from './PatientStatus';
+import PatientProblem from './PatientProblem';
+import BarriersAndTodos from './BarriersAndTodos';
+import LosAndEtdInfo from './LosAndEtdInfo';
+import DcArrangement from './DcArrangement';
+import AttendingProvider from './AttendingProvider';
+import DrgInfo from './DrgInfo';
+import ExpectedDischargeDate from './ExpectedDischargeDate';
+import DcArrangementNote from './DcArrangementNote';
+import InsuranceInfo from './InsuranceInfo';
+import PatientAlerts from '../PatientAlerts';
+import DrgPickerDialog from '../dialogs/DrgPickerDialog';
+import { useSelector, useDispatch } from 'react-redux';
+import { selectMdcOptions, selectDrgs, fetchDrgs, updateDrg } from 'app/store/slices/drgSlice';
+import { useNavigate } from 'react-router-dom';
+
+const PatientBlock = ({
+  patient,
+  bed,
+  visit,
+  readOnly = false,
+  onPatientProblemChange = () => {},
+  onPatientStatusChange = () => {},
+  onDcArrangementChange = () => {},
+  onDcArrangementNoteChange = () => {},
+  onExpectedTransferTimeChange = () => {},
+  onExpectedDischargeTimeChange = () => {},
+  className = '', 
+}) => {
+  const [drgDialogOpen, setDrgDialogOpen] = useState(false);
+  const [selectedDrg, setSelectedDrg] = useState(null);
+
+  const dispatch = useDispatch();
+  const mdcOptions = useSelector(selectMdcOptions);
+  const drgs = useSelector(selectDrgs);
+  const selectedFilter = useSelector((state) => state.myPatientList.selectedFilter);
+  const selectedSubFilter = useSelector((state) => state.myPatientList.selectedSubFilter);
+    const navigate = useNavigate();
+
+  const fetchDrgsHandler = async (params) => {
+    const searchParams = {
+      ...params,
+      visitId: visit?.id
+    };
+    await dispatch(fetchDrgs(searchParams));
+    return drgs;
+  };
+
+  const handleDrgApply = async (drg) => {
+    setSelectedDrg(drg);
+    if (!visit?.id || !drg?.code) return;
+    try {
+      const result = await dispatch(updateDrg({ visitId: visit.id, drgCode: drg.code }));
+      if (result?.payload && result.payload.visitId) {
+        dispatch({
+          type: 'myPatientList/updatePatientDrg',
+          payload: {
+            visitId: result.payload.visitId,
+            drgCode: result.payload.drgCode,
+          },
+        });
+      }
+    } catch (error) {
+      console.error('Failed to update DRG:', error);
+    }
+  };
+
+  if (selectedFilter === 'patient' && selectedSubFilter === 'AVAILABLE') {
+    return (
+      <div className="rounded-lg shadow-md bg-gray-100 border border-gray-300 mb-10 px-12 py-10">
+        <PatientBlockCell>
+          <BedInfo bed={bed} visit={visit} unClickable />
+        </PatientBlockCell>
+      </div>
+    );
+  }
+
+  return (
+    <div className={`rounded-lg shadow-md bg-gray-100 border border-gray-300 mb-4 px-12 pt-12 pb-6 ${className}`}>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8">
+        {/* Row 1 */}
+        <PatientBlockCell>
+          <BedInfo bed={bed} visit={visit} onClick={() => {
+            navigate(`${process.env.PUBLIC_URL}/patient_details`, { state: { visit } });
+          }} />
+        </PatientBlockCell>
+        <PatientBlockCell>
+          <PatientStatus
+            visit={visit}
+            readOnly={readOnly}
+            onChange={onPatientStatusChange}
+          />
+        </PatientBlockCell>
+        <PatientBlockCell className="flex justify-end md:justify-start">
+          <PatientProblem visit={visit} readOnly={readOnly} onChange={onPatientProblemChange} />
+        </PatientBlockCell>
+        <PatientBlockCell className="flex justify-start md:justify-end">
+          <BarriersAndTodos visit={visit} />
+        </PatientBlockCell>
+
+        {/* Row 2 */}
+        <PatientBlockCell className="flex col-start-2 md:col-start-1 row-start-1 md:row-start-2 justify-end md:justify-start">
+          <PatientInfo patient={patient} />
+        </PatientBlockCell>
+        <PatientBlockCell className="flex justify-end md:justify-start">
+          <LosAndEtdInfo
+            visit={visit}
+            readOnly={readOnly}
+            onChange={onExpectedTransferTimeChange}
+          />
+        </PatientBlockCell>
+        <PatientBlockCell>
+          <DcArrangement
+            visit={visit}
+            className="flex justify-end md:justify-start"
+            readOnly={readOnly}
+            onChange={onDcArrangementChange}
+          />
+        </PatientBlockCell>
+        <PatientBlockCell className="flex justify-start md:justify-end">
+          <AttendingProvider name={visit?.attendingPhysician} />
+        </PatientBlockCell>
+
+        {/* Row 3 */}
+        <PatientBlockCell className="flex justify-end md:justify-start">
+          <span onClick={() => setDrgDialogOpen(true)} style={{ cursor: 'pointer' }}>
+            <DrgInfo visit={visit} readOnly={readOnly} />
+          </span>
+        </PatientBlockCell>
+        <PatientBlockCell>
+          <ExpectedDischargeDate
+            visit={visit}
+            readOnly={readOnly}
+            onChange={onExpectedDischargeTimeChange}
+          />
+        </PatientBlockCell>
+        <PatientBlockCell className="flex col-start-2 md:col-start-3 row-start-4 md:row-start-3 justify-end md:justify-start">
+          <DcArrangementNote
+            visit={visit}
+            readOnly={readOnly}
+            onChange={onDcArrangementNoteChange}
+          />
+        </PatientBlockCell>
+        <PatientBlockCell className="flex justify-end">
+          <InsuranceInfo visit={visit} />
+        </PatientBlockCell>
+
+        {/* Row 4 */}
+        <PatientBlockCell className="flex col-span-2 md:col-span-4 justify-end">
+          <PatientAlerts patientAlerts={visit?.patientAlerts} showIconsOnly />
+        </PatientBlockCell>
+      </div>
+      <DrgPickerDialog
+        open={drgDialogOpen}
+        onClose={() => setDrgDialogOpen(false)}
+        onApply={handleDrgApply}
+        initialDrg={visit?.drg}
+        fetchDrgs={fetchDrgsHandler}
+        mdcOptions={mdcOptions}
+        defaultSearch={{}} // Do not prefill DRG code
+      />
+    </div>
+  );
+};
+
+export default React.memo(PatientBlock);

@@ -1,0 +1,79 @@
+//PatientDetailsPage.js
+
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { useTranslation } from 'react-i18next';
+import { useLocation } from 'react-router-dom';
+import PatientBlock from 'app/shared-components/patient/PatientBlock';
+import BarriersSection from './BarriersSection';
+import TodosSection from './TodosSection';
+import NotesSection from './NotesSection';
+import {
+  fetchPatientDetails,
+  fetchNotes,
+  selectPatient,
+  selectVisit,
+  selectBed,
+  selectPatientDetailsLoading,
+  selectPatientDetailsError,
+} from 'app/store/slices/patientDetailsSlice';
+
+const PatientDetailsPage = () => {
+  const dispatch = useDispatch();
+  const { t } = useTranslation('app');
+  const location = useLocation();
+  const patient = useSelector(selectPatient);
+  const reduxVisit = useSelector(selectVisit);
+  const bed = useSelector(selectBed);
+  const loading = useSelector(selectPatientDetailsLoading);
+  const error = useSelector(selectPatientDetailsError);
+
+  // Prefer visit from navigation state if present
+  const visit = location.state?.visit || reduxVisit;
+
+  useEffect(() => {
+    dispatch(fetchPatientDetails());
+    dispatch(fetchNotes(visit));
+  }, [dispatch]);
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center p-8">
+        <p className="text-clgrey-dark">{t('LOADING_MESSAGE')}</p>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="p-4 bg-red-50 border border-red-200 rounded-lg">
+        <p className="text-red-700 text-sm">{t('NETWORK_ERROR_MESSAGE')}</p>
+      </div>
+    );
+  }
+
+  return (
+    <div className="w-full px-4 sm:px-8 md:px-16 lg:px-32 py-8 space-y-10">
+      <div className="w-full">
+        <PatientBlock
+          patient={patient}
+          visit={visit}
+          bed={bed}
+          readOnly={false}
+          className="w-full py-4 px-14 text-md font-medium text-gray-900"
+        />
+      </div>
+      <div className="w-full">
+        <BarriersSection sectionPadding="p-8" />
+      </div>
+      <div className="w-full">
+        <TodosSection sectionPadding="p-8" />
+      </div>
+      <div className="w-full">
+        <NotesSection sectionPadding="p-8" visit={visit} />
+      </div>
+    </div>
+  );
+};
+
+export default PatientDetailsPage;
