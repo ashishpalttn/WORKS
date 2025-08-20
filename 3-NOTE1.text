@@ -1,0 +1,46 @@
+Frontend Assignment – Real-time Order Book Viewer
+Duration: 15 minutes
+Objective: Build a minimal real-time order book dashboard UI using React.
+ 
+Instructions:
+You're tasked with building a simple real-time order book UI that receives live tick updates (simulated) and updates the DOM efficiently. This assignment focuses on your understanding of React rendering, WebSocket integration, and performance in UI updates.
+ 
+What to Build:
+Order Book Table:
+A split table showing top 5 bids and top 5 asks.
+Each row shows: Price, Quantity, and Order Count.
+Bids should be sorted descending, asks ascending.
+ 
+Real-Time Updates:
+Use a simulated WebSocket (or setInterval with dummy JSON updates) to inject new ticks every 100ms.
+Each tick should update price/quantity/order count for one side (bid/ask).
+Efficiently re-render only what's needed.
+ 
+Visual Cue:
+Highlight the row (e.g., flash green/red) when data updates.
+ 
+Performance:
+Avoid unnecessary re-renders.
+ 
+Design/UI:
+No need for full design fidelity. Simple, readable layout using CSS or basic MUI/Tailwind if preferred.
+ 
+Bonus (only if time permits):
+Add controls to toggle number of rows (5/10/20).
+Add a simple "freeze" button to pause the stream.
+ 
+Tech Constraints:
+Use only React (preferably with hooks).
+Can use either plain JavaScript or TypeScript.
+ 
+Use dummy WebSocket logic (no actual server needed).
+
+
+const generateTick = (side: 'bid' | 'ask'): Tick => ({
+  side,
+  price: parseFloat((Math.random() * (101 - 99) + 99).toFixed(2)),
+  quantity: Math.floor(Math.random() * 1000),
+  orderCount: Math.floor(Math.random() * 10) + 1,
+});
+ 
+ 
