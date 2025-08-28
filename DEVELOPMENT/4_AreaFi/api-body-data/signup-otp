@@ -1,0 +1,18 @@
+{
+    "application": "CLIENT",
+    "name": "tempName",
+    "mobile": "7800750614",
+    "category": "tempCategory",
+    "subCetegory": [
+        "subcategory1",
+        "subcategory2"
+    ],
+    "shopName": "tempShopName",
+    "address": "tempAddress",
+    "location": {
+        "latitude": "00000",
+        "longitude": "00000"
+    },
+    "email": "tempemail.com",
+    "isGst": false
+}
