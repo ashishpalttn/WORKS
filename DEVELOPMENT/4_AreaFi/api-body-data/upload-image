@@ -1,0 +1,5 @@
+curl -X POST http://localhost:3000/dev/upload-image   -F "images=@/home/ashish/Downloads/hire.jpg"   -F "images=@/home/ashish/Downloads/image.jpg"
+
+  
+  curl -X POST http://localhost:3000/dev/upload-image \
+  -F "images=@/home/ashish/Downloads/geine.png"
