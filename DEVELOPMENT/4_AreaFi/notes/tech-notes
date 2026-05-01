@@ -1,0 +1,2 @@
+Short Term: Use DynamoDB GSI with a composite key approach
+Long Term: Implement ElasticSearch/OpenSearch

@@ -1,0 +1,36 @@
+1# prompt for create new api
+
+table name = bill
+partition key = bill_id
+
+fieldName 	valueType	isRequired
+bill no	singular 	mandatory 
+date	singular 	mandatory 
+customer name	singular 	optional 
+phoneNo	singular 	optional 
+items	multiple 	mandatory 
+subtotal	singular 	mandatory 
+taxes	singular 	optional 
+total	singular 	mandatory 
+
+//update serverless.yml, resources.yml and functions.yml
+// create habdler, model, service
+
+first analyse existing product api and existing workflow, then create similer REST Api new bill apis using above details
+
+
+
+
+
+
+
+keep remember always follow my existing code structure and existing code flow
+
+vendor-products-v2
+
+create a new api toggle-active
+if used sends vendor_id and  is_active
+
+then update the new  is_active value of, which have same vendor_id 
+
+used best approach 
